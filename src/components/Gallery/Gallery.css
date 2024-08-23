@@ -38,4 +38,5 @@
   max-height: 90%;
   margin: auto;
   object-fit: contain;
+  border-radius: 10px;
 }

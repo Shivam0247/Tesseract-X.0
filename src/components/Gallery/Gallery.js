@@ -53,7 +53,7 @@ function Gallery() {
       </h2>
 
       <div className="flex mt-10 justify-center items-center w-full min-h-[100vh] gallery-container">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-[80%]">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-[85%]">
           {chunkedImages.map((columnImages, columnIndex) => (
             <div key={columnIndex} className="grid gap-4">
               {columnImages.map((src, imgIndex) => (
@@ -77,7 +77,7 @@ function Gallery() {
         )}
       </div>
 
-      <div className="btn flex justify-center items-center h-[8vh]">
+      <div className="btn flex justify-center items-center h-[13vh]">
         <HoverBorderGradient
           containerClassName="rounded-full"
           className="bg-black text-white flex items-center space-x-2"
