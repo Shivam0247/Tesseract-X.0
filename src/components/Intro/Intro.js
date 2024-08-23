@@ -53,7 +53,6 @@ function Intro() {
       }
     );
 
-    // Cleanup function to remove ScrollTrigger instances
     return () => {
       if (titleAnimation.scrollTrigger) {
         titleAnimation.scrollTrigger.kill();
