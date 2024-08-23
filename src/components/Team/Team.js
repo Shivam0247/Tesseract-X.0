@@ -1,7 +1,54 @@
 import React from "react";
+import TeamCard from "./TeamCard";
+import { HoverBorderGradient } from "../ui/hover-border-gradient";
 
 function Team() {
-  return <div className="bg-black h-[100vh] w-[100vw]"></div>;
+  return (
+    <div className="w-full min-h-[100vh] pb-20 py-10 bg-black">
+      <h2 className="max-w-7xl pl-4 mx-[2em] mb-[1em] text-xl md:text-5xl font-bold text-neutral-200 font-sans">
+        The Minds Behind the Magic.
+      </h2>
+
+      <div className="team mx-[2em] flex flex-row flex-wrap justify-center">
+        <TeamCard
+          name="Khushi Shah"
+          position="General Secretary"
+          img="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <TeamCard
+          name="Krish Modi"
+          position="Treasurer"
+          img="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <TeamCard
+          name="Shivam Patel"
+          position="Tech Head"
+          img="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <TeamCard
+          name="Ansh Soni"
+          position="GD Head"
+          img="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <TeamCard
+          name="Khushi Uttamani"
+          position="Social Media Head"
+          img="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+      </div>
+
+      <div className="btn flex justify-center items-center h-[8vh]">
+        <HoverBorderGradient
+          containerClassName="rounded-full"
+          className="bg-black text-white flex items-center space-x-2"
+          duration={1}
+          clockwise={true}
+        >
+          <span>View All Members</span>
+        </HoverBorderGradient>
+      </div>
+    </div>
+  );
 }
 
 export default Team;

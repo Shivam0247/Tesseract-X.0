@@ -9,9 +9,9 @@ export function AppleCardsCarouselDemo() {
   ));
 
   return (
-    <div className="w-full h-[100vh] py-20 bg-black">
+    <div className="w-full min-h-[100vh] pb-22 py-10 bg-black">
       <h2 className="max-w-7xl pl-4 mx-[2em] text-xl md:text-5xl font-bold text-neutral-200 font-sans">
-        Get to know Events.
+        Events in the Spotlight.
       </h2>
       <Carousel items={cards} />
     </div>
