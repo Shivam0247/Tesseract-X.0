@@ -1,0 +1,41 @@
+/* Gallery.css */
+
+.gallery-container {
+  position: relative;
+}
+
+.gallery-image {
+  transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.03);
+  z-index: 10;
+}
+
+.gallery-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 1000; /* Ensure the overlay is on top */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* Ensure the overlay itself doesn't block interactions */
+}
+
+.gallery-overlay.active {
+  display: flex;
+  pointer-events: auto; /* Allow interaction with the overlay */
+}
+
+.gallery-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  object-fit: contain;
+}
