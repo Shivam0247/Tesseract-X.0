@@ -40,7 +40,10 @@ export const MaskContainer = ({
       ref={containerRef}
       className={cn("h-screen relative w-[100%] border-none", className)}
       animate={{
-        backgroundColor: isHovered ? "black" : "var(--black)",
+        backgroundImage: isHovered ? "black" : `black`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       <motion.div
