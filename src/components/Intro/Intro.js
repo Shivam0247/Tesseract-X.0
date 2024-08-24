@@ -158,8 +158,8 @@ function Intro() {
                 showWelcome ? (
                   <div className="welcome-message flex justify-center items-center h-[97%]">
                     <p
+                      className="front-text-paragraph"
                       style={{
-                        fontSize: "2rem",
                         textAlign: "center",
                         color: "#FFFEFC",
                       }}
@@ -170,13 +170,7 @@ function Intro() {
                         typingDelay={10}
                         cursorRenderer={(cursor) => <h1>{cursor}</h1>}
                         displayTextRenderer={(text, i) => (
-                          <p
-                            style={{
-                              fontSize: "2rem",
-                              textAlign: "center",
-                              color: "#FFFEFC",
-                            }}
-                          >
+                          <p className="typing-text">
                             {text.split("").map((char, i) => (
                               <span key={i}>{char}</span>
                             ))}

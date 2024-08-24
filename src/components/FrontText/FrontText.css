@@ -70,3 +70,9 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.typing-text {
+  font-size: 4rem; /* Adjust font size as needed */
+  text-align: center;
+  color: #fffefc;
+}

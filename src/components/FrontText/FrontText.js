@@ -107,9 +107,11 @@ function FrontText() {
         }
         className="h-[100vh] border rounded-md front-text-paragraph"
       >
-        The first rule of <span className="text-red-500">MRR Club</span> is you
-        do not talk about MRR Club. The second rule of MRR Club is you DO NOT
-        talk about <span className="text-red-500">MRR Club</span>.
+        <span className="text-red-500"> Warning :</span> Side effects of
+        attending
+        <span className="text-red-500"> TESSARACT</span> may include
+        uncontrollable excitement, tech inspiration overload, and the
+        irresistible urge to create the next big thing!
       </MaskContainer>
     </div>
   );
