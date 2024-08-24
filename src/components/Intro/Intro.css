@@ -49,6 +49,13 @@
   max-height: 100%;
   /* box-shadow: rgba(100, 100, 111, 0.2) 5px 5px 50px 50px; */
 }
+#terminalEditor {
+  overflow: scroll;
+}
+
+#terminalEditor::-webkit-scrollbar {
+  display: none;
+}
 
 .glass-effect {
   background: linear-gradient(
