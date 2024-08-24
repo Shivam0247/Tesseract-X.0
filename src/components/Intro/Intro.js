@@ -3,66 +3,19 @@ import "./Intro.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ReactTerminal } from "react-terminal";
+import ReactTypingEffect from "react-typing-effect";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Intro() {
   const [asciiLines, setAsciiLines] = useState([]);
-  const [lineIndex, setLineIndex] = useState(0);
+  const [welcomeMessage, setWelcomeMessage] = useState("");
+  const [showWelcome, setShowWelcome] = useState(false);
+  const [hasTriggered, setHasTriggered] = useState(false); // New state to track if typing has triggered
 
   const asciiArt = `
-                               .%% 
-                                           ...@@@@@@@@.... 
-                                         ..@@@@@@+=@@@@@@. 
-                                      . @@@@@@:.    .:@@@@@@... 
-                                  ...@@@@@@             .@@@@@@.. 
-                                .-@@@@@@..                 .@@@@@@- x
-                              *@@@@@@...                    ...@@@@@@* 
-                       .  .@@@@@@@                                @@@@@@%.  . 
-                      ..@@@@@@*.                                     *@@@@@@.. 
-                   . @@@@@@=..                                        ..-@@@@@@.. 
-                ..@@@@@@. .                                                .@@@@@@.. 
-             .:@@@@@@..                          ..                          ..@@@@@@:. 
-           =@@@@@@..                          .@@@@@@.                          ..@@@@@@= 
-          @@@@@* ..                        .@@@@@@@@@@@@.                           *@@@@@ 
-          @@@@@@@@@...                ..:@@@@@@     .@@@@@@:..                  .@@@@@@@@@ 
-          @@@+.*@@@@@@. .          ..+@@@@@@.          .@@@@@@+..           ..@@@@@@*.+@@@ 
-          @@@+   .:@@@@@@:.      .%@@@@@@.                .@@@@@@%.       .@@@@@@-    +@@@ 
-          @@@+     . .@@@@@@*..@@@@@@#..                    ..#@@@@@@..:@@@@@@. .     +@@@ 
-          @@@+        .. %@@@@@@@@=...                        .. =@@@@@@@@@..         +@@@ 
-          @@@+            ..@@@@@@@..                           .%@@@@@@.             +@@@ 
-          @@@+             .@@@.@@@@@@:                    . .@@@@@@+@@@.             +@@@ 
-          @@@+             .@@@  ..@@@@@@#.               :@@@@@@:.  @@@.             +@@@ 
-          @@@+             .@@@     . %@@@@@@..      ..=@@@@@@..     @@@.             +@@@ 
-          @@@+             .@@@        . -@@@@@@.   %@@@@@@..        @@@.             +@@@ 
-          @@@+             .@@@             .@@@@@@@@@@#.            @@@.             +@@@ 
-          @@@+             .@@@               ..@@@@=.               @@@.             +@@@ 
-          @@@+             .@@@                 =@@@.                @@@.             +@@@ 
-          @@@+             .@@@                 =@@@                 @@@.             +@@@ 
-          @@@+             .@@@                 =@@@                 @@@.             +@@@ 
-          @@@+             .@@@                 +@@@                 @@@.             +@@@ 
-          @@@+             .@@@                 +@@@                 @@@.             +@@@ 
-          @@@+             .@@@-.               +@@@                :@@@.             +@@@ 
-          @@@+             .@@@@@@= ..          +@@@          .. =@@@@@@.             +@@@ 
-          @@@+                .@@@@@@#..        +@@@        . #@@@@@@.                +@@@ 
-          @@@+                   .%@@@@@@.      *@@@      .@@@@@@%.                   +@@@ 
-          @@@+                     ..+@@@@@@.   *@@@   .@@@@@@+..                     +@@@ 
-          @@@+                       ...:@@@@@@ *@@@ @@@@@@:..                        +@@@ 
-          @@@@@.                           .@@@@@@@@@@@@. .                         .@@@@@ 
-           =@@@@@@..                         ..@@@@@@.                          ..@@@@@@= 
-             .:@@@@@@..                         #@@@                         ..@@@@@@:. 
-                ..@@@@@@. .                    .#@@@                      ..@@@@@@.. 
-                   . @@@@@@=..                  #@@@                  ..=@@@@@@.. 
-                      ..@@@@@@*.                #@@@                 *@@@@@@. 
-                       .  .@@@@@@@              #@@@              @@@@@@%.  . 
-                              *@@@@@@...        #@@%        ...@@@@@@* 
-                                .-@@@@@@.       %@@%      ..@@@@@@- 
-                                  ...@@@@@@.    %@@%    .@@@@@@.. 
-                                      ..@@@@@@: %@@%.:@@@@@@ .. 
-                                         ..@@@@@@@@@@@@@@. 
-                                           . .@@@@@@@@.... 
-                                                .%% 
-    `;
+    // ASCII art here
+  `;
 
   useEffect(() => {
     const lines = asciiArt.split("\n");
@@ -75,10 +28,59 @@ function Intro() {
       } else {
         clearInterval(intervalId);
       }
-    }, 100); // Adjust the interval as needed
+    }, 100);
 
     return () => clearInterval(intervalId);
   }, []);
+
+  useEffect(() => {
+    const typeMessage = (message, speed) => {
+      let i = 0;
+      const intervalId = setInterval(() => {
+        setWelcomeMessage((prev) => prev + message[i]);
+        i++;
+        if (i >= message.length) {
+          clearInterval(intervalId);
+          setTimeout(() => {
+            setShowWelcome(false);
+          }, 3000);
+        }
+      }, speed);
+    };
+
+    const trigger = ScrollTrigger.create({
+      trigger: ".typing-trigger",
+      start: "top center",
+      onEnter: () => {
+        if (!hasTriggered) {
+          setShowWelcome(true);
+          typeMessage("Welcome to the SnT", 100);
+          setHasTriggered(true); // Set flag to true after triggering
+        }
+      },
+      onLeaveBack: () => {
+        setShowWelcome(false);
+      },
+    });
+
+    return () => {
+      trigger.kill();
+    };
+  }, [hasTriggered]); // Add hasTriggered to dependencies
+
+  const handleCommand = (command) => {
+    console.log("Command received:", command);
+
+    const commandParts = command.trim().split(" ");
+    const cmd = commandParts[0];
+    const args = commandParts.slice(1);
+
+    if (commands[cmd]) {
+      return commands[cmd](...args);
+    } else {
+      return "Command not found";
+    }
+  };
 
   const commands = {
     whoami: () => "SnT(science and technical committee).",
@@ -94,7 +96,6 @@ function Intro() {
   const infoRef = useRef(null);
 
   useEffect(() => {
-    // GSAP Animations
     const titleAnimation = gsap.fromTo(
       titleRef.current,
       { opacity: 0, y: 50 },
@@ -143,30 +144,69 @@ function Intro() {
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <p className="font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 h-[60%] w-full flex justify-center items-center">
         <div className="glass-effect h-[100%] w-[70%] flex justify-center items-center">
-          <ReactTerminal
-            className="CMD gradient-border"
-            commands={commands}
-            prompt="SnT@pdeu ~ %"
-            errorMessage={
-              <span className="text-red-500">command not found</span>
-            }
-            welcomeMessage={
-              <>
-                {"Welcome to the SnT Terminal. Type 'help' for more details."}
-                <br />
-              </>
-            }
-            themes={{
-              "my-custom-theme": {
-                themeBGColor: "",
-                themeToolbarColor: "",
-                themeColor: "#FFFEFC",
-                themePromptColor: "#a917a8",
-                errorTextColor: "#FF0000", // This will make the error text red
-              },
-            }}
-            theme="my-custom-theme"
-          />
+          <div className="typing-trigger w-[100%] h-[100%]">
+            {" "}
+            {/* This is the trigger element */}
+            <ReactTerminal
+              className="CMD gradient-border"
+              commands={commands}
+              prompt="SnT@pdeu ~ %"
+              errorMessage={
+                <span className="text-red-500">command not found</span>
+              }
+              welcomeMessage={
+                showWelcome ? (
+                  <div className="welcome-message flex justify-center items-center h-[97%]">
+                    <p
+                      style={{
+                        fontSize: "2rem",
+                        textAlign: "center",
+                        color: "#FFFEFC",
+                      }}
+                    >
+                      <ReactTypingEffect
+                        text="Welcome To The SnT"
+                        cursor={" "}
+                        typingDelay={10}
+                        cursorRenderer={(cursor) => <h1>{cursor}</h1>}
+                        displayTextRenderer={(text, i) => (
+                          <p
+                            style={{
+                              fontSize: "2rem",
+                              textAlign: "center",
+                              color: "#FFFEFC",
+                            }}
+                          >
+                            {text.split("").map((char, i) => (
+                              <span key={i}>{char}</span>
+                            ))}
+                          </p>
+                        )}
+                      />
+                    </p>
+                  </div>
+                ) : (
+                  <>
+                    {
+                      "Welcome to the SnT Terminal. Type 'help' for more details."
+                    }
+                    <br />
+                  </>
+                )
+              }
+              onChange={handleCommand}
+              themes={{
+                "my-custom-theme": {
+                  themeBGColor: "",
+                  themeToolbarColor: "",
+                  themeColor: "#FFFEFC",
+                  themePromptColor: "#a917a8",
+                  errorTextColor: "#FF0000",
+                },
+              }}
+              theme="my-custom-theme"
+            />
+          </div>
         </div>
       </p>
     </div>

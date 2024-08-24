@@ -23,6 +23,7 @@
     "react-responsive-masonry": "^2.3.0",
     "react-scripts": "5.0.1",
     "react-terminal": "^1.4.4",
+    "react-typing-effect": "^2.0.5",
     "swiper": "^11.1.9",
     "tailwind-merge": "^2.5.2",
     "three": "^0.167.1",

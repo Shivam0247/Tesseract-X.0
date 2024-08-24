@@ -81,20 +81,17 @@ function Galler() {
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
           <Masonry gutter="10px">
             {images.map((image, index) => (
-              <div key={index} onClick={() => handleImageClick(image.src)}>
+              <div
+                key={index}
+                onClick={() => handleImageClick(image.src)}
+                className="gallery-item"
+              >
                 <img
                   src={image.src}
                   alt={`Image ${index + 1}`}
-                  style={{
-                    width: "100%",
-                    display: "block",
-                    marginBottom: "10px", // Added gap between images
-                    borderRadius: "10px", // Added border-radius
-                  }}
+                  className="gallery-image"
                 />
-                <p style={{ color: "white", textAlign: "center" }}>
-                  {image.caption}
-                </p>
+                <p className="gallery-caption">{image.caption}</p>
               </div>
             ))}
           </Masonry>
