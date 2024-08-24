@@ -14,7 +14,7 @@ import { cn } from "../../lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "../../Images/front.jpg";
 import { useOutsideClick } from "../../hooks/use-outside-click";
-
+import "./Apple.css";
 export const CarouselContext = createContext({
   onCardClose: () => {},
   currentIndex: 0,
@@ -76,7 +76,7 @@ export const Carousel = ({ items, initialScroll = 0 }) => {
     >
       <div className="relative w-full bg-black">
         <div
-          className="flex w-full overflow-x-scroll overscroll-x-auto py-[2rem] md:py-[2em] scroll-smooth [scrollbar-width:none]"
+          className="scroll-container flex w-full overflow-x-scroll overscroll-x-auto py-[2rem] md:py-[2em] scroll-smooth"
           ref={carouselRef}
           onScroll={checkScrollability}
         >
