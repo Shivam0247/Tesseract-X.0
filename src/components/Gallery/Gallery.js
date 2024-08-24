@@ -1,30 +1,55 @@
 import React, { useState, useEffect } from "react";
 import "./Gallery.css"; // Import the CSS file
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 
-const images = [
-  "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg",
-  "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg",
-  "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg",
-  "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg",
-  "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg",
-  "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg",
-  "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg",
-  "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg",
-  "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg",
-  "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg",
-  "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg",
-  "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg",
-];
+function Galler() {
+  const images = [
+    {
+      src: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg",
+    },
+    {
+      src: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg",
+    },
+    {
+      src: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg",
+    },
+    {
+      src: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg",
+    },
+    {
+      src: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg",
+    },
+    {
+      src: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg",
+    },
+    {
+      src: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg",
+    },
+    {
+      src: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg",
+    },
+    {
+      src: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg",
+    },
+    {
+      src: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg",
+    },
+    {
+      src: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg",
+    },
+    {
+      src: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg",
+    },
+    {
+      src: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg",
+    },
+    {
+      src: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg",
+    },
+  ];
 
-function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
-
-  // Split images array into groups of 3 for each column
-  const chunkedImages = [];
-  for (let i = 0; i < images.length; i += 3) {
-    chunkedImages.push(images.slice(i, i + 3));
-  }
 
   useEffect(() => {
     if (selectedImage) {
@@ -52,32 +77,30 @@ function Gallery() {
         The Essence of Moments.
       </h2>
 
-      <div className="flex mt-10 justify-center items-center w-full min-h-[100vh] gallery-container">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-[85%]">
-          {chunkedImages.map((columnImages, columnIndex) => (
-            <div key={columnIndex} className="grid gap-4">
-              {columnImages.map((src, imgIndex) => (
-                <div key={imgIndex} className="relative">
-                  <img
-                    className="gallery-image h-auto max-w-full rounded-lg cursor-pointer"
-                    src={src}
-                    alt={`Gallery image ${imgIndex + 1}`}
-                    onClick={() => handleImageClick(src)}
-                  />
-                </div>
-              ))}
-            </div>
-          ))}
-        </div>
-
-        {selectedImage && (
-          <div className="gallery-overlay active" onClick={handleOverlayClick}>
-            <img src={selectedImage} alt="Enlarged view" />
-          </div>
-        )}
+      <div className="w-[85%] mx-auto mt-10">
+        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+          <Masonry gutter="10px">
+            {images.map((image, index) => (
+              <div key={index} onClick={() => handleImageClick(image.src)}>
+                <img
+                  src={image.src}
+                  alt={`Image ${index + 1}`}
+                  style={{
+                    width: "100%",
+                    display: "block",
+                    marginBottom: "10px", // Added gap between images
+                    borderRadius: "10px", // Added border-radius
+                  }}
+                />
+                <p style={{ color: "white", textAlign: "center" }}>
+                  {image.caption}
+                </p>
+              </div>
+            ))}
+          </Masonry>
+        </ResponsiveMasonry>
       </div>
-
-      <div className="btn flex justify-center items-center h-[13vh]">
+      <div className="btn flex justify-center items-center h-[8vh]">
         <HoverBorderGradient
           containerClassName="rounded-full"
           className="bg-black text-white flex items-center space-x-2"
@@ -87,8 +110,32 @@ function Gallery() {
           <span>View More Photos</span>
         </HoverBorderGradient>
       </div>
+
+      {selectedImage && (
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.8)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: "999",
+          }}
+          onClick={handleOverlayClick}
+        >
+          <img
+            src={selectedImage}
+            alt=""
+            style={{ maxWidth: "90%", maxHeight: "90%", borderRadius: "10px" }}
+          />
+        </div>
+      )}
     </div>
   );
 }
 
-export default Gallery;
+export default Galler;
