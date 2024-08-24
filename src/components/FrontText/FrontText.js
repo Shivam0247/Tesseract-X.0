@@ -137,7 +137,10 @@ function FrontText() {
     <div className="h-[90vh] w-full flex items-center justify-center overflow-hidden">
       <MaskContainer
         revealText={
-          <p className="max-w-4xl mx-auto front-text-paragraph text-left text-[9rem] font-bold">
+          <p
+            className="max-w-4xl mx-auto front-text-paragraph text-left text-[4rem] font-bold 
+  sm:text-[6rem] md:text-[9rem]"
+          >
             {shuffledText}
           </p>
         }
