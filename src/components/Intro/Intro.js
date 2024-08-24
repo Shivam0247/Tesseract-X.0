@@ -11,7 +11,7 @@ function Intro() {
   const [asciiLines, setAsciiLines] = useState([]);
   const [welcomeMessage, setWelcomeMessage] = useState("");
   const [showWelcome, setShowWelcome] = useState(false);
-  const [hasTriggered, setHasTriggered] = useState(false); // New state to track if typing has triggered
+  const [hasTriggered, setHasTriggered] = useState(false);
 
   const asciiArt = `
     // ASCII art here
@@ -55,7 +55,7 @@ function Intro() {
         if (!hasTriggered) {
           setShowWelcome(true);
           typeMessage("Welcome to the SnT", 100);
-          setHasTriggered(true); // Set flag to true after triggering
+          setHasTriggered(true);
         }
       },
       onLeaveBack: () => {
@@ -66,7 +66,7 @@ function Intro() {
     return () => {
       trigger.kill();
     };
-  }, [hasTriggered]); // Add hasTriggered to dependencies
+  }, [hasTriggered]);
 
   const handleCommand = (command) => {
     console.log("Command received:", command);
@@ -88,7 +88,39 @@ function Intro() {
     TESSARACT: () => "TESSARACT is xyz.....",
     cd: (directory) => `Changed path to ${directory}.`,
     echo: (text) => text,
-    help: () => `Available commands: whoami, cd [directory], echo [text], help`,
+    help: () => (
+      <div>
+        List of all commands:
+        <br />
+        <br />
+        <strong>help</strong> - Display all the commands
+        <br />
+        <strong>Clear</strong> - Clear Screen
+        <br />
+        <br />
+        <strong>-----Information-----</strong>
+        <br /> <br />
+        <strong>whoami</strong> - Info About the user
+        <br />
+        <strong>Info</strong> - Info About SnT
+        <br />
+        <strong>Tessaract</strong> - Info About Tessaract
+        <br />
+        <br />
+        <strong>-----Navigation-----</strong>
+        <br /> <br />
+        <strong>About</strong> - Go to the About page
+        <br />
+        <strong>Event</strong> - Go to the Event page
+        <br />
+        <strong>Gallery</strong> - Go to the Gallery page
+        <br />
+        <strong>Team</strong> - Go to the Team page
+        <br />
+        <strong>Contact</strong> - Go to the Contact page
+        <br />
+      </div>
+    ),
     SnT: () => asciiLines.map((line, index) => <pre key={index}>{line}</pre>),
   };
 
@@ -140,13 +172,10 @@ function Intro() {
 
   return (
     <div className="h-[100vh] w-full bg-black bg-grid-white/[0.150] relative flex items-center justify-center">
-      {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <p className="font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 h-[60%] w-full flex justify-center items-center">
         <div className="glass-effect h-[100%] w-[70%] flex justify-center items-center">
           <div className="typing-trigger w-[100%] h-[100%]">
-            {" "}
-            {/* This is the trigger element */}
             <ReactTerminal
               className="CMD gradient-border"
               commands={commands}

@@ -137,7 +137,7 @@ function FrontText() {
     <div className="h-[90vh] w-full flex items-center justify-center overflow-hidden">
       <MaskContainer
         revealText={
-          <p className="max-w-4xl mx-auto front-text-paragraph text-left text-9xl font-bold">
+          <p className="max-w-4xl mx-auto front-text-paragraph text-left text-[9rem] font-bold">
             {shuffledText}
           </p>
         }
@@ -146,7 +146,7 @@ function FrontText() {
         <span className="text-red-500">Warning:</span> Side effects of attending{" "}
         <span className="text-red-500">TESSARACT</span> may include
         uncontrollable excitement, tech inspiration overload, and the
-        irresistible urge to create the next big thing!
+        irresistible urge to create the next big thing !
       </MaskContainer>
     </div>
   );
