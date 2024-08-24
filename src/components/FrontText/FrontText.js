@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "./FrontText.css";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -15,7 +15,8 @@ function FrontText() {
     seconds: "00",
   });
 
-  const textRef = useRef(null);
+  const [shuffledText, setShuffledText] = useState("Tessaract X.0");
+  const originalText = "Tessaract X.0";
 
   const padWithZero = (number) => {
     return number.toString().padStart(2, "0");
@@ -97,19 +98,53 @@ function FrontText() {
     };
   }, []);
 
+  useEffect(() => {
+    const specialChars = "!@#$%^&*()_+[]{}|;:',.<>?";
+
+    const shuffleText = () => {
+      const textArray = originalText.split("");
+
+      // Mix in random special characters
+      const augmentedArray = textArray.map((char) =>
+        Math.random() > 0.5
+          ? specialChars.charAt(Math.floor(Math.random() * specialChars.length))
+          : char
+      );
+
+      for (let i = augmentedArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [augmentedArray[i], augmentedArray[j]] = [
+          augmentedArray[j],
+          augmentedArray[i],
+        ];
+      }
+      return augmentedArray.join("");
+    };
+
+    const interval = setInterval(() => {
+      setShuffledText(shuffleText());
+    }, 50); // Speed up the shuffling by reducing the interval time
+
+    setTimeout(() => {
+      clearInterval(interval);
+      setShuffledText(originalText);
+    }, 1500); // Shorten the duration of shuffling
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="h-[90vh] w-full flex items-center justify-center  overflow-hidden">
+    <div className="h-[90vh] w-full flex items-center justify-center overflow-hidden">
       <MaskContainer
         revealText={
-          <p className="max-w-4xl mx-auto front-text-paragraph text-center text-9xl font-bold">
-            Tessaract X.0
+          <p className="max-w-4xl mx-auto front-text-paragraph text-left text-9xl font-bold">
+            {shuffledText}
           </p>
         }
         className="h-[100vh] border rounded-md front-text-paragraph"
       >
-        <span className="text-red-500"> Warning :</span> Side effects of
-        attending
-        <span className="text-red-500"> TESSARACT</span> may include
+        <span className="text-red-500">Warning:</span> Side effects of attending{" "}
+        <span className="text-red-500">TESSARACT</span> may include
         uncontrollable excitement, tech inspiration overload, and the
         irresistible urge to create the next big thing!
       </MaskContainer>
