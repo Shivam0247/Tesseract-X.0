@@ -59,3 +59,8 @@
 .font-modern-2:hover {
   font-family: "Avenir", sans-serif;
 }
+
+/* FrontText.css or another relevant CSS file */
+.green-cell {
+  background-color: #00ff00; /* Green color */
+}

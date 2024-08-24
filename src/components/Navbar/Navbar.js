@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import "./Navbar.css";
 import {
   Dialog,
   DialogPanel,
@@ -70,7 +71,7 @@ export default function Example() {
     <header className="md:flex">
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-[100%] w-[100%] items-center justify-between p-6 lg:px-8"
+        className="Navbar mx-auto flex max-w-[100%] w-[100%] items-center justify-between p-6 lg:px-8"
       >
         <div className="flex lg:hidden">
           <button

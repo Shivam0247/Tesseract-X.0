@@ -5,7 +5,8 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url("./Images/front.jpg");
+  /* background-image: url("./Images/front.jpg"); */
+  background-color: black;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

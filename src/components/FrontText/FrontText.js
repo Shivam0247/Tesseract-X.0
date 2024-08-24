@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./FrontText.css";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { MaskContainer } from "../ui/svg-mask-effect";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -97,40 +98,20 @@ function FrontText() {
   }, []);
 
   return (
-    <div className="FrontText" ref={textRef}>
-      <div className="MainText">
-        <span className="Maintitle sm:text-[100px] text-[50px]">
-          <span className="font-robotic-1">T</span>
-          <span className="font-modern-1">E</span>
-          <span className="font-robotic-2">S</span>
-          <span className="font-modern-2">S</span>
-          <span className="font-robotic-1">A</span>
-          <span className="font-modern-1">R</span>
-          <span className="font-robotic-2">A</span>
-          <span className="font-modern-2">C</span>
-          <span className="font-robotic-1">T</span>
-        </span>
-        <span className="sm:text-[100px] text-[50px]">
-          <span className="font-modern-1">X</span>
-          <span className="font-modern-2">.</span>
-          <span className="font-modern-1">0</span>
-        </span>
-      </div>
-
-      <div className="countDown">
-        <span className="countdown flex flex-col text-[17px]">
-          <span>
-            <span>{timeLeft.days} : </span>
-            <span>{timeLeft.hours}</span> : <span>{timeLeft.minutes}</span> :
-            <span> {timeLeft.seconds}</span>
-          </span>
-          <span className="text-[13px]">
-            <span>DD : </span>
-            <span>HH</span> : <span>MM</span> :<span> SS</span>
-          </span>
-        </span>
-        <span>PDEU</span>
-      </div>
+    <div className="h-[90vh] w-full flex items-center justify-center  overflow-hidden">
+      <MaskContainer
+        revealText={
+          <p className="max-w-4xl mx-auto text-slate-800 text-center  text-4xl font-bold">
+            The first rule of MRR Club is you do not talk about MRR Club. The
+            second rule of MRR Club is you DO NOT talk about MRR Club.
+          </p>
+        }
+        className="h-[100vh] border rounded-md"
+      >
+        The first rule of <span className="text-red-500">MRR Club</span> is you
+        do not talk about MRR Club. The second rule of MRR Club is you DO NOT
+        talk about <span className="text-red-500">MRR Club</span>.
+      </MaskContainer>
     </div>
   );
 }
