@@ -32,6 +32,9 @@ module.exports = {
             opacity: 1,
             transform: "translate(-50%,-40%) scale(1)",
           },
+          borderRadius: {
+            large: '1.5rem',
+          },
         },
       },
       // Add any other custom theme configurations here

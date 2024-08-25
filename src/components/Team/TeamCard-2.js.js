@@ -1,21 +1,22 @@
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 
+
 function TeamCard({ name, position, img }) {
   return (
     <div >
       <CardContainer className="inter-var flex mx-[1em]">
 
-        <CardBody className="relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2] w-auto sm:w-[20rem] min-h-[35vh] rounded-xl p-6 border"
-          data-aos="fade-down">
+        <CardBody className="relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-white border-white/[0.2] w-auto sm:w-[25rem] min-h-[35vh] rounded-xl p-6 border"
+          data-aos="fade-in" data-aos-dealy="300">
           
-          <CardItem translateZ="50" className="text-xl font-bold text-white ">
+          <CardItem translateZ="50" className="text-xl font-bold text-black ">
             {name}
           </CardItem>
           <CardItem
             as="p"
             translateZ="60"
-            className="text-sm max-w-sm mt-2 text-neutral-300"
+            className="text-sm max-w-sm mt-2 text-neutral-800"
           >
             {position}
           </CardItem>
@@ -32,6 +33,7 @@ function TeamCard({ name, position, img }) {
           <CardItem translateZ="50" className="text-xl font-bold text-white">
             <span></span>
           </CardItem>
+          
 
           {/* <div className="flex justify-between items-center mt-5">
             <CardItem

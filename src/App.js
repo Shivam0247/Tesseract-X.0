@@ -8,6 +8,7 @@ import * as Event from "./components/Events/Event";
 import Team from "./components/Team/Team";
 import Gallery from "./components/Gallery/Gallery";
 import { TracingBeam } from "./components/ui/tracing-beam";
+import TeamPage from "./components/Team/TeamPage";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
       <Intro />
       <Event.AppleCardsCarouselDemo />
       <Team />
+      <Gallery />
+      <TeamPage />
       <Gallery />
     </div>
   );
