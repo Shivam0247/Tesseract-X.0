@@ -9,6 +9,7 @@ import Team from "./components/Team/Team";
 import Gallery from "./components/Gallery/Gallery";
 import { TracingBeam } from "./components/ui/tracing-beam";
 import Sponsor from "./components/Sponsor/sponsor";
+import { AboutUs } from "./components/AboutUs/AboutUs";
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
       <Team />
       <Gallery />
       <Sponsor />
+      <AboutUs />
     </div>
   );
 }
