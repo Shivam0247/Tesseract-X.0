@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "./Intro.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -12,6 +13,7 @@ function Intro() {
   const [welcomeMessage, setWelcomeMessage] = useState("");
   const [showWelcome, setShowWelcome] = useState(false);
   const [hasTriggered, setHasTriggered] = useState(false);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const asciiArt = `
     // ASCII art here
@@ -72,20 +74,36 @@ function Intro() {
     console.log("Command received:", command);
 
     const commandParts = command.trim().split(" ");
-    const cmd = commandParts[0];
+    const cmd = commandParts[0].toLowerCase(); // Make command case-insensitive
     const args = commandParts.slice(1);
 
+    // Handle special commands like "about" here
+    if (cmd === "about") {
+      navigate("/about"); // Redirect to the About page
+      return ""; // Return empty string or any appropriate message
+    }
+
     if (commands[cmd]) {
+      console.log("Executing command:", cmd); // Debugging output
       return commands[cmd](...args);
     } else {
+      console.log("Command not found:", cmd); // Debugging output
       return "Command not found";
     }
   };
 
   const commands = {
     whoami: () => "SnT(science and technical committee).",
+    about: () => {
+      window.location.assign("/AboutUs");
+      return "Redirecting to About page";
+    },
+    home: () => {
+      window.location.assign("/");
+      return "Redirecting to Home page";
+    },
     info: () => "SnT is xyz.........",
-    TESSARACT: () => "TESSARACT is xyz.....",
+    tesseract: () => "TESSARACT is xyz.....",
     cd: (directory) => `Changed path to ${directory}.`,
     echo: (text) => text,
     help: () => (
@@ -95,33 +113,34 @@ function Intro() {
         <br />
         <strong>help</strong> - Display all the commands
         <br />
-        <strong>Clear</strong> - Clear Screen
+        <strong>clear</strong> - Clear Screen
         <br />
         <br />
         <strong>-----Information-----</strong>
         <br /> <br />
         <strong>whoami</strong> - Info About the user
         <br />
-        <strong>Info</strong> - Info About SnT
+        <strong>info</strong> - Info About SnT
         <br />
-        <strong>Tessaract</strong> - Info About Tessaract
+        <strong>tesseract</strong> - Info About Tesseract
         <br />
         <br />
         <strong>-----Navigation-----</strong>
         <br /> <br />
-        <strong>About</strong> - Go to the About page
+        <strong>about</strong> - Go to the About page
         <br />
-        <strong>Event</strong> - Go to the Event page
+        <strong>event</strong> - Go to the Event page
         <br />
-        <strong>Gallery</strong> - Go to the Gallery page
+        <strong>gallery</strong> - Go to the Gallery page
         <br />
-        <strong>Team</strong> - Go to the Team page
+        <strong>team</strong> - Go to the Team page
         <br />
-        <strong>Contact</strong> - Go to the Contact page
+        <strong>contact</strong> - Go to the Contact page
         <br />
       </div>
     ),
-    SnT: () => asciiLines.map((line, index) => <pre key={index}>{line}</pre>),
+    // Make sure to update `SnT` command if necessary
+    snt: () => asciiLines.map((line, index) => <pre key={index}>{line}</pre>),
   };
 
   const titleRef = useRef(null);
