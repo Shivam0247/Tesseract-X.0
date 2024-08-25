@@ -3,6 +3,7 @@ import "./FrontText.css";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { MaskContainer } from "../ui/svg-mask-effect";
+import ReactTypingEffect from "react-typing-effect";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -137,11 +138,28 @@ function FrontText() {
     <div className="h-[100vh] w-full flex items-center justify-center overflow-hidden">
       <MaskContainer
         revealText={
-          <p
-            className="max-w-4xl mx-auto front-text-paragraph text-left text-[4rem] font-bold 
-  sm:text-[6rem] md:text-[9rem]"
-          >
-            {shuffledText}
+          <p className="max-w-4xl mx-auto front-text-paragraph text-center font-bold leading-tight">
+            <span className=" text-[4.5rem] sm:text-[6rem] md:text-[9rem]">
+              Tessaract X.0
+            </span>
+            <br />
+            <ReactTypingEffect
+              text="Where Technology Meets Creativity"
+              cursor={" "}
+              typingDelay={0}
+              speed={100} // Controls the typing speed
+              eraseSpeed={0} // Prevents reverse typing
+              eraseDelay={99999999} // Delays the erasing indefinitely
+              loop={true} // Ensures continuous typing
+              cursorRenderer={(cursor) => <h1>{cursor}</h1>}
+              displayTextRenderer={(text, i) => (
+                <p className="typing">
+                  {text.split("").map((char, i) => (
+                    <span key={i}>{char}</span>
+                  ))}
+                </p>
+              )}
+            />
           </p>
         }
         className="h-[100vh] border rounded-md front-text-paragraph"

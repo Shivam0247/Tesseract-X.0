@@ -76,3 +76,21 @@
   text-align: center;
   color: #fffefc;
 }
+
+.typing {
+  font-size: 35px;
+}
+
+/* For medium devices (tablets, etc.) */
+@media (max-width: 768px) {
+  .typing {
+    font-size: 20px; /* Adjust size for medium screens */
+  }
+}
+
+/* For small devices (mobile phones, etc.) */
+@media (max-width: 480px) {
+  .typing {
+    font-size: 15px; /* Adjust size for small screens */
+  }
+}
