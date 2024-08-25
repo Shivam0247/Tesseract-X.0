@@ -26,6 +26,7 @@ import {
   PhoneIcon,
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
+import { Link } from "react-router-dom";
 
 const products = [
   {
@@ -83,14 +84,33 @@ export default function Example() {
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
           </button>
         </div>
-        <PopoverGroup className="hidden w-[100%] justify-around lg:flex lg:gap-x-12">
+        <div className="flex">
+          <a href="#" className="-m-1.5 p-1.5">
+            <span className="sr-only">Your Company</span>
+            <img
+              alt=""
+              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              className="h-8 w-auto"
+            />
+          </a>
+        </div>
+
+        <PopoverGroup className="hidden w-[100%] justify-end mr-5 lg:flex lg:gap-x-12">
           <div>
-            <a
-              href="#"
+            <Link
+              to="/"
               className="text-medium font-semibold leading-6 text-white"
             >
               Home
-            </a>
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/AboutUs"
+              className="text-medium font-semibold leading-6 text-white"
+            >
+              About
+            </Link>
           </div>
 
           <div>
@@ -99,17 +119,6 @@ export default function Example() {
               className="text-medium font-semibold leading-6 text-white"
             >
               Team
-            </a>
-          </div>
-
-          <div className="flex">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                alt=""
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
-              />
             </a>
           </div>
 
