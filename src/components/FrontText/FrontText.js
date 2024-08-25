@@ -128,7 +128,7 @@ function FrontText() {
     setTimeout(() => {
       clearInterval(interval);
       setShuffledText(originalText);
-    }, 1500); // Shorten the duration of shuffling
+    }, 0); // Shorten the duration of shuffling
 
     return () => clearInterval(interval);
   }, []);

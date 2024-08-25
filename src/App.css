@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* App.css */
+.app.loading .content {
+    opacity: 0;
+    /* transform: scale(0.95); */
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  }
+  
+  .app.loaded .content {
+    opacity: 1;
+    /* transform: scale(1); */
+    transition: opacity 0.6s ease-in, transform 0.6s ease-in;
+  }
+  
+  .content {
+    opacity: 0;
+    /* transform: scale(0.95); */
+  }
