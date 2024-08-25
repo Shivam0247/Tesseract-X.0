@@ -12,6 +12,7 @@ import Sponsor from "./components/Sponsor/sponsor";
 import { AboutUs } from "./components/AboutUs/AboutUs";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Home/Home";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Team />
         <Gallery />
         <Sponsor /> */}
+        <Footer />
       </BrowserRouter>
     </div>
   );

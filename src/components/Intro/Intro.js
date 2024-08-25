@@ -74,13 +74,12 @@ function Intro() {
     console.log("Command received:", command);
 
     const commandParts = command.trim().split(" ");
-    const cmd = commandParts[0].toLowerCase(); // Make command case-insensitive
+    const cmd = commandParts[0].toLowerCase();
     const args = commandParts.slice(1);
 
-    // Handle special commands like "about" here
     if (cmd === "about") {
-      navigate("/about"); // Redirect to the About page
-      return ""; // Return empty string or any appropriate message
+      navigate("/about");
+      return "";
     }
 
     if (commands[cmd]) {
