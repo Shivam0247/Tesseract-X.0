@@ -77,3 +77,21 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.typing-text {
+  font-size: 5rem; /* Default size */
+}
+
+/* For medium devices (tablets, etc.) */
+@media (max-width: 768px) {
+  .typing-text {
+    font-size: 3rem; /* Adjust size for medium screens */
+  }
+}
+
+/* For small devices (mobile phones, etc.) */
+@media (max-width: 480px) {
+  .typing-text {
+    font-size: 2rem; /* Adjust size for small screens */
+  }
+}
