@@ -9,7 +9,7 @@ export function AppleCardsCarouselDemo() {
   ));
 
   return (
-    <div className="w-full min-h-[100vh] pb-22 py-10 bg-black">
+    <div className="w-full min-h-[50vh] pb-22 py-10 bg-black">
       <h2 className="max-w-7xl pl-4 mx-[2em] text-xl md:text-5xl font-bold text-neutral-200 font-sans">
         Events in the Spotlight.
       </h2>
