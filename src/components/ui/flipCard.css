@@ -24,17 +24,29 @@
 }
 
 .flip-card-front {
-  background: linear-gradient(180deg, var(--slate-800), var(--slate-900));
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Slightly opaque white for frosted glass effect */
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.2)
+  ); /* Glassy gradient */
+  backdrop-filter: blur(8px); /* Glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for depth */
+
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
 }
 .flip-card-back {
-  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
-  backdrop-filter: blur(10px); /* Background blur for glass effect */
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Light border to enhance glass effect */
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   transform: rotateY(180deg);
   display: flex;
   align-items: center;

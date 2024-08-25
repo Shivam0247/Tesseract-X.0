@@ -9,6 +9,8 @@ function sponsor() {
       name: "Charles Dickens",
       title: "A Tale of Two Cities",
       back: "asssas",
+      image:
+        "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg",
     },
     {
       quote:
@@ -16,12 +18,16 @@ function sponsor() {
       name: "William Shakespeare",
       title: "Hamlet",
       back: "asssas",
+      image:
+        "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg",
     },
     {
       quote: "All that we see or seem is but a dream within a dream.",
       name: "Edgar Allan Poe",
       title: "A Dream Within a Dream",
       back: "asssas",
+      image:
+        "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg",
     },
     {
       quote:
@@ -29,6 +35,8 @@ function sponsor() {
       name: "Jane Austen",
       title: "Pride and Prejudice",
       back: "asssas",
+      image:
+        "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg",
     },
     {
       quote:
@@ -36,11 +44,13 @@ function sponsor() {
       name: "Herman Melville",
       title: "Moby-Dick",
       back: "asssas",
+      image:
+        "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg",
     },
   ];
 
   return (
-    <div className="w-full min-h-[100vh] pb-20 py-10 bg-black">
+    <div className="w-full min-h-[50vh] pb-20 py-10 bg-black">
       <h2 className="max-w-7xl pl-4 mx-[2em] mb-[1em] text-xl md:text-5xl font-bold text-neutral-200 font-sans">
         Pioneers of Possibility.
       </h2>

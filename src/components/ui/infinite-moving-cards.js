@@ -3,7 +3,6 @@
 import { cn } from "../../lib/utils";
 import React, { useEffect, useState } from "react";
 import "./flipCard.css";
-import logo from "../../Images/logo.png";
 
 export const InfiniteMovingCards = ({
   items,
@@ -93,11 +92,11 @@ export const InfiniteMovingCards = ({
                   <div className="relative z-20 flex flex-row items-center">
                     <span className="flex flex-col gap-1 justify-center items-center">
                       <img
-                        src={logo}
+                        src={item.image}
                         alt=""
                         style={{
-                          width: "50%",
-                          height: "auto",
+                          width: "60%",
+                          height: "40%",
                           objectFit: "contain",
                           borderRadius: "0.5rem",
                         }}
