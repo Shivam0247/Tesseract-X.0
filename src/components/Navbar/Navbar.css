@@ -9,4 +9,8 @@
   /* border-radius: 20px; */
   /* border: 1px solid rgba(255, 255, 255, 0.18); */
   z-index: 999;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
