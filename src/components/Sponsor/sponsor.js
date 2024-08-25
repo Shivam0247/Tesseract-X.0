@@ -59,7 +59,7 @@ function sponsor() {
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
-          speed="medium"
+          speed="fast"
         />
       </div>
     </div>
