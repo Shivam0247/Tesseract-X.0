@@ -71,7 +71,7 @@ export default function Example() {
     <header className="md:flex">
       <nav
         aria-label="Global"
-        className="Navbar mx-auto flex max-w-[100%] w-[100%] items-center justify-between p-6 lg:px-8"
+        className="Navbar mx-auto flex max-w-[100%] w-[100%] items-center justify-between p-6 lg:px-8 fixed z-[999"
       >
         <div className="flex lg:hidden">
           <button
