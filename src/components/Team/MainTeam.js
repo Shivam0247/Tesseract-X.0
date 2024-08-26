@@ -133,7 +133,7 @@ function MainTeam() {
         selectionMode="multiple"
         selectedKeys={openKeys}
         onSelectionChange={handleSelectionChange}
-        className="text-white px-5"
+        className="text-white px-5 sm:px-[6em]"
         fullWidth
       >
         <AccordionItem

@@ -14,6 +14,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import MainTeam from "./components/Team/MainTeam";
+import MainGallery from "./components/Gallery/MainGalley";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/AboutUs" element={<AboutUs />} />
+          <Route exact path="/Gallery" element={<MainGallery />} />
           <Route exact path="/Team" element={<MainTeam />} />
         </Routes>
         {/* <FrontText />
