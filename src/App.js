@@ -16,8 +16,32 @@ import Footer from "./components/Footer/Footer";
 import MainTeam from "./components/Team/MainTeam";
 import MainGallery from "./components/Gallery/MainGalley";
 
+
+import React, { useState, useEffect } from 'react';
+import LoadingScreen from './components/Loading/LoadingScreen';
+
 function App() {
+  const [loading, setLoading] = useState(true);
+  const [fadeIn, setFadeIn] = useState(false);
+
+  const handleLoadingComplete = () => {
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    if (!loading) {
+      setTimeout(() => {
+        setFadeIn(true);
+      }, 100); // Delay for a smooth transition to the main app
+    }
+  }, [loading]);
+
   return (
+    <>
+      {loading ? (
+        <LoadingScreen onLoadingComplete={handleLoadingComplete} />
+      ) : (
+        <div className={`app-content ${fadeIn ? 'fade-in' : ''}`}>
     <div className="App">
       <BrowserRouter>
         <Navbar />
@@ -36,6 +60,9 @@ function App() {
         <Footer />
       </BrowserRouter>
     </div>
+        </div>
+      )}
+    </>
   );
 }
 

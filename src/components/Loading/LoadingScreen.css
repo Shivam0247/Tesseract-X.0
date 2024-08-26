@@ -1,0 +1,68 @@
+.loading-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0a0a0a;
+    color: #00ffcc;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .scanner {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .fingerprint {
+    width: 100%;
+    height: 100%;
+    background-image: url('./fingerprint.png'); /* Replace with your fingerprint image */
+    background-size: cover;
+    opacity: 0.2;
+    z-index: 1;
+  }
+  
+  .scan-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #00ffcc;
+    animation: scan 2s infinite linear;
+    z-index: 2;
+  }
+  
+  @keyframes scan {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: calc(100% - 4px);
+    }
+    100% {
+      top: 0;
+    }
+  }
+  
+  .progress-container {
+    width: 70%;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+  
+  .progress-bar {
+    height: 6px;
+    background-color: #00ffcc;
+    transition: width 0.2s ease;
+  }
+  
+  .progress-text {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  
