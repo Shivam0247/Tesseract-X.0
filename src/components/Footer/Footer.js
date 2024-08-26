@@ -138,7 +138,7 @@ function Footer() {
           </div>
           <hr class="border-gray-600" />
           <p class="w-full text-center my-12 text-gray-600">
-            Built by the 2024 tech team of SnT
+            Built by the 2024 tech team of SnT (Science And Technical Committee)
           </p>
         </div>
       </div>
