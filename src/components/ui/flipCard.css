@@ -59,3 +59,37 @@
   height: auto;
   object-fit: cover; /* Adjusts image size while maintaining aspect ratio */
 }
+
+.scroller {
+  position: relative;
+  z-index: 20;
+  max-width: 7xl;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  height: 50%;
+}
+
+/* Increase width for larger devices */
+@media (min-width: 768px) {
+  .scroller {
+    max-width: 8xl; /* Example value, adjust as needed */
+  }
+}
+
+@media (min-width: 1024px) {
+  .scroller {
+    max-width: 80%; /* Example value, adjust as needed */
+  }
+}
+
+@media (min-width: 1280px) {
+  .scroller {
+    max-width: 80%; /* Example value, adjust as needed */
+  }
+}
