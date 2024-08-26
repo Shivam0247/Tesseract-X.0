@@ -121,15 +121,14 @@ function MainTeam() {
   };
 
   return (
-    <div className="w-full min-h-[50vh] pb-20 py-10 bg-black mt-[6rem]">
-      <h2 className="max-w-7xl pl-4 mx-[1.8em] mb-[1rem] text-xl md:text-5xl flex justify-center font-bold text-neutral-200 font-sans">
+    <div className="w-full min-h-[50vh] pb-20 py-10 bg-black">
+      <h2 className="max-w-[100%] mx-[1.8em] mb-[1rem] text-4xl md:text-5xl flex justify-center font-bold text-neutral-200 font-sans mt-[6rem]">
         The Team
       </h2>
       <h4 className="text-white flex justify-center text-[15px] mb-[3em]">
         Presenting the Team That Powers SNT
       </h4>
 
-      {/* Accordion Section */}
       <Accordion
         selectionMode="multiple"
         selectedKeys={openKeys}
@@ -140,15 +139,11 @@ function MainTeam() {
         <AccordionItem
           key="1"
           aria-label="Executives"
-          //   startContent={
-          //     <Avatar
-          //       isBordered
-          //       color="primary"
-          //       radius="lg"
-          //       src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-          //     />
-          //   }
-          title="Executives"
+          title={
+            <span style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
+              Executives
+            </span>
+          }
           keepContentMounted
         >
           <div className="team mx-[2em] flex-grow-0 flex-shrink-0 basis-1/3 flex flex-row flex-wrap justify-center">
@@ -164,16 +159,12 @@ function MainTeam() {
         </AccordionItem>
         <AccordionItem
           key="2"
-          aria-label="Janelle Lenard"
-          //   startContent={
-          //     <Avatar
-          //       isBordered
-          //       color="success"
-          //       radius="lg"
-          //       src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-          //     />
-          //   }
-          title="Heads"
+          aria-label="Heads"
+          title={
+            <span style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
+              Heads
+            </span>
+          }
           keepContentMounted
         >
           <div className="team mx-[2em] flex-grow-0 flex-shrink-0 basis-1/3 flex flex-row flex-wrap justify-center">

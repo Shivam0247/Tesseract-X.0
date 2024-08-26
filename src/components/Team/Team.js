@@ -1,8 +1,14 @@
 import React from "react";
 import TeamCard from "./TeamCard";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 
 function Team() {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate("/Team");
+  };
   return (
     <div className="w-full min-h-[50vh] pb-20 py-10 bg-black">
       <h2 className="max-w-7xl pl-4 mx-[2em] mb-[1em] text-xl md:text-5xl font-bold text-neutral-200 font-sans">
@@ -38,6 +44,7 @@ function Team() {
           className="bg-black text-white flex items-center space-x-2"
           duration={1}
           clockwise={true}
+          onClick={handleButtonClick}
         >
           <span>View All Members</span>
         </HoverBorderGradient>
