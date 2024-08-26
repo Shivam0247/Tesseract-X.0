@@ -8,7 +8,7 @@ export function AboutUs() {
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Started Planning  for Tesseract
+            Started Planning for Tesseract
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
