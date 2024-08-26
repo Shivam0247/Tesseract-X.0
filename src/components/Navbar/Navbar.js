@@ -122,7 +122,7 @@ export default function Example() {
           </div>
           <div>
             <Link
-              to="#"
+              to="/Gallery"
               className="text-medium font-semibold leading-6 text-white"
             >
               Gallery
@@ -199,7 +199,7 @@ export default function Example() {
                   Event
                 </a>
                 <a
-                  href="#"
+                  href="/Gallery"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Gallery

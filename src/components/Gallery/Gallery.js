@@ -2,8 +2,14 @@ import React, { useState, useEffect } from "react";
 import "./Gallery.css"; // Import the CSS file
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
+import { useNavigate } from "react-router-dom";
 
 function Galler() {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate("/Gallery");
+  };
   const images = [
     {
       src: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg",
@@ -103,6 +109,7 @@ function Galler() {
           className="bg-black text-white flex items-center space-x-2"
           duration={1}
           clockwise={true}
+          onClick={handleButtonClick}
         >
           <span>View More Photos</span>
         </HoverBorderGradient>

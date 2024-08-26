@@ -93,13 +93,21 @@ function Intro() {
 
   const commands = {
     whoami: () => "SnT(science and technical committee).",
+    home: () => {
+      window.location.assign("/");
+      return "Redirecting to Home page";
+    },
     about: () => {
       window.location.assign("/AboutUs");
       return "Redirecting to About page";
     },
-    home: () => {
-      window.location.assign("/");
-      return "Redirecting to Home page";
+    gallery: () => {
+      window.location.assign("/Gallery");
+      return "Redirecting to Gallery page";
+    },
+    team: () => {
+      window.location.assign("/Team");
+      return "Redirecting to Team page";
     },
     info: () => "SnT is xyz.........",
     tesseract: () => "TESSARACT is xyz.....",
@@ -126,6 +134,8 @@ function Intro() {
         <br />
         <strong>-----Navigation-----</strong>
         <br /> <br />
+        <strong>home</strong> - Go to the Home page
+        <br />
         <strong>about</strong> - Go to the About page
         <br />
         <strong>event</strong> - Go to the Event page
