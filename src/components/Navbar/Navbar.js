@@ -130,7 +130,7 @@ export default function Example() {
           </div>
           <div>
             <Link
-              to="#"
+              to="/Team"
               className="text-medium font-semibold leading-6 text-white"
             >
               Team
