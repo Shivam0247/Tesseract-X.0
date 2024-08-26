@@ -8,7 +8,7 @@ export function AboutUs() {
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+            Started Planning  for Tesseract
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -89,11 +89,11 @@ export function AboutUs() {
       ),
     },
     {
-      title: "Changelog",
+      title: "Build For The Innovators",
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
+            Tess is going to held in the month of november
           </p>
           <div className="mb-8">
             <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
@@ -123,3 +123,4 @@ export function AboutUs() {
 
   return <Timeline data={data} />;
 }
+export default AboutUs;
