@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom";
 import "./Intro.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -13,7 +13,8 @@ function Intro() {
   const [welcomeMessage, setWelcomeMessage] = useState("");
   const [showWelcome, setShowWelcome] = useState(false);
   const [hasTriggered, setHasTriggered] = useState(false);
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
+  const terminalRef = useRef(null);
 
   const asciiArt = `
     // ASCII art here
@@ -63,6 +64,15 @@ function Intro() {
       onLeaveBack: () => {
         setShowWelcome(false);
       },
+      onUpdate: () => {
+        // Prevent scrolling to top on smaller devices
+        const inputFocused =
+          document.activeElement.tagName === "INPUT" ||
+          document.activeElement.tagName === "TEXTAREA";
+        if (inputFocused) {
+          window.scrollTo(0, window.scrollY);
+        }
+      },
     });
 
     return () => {
@@ -83,16 +93,16 @@ function Intro() {
     }
 
     if (commands[cmd]) {
-      console.log("Executing command:", cmd); // Debugging output
+      console.log("Executing command:", cmd);
       return commands[cmd](...args);
     } else {
-      console.log("Command not found:", cmd); // Debugging output
+      console.log("Command not found:", cmd);
       return "Command not found";
     }
   };
 
   const commands = {
-    whoami: () => "SnT(science and technical committee).",
+    whoami: () => "SnT (Science and Technical Committee).",
     home: () => {
       window.location.assign("/");
       return "Redirecting to Home page";
@@ -148,7 +158,6 @@ function Intro() {
         <br />
       </div>
     ),
-    // Make sure to update `SnT` command if necessary
     snt: () => asciiLines.map((line, index) => <pre key={index}>{line}</pre>),
   };
 
@@ -205,6 +214,7 @@ function Intro() {
         <div className="glass-effect h-[100%] w-[90%] sm:w-[70%] flex justify-center items-center">
           <div className="typing-trigger w-[100%] h-[100%]">
             <ReactTerminal
+              ref={terminalRef}
               className="CMD gradient-border"
               commands={commands}
               prompt="SnT@pdeu ~ %"
