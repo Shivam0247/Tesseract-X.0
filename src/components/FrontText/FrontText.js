@@ -135,7 +135,7 @@ function FrontText() {
   }, []);
 
   return (
-    <div className="h-[100vh] w-full flex items-center justify-center overflow-hidden">
+    <div className="FrontText h-[100vh] w-full flex items-center justify-center overflow-hidden">
       <MaskContainer
         revealText={
           <p className="max-w-4xl mx-auto front-text-paragraph text-center font-bold leading-tight">

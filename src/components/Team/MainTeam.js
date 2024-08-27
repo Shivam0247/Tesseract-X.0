@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TeamCard from "./TeamCard";
 import { Avatar, Accordion, AccordionItem } from "@nextui-org/react";
-
+import "./Team.css";
 function MainTeam() {
   // Initialize openKeys with both keys to have both accordion items open by default
   const [openKeys, setOpenKeys] = useState(["1", "2"]);
@@ -121,11 +121,11 @@ function MainTeam() {
   };
 
   return (
-    <div className="w-full min-h-[50vh] pb-20 py-10 bg-black">
-      <h2 className="max-w-[100%] mx-[1.8em] mb-[1rem] text-4xl md:text-5xl flex justify-center font-bold text-neutral-200 font-sans mt-[6rem]">
+    <div className="MainTeam w-full min-h-[50vh] pb-20 py-10 bg-black">
+      <h2 className="max-w-[100%] mx-[1.8em] mb-[1rem] text-4xl md:text-5xl flex justify-center font-bold text-neutral-200 mt-[6rem]">
         The Team
       </h2>
-      <h4 className="text-white flex justify-center text-[15px] mb-[3em]">
+      <h4 className="text-neutral-300 flex justify-center text-[15px] mb-[3em]">
         Presenting the Team That Powers SNT
       </h4>
 
