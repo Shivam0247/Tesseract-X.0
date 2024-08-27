@@ -1,6 +1,6 @@
 import React from "react";
 import TeamCard from "./TeamCard";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom"; 
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 
 function Team() {

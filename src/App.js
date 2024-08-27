@@ -15,10 +15,9 @@ import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import MainTeam from "./components/Team/MainTeam";
 import MainGallery from "./components/Gallery/MainGalley";
-
-
-import React, { useState, useEffect } from 'react';
-import LoadingScreen from './components/Loading/LoadingScreen';
+import { Analytics } from "@vercel/analytics/react";
+import React, { useState, useEffect } from "react";
+import LoadingScreen from "./components/Loading/LoadingScreen";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -32,7 +31,7 @@ function App() {
     if (!loading) {
       setTimeout(() => {
         setFadeIn(true);
-      }, 100); // Delay for a smooth transition to the main app
+      }, 100);
     }
   }, [loading]);
 
@@ -41,25 +40,26 @@ function App() {
       {loading ? (
         <LoadingScreen onLoadingComplete={handleLoadingComplete} />
       ) : (
-        <div className={`app-content ${fadeIn ? 'fade-in' : ''}`}>
-    <div className="App">
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/AboutUs" element={<AboutUs />} />
-          <Route exact path="/Gallery" element={<MainGallery />} />
-          <Route exact path="/Team" element={<MainTeam />} />
-        </Routes>
-        {/* <FrontText />
+        <div className={`app-content ${fadeIn ? "fade-in" : ""}`}>
+          <div className="App">
+            <BrowserRouter>
+              <Analytics />
+              <Navbar />
+              <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route exact path="/AboutUs" element={<AboutUs />} />
+                <Route exact path="/Gallery" element={<MainGallery />} />
+                <Route exact path="/Team" element={<MainTeam />} />
+              </Routes>
+              {/* <FrontText />
         <Intro />
         <Event.AppleCardsCarouselDemo />
         <Team />
         <Gallery />
         <Sponsor /> */}
-        <Footer />
-      </BrowserRouter>
-    </div>
+              <Footer />
+            </BrowserRouter>
+          </div>
         </div>
       )}
     </>

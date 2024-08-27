@@ -1,7 +1,15 @@
 import React from "react";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
-function sponsor() {
+function Sponsor() {
+  // Generate image URLs dynamically
+  const imageBaseUrl = "https://i.ibb.co/x5Hcj20/";
+  const imageCount = 5; // Number of images available
+  const imageUrls = Array.from(
+    { length: imageCount },
+    (_, index) => `${imageBaseUrl}${index + 1}.png`
+  );
+
   const testimonials = [
     {
       quote:
@@ -9,25 +17,22 @@ function sponsor() {
       name: "Charles Dickens",
       title: "A Tale of Two Cities",
       back: "asssas",
-      image:
-        "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg",
+      image: "https://i.ibb.co/mHX6mHK/5.png",
     },
     {
       quote:
         "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
       name: "William Shakespeare",
       title: "Hamlet",
-      back: "asssas",
-      image:
-        "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg",
+      back: "sss",
+      image: imageUrls[1],
     },
     {
       quote: "All that we see or seem is but a dream within a dream.",
       name: "Edgar Allan Poe",
       title: "A Dream Within a Dream",
       back: "asssas",
-      image:
-        "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg",
+      image: imageUrls[2],
     },
     {
       quote:
@@ -35,8 +40,7 @@ function sponsor() {
       name: "Jane Austen",
       title: "Pride and Prejudice",
       back: "asssas",
-      image:
-        "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg",
+      image: imageUrls[3],
     },
     {
       quote:
@@ -44,8 +48,7 @@ function sponsor() {
       name: "Herman Melville",
       title: "Moby-Dick",
       back: "asssas",
-      image:
-        "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg",
+      image: imageUrls[4],
     },
   ];
 
@@ -66,4 +69,4 @@ function sponsor() {
   );
 }
 
-export default sponsor;
+export default Sponsor;
