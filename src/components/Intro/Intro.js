@@ -15,6 +15,8 @@ function Intro() {
   const [hasTriggered, setHasTriggered] = useState(false);
   const navigate = useNavigate();
   const terminalRef = useRef(null);
+  const scrollPosition = useRef(0); // Ref to store scroll position
+  const targetScrollY = useRef(0); // Ref to store target scroll position (130vh)
 
   const asciiArt = `
     // ASCII art here
@@ -65,12 +67,12 @@ function Intro() {
         setShowWelcome(false);
       },
       onUpdate: () => {
-        // Prevent scrolling to top on smaller devices
         const inputFocused =
           document.activeElement.tagName === "INPUT" ||
           document.activeElement.tagName === "TEXTAREA";
         if (inputFocused) {
-          window.scrollTo(0, window.scrollY);
+          // Scroll to target position when input is focused
+          window.scrollTo(0, targetScrollY.current);
         }
       },
     });
@@ -79,6 +81,23 @@ function Intro() {
       trigger.kill();
     };
   }, [hasTriggered]);
+
+  useEffect(() => {
+    // Set target scroll position to 130vh
+    targetScrollY.current = window.innerHeight * 1;
+
+    const handleFocus = () => {
+      // Save current scroll position
+      scrollPosition.current = window.scrollY;
+    };
+
+    const terminalInput = document.querySelector(".react-terminal");
+    terminalInput?.addEventListener("focus", handleFocus);
+
+    return () => {
+      terminalInput?.removeEventListener("focus", handleFocus);
+    };
+  }, []);
 
   const handleCommand = (command) => {
     console.log("Command received:", command);
