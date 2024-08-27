@@ -139,7 +139,7 @@ function Intro() {
       return "Redirecting to Team page";
     },
     info: () => "SnT is xyz.........",
-    tesseract: () => "TESSARACT is xyz.....",
+    tesseract: () => "TESSERACT is xyz.....",
     cd: (directory) => `Changed path to ${directory}.`,
     echo: (text) => text,
     help: () => (

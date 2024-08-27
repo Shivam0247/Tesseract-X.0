@@ -11,7 +11,7 @@ function Footer() {
       <div class="md:w-[100%] w-full px-4 text-white flex flex-col">
         <div class="w-full text-3xl md:text-7xl sm:text-5xl font-bold">
           <h1 class="w-full md:w-2/3 max-w-[39%]">
-            Join the Tessaract Revolution!
+            Join the Tesseract Revolution!
           </h1>
         </div>
         <div class="flex mt-8 flex-col md:flex-row md:justify-between">
@@ -62,7 +62,7 @@ function Footer() {
               </svg> */}
               <div className="">
                 <TextRevealCard
-                  text="Tessaract X.0"
+                  text="Tesseract X.0"
                   revealText="Theme"
                 ></TextRevealCard>
               </div>
