@@ -1,8 +1,8 @@
 import React from "react";
 import TeamCard from "./TeamCard";
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
-
+import "./Team.css";
 function Team() {
   const navigate = useNavigate();
 
@@ -15,7 +15,7 @@ function Team() {
         The Minds Behind the Magic.
       </h2>
 
-      <div className="team mx-[2em] flex-grow-0 flex-shrink-0 basis-1/3 flex flex-row flex-wrap justify-center">
+      <div className="TeamCard team mx-[2em] flex-grow-0 flex-shrink-0 basis-1/3 flex flex-row flex-wrap justify-center">
         <TeamCard
           name="xyz"
           position="President"
