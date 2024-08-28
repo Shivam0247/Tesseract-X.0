@@ -62,7 +62,7 @@ function Galler() {
           }
           keepContentMounted
         >
-          <div className="w-[85%] mx-auto mt-10">
+          <div className="w-[100%] mx-auto mt-10">
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
             >
@@ -94,7 +94,7 @@ function Galler() {
           }
           keepContentMounted
         >
-          <div className="w-[85%] mx-auto mt-10">
+          <div className="w-[100%] mx-auto mt-10">
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
             >
@@ -127,7 +127,7 @@ function Galler() {
           }
           keepContentMounted
         >
-          <div className="w-[85%] mx-auto mt-10">
+          <div className="w-[100%] mx-auto mt-10">
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
             >
