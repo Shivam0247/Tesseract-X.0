@@ -9,7 +9,7 @@ export const MaskContainer = ({
   children,
   revealText,
   size = 10,
-  revealSize = 900, // Increase the reveal size to make the circle larger
+  revealSize = 850, // Increase the reveal size to make the circle larger
   className,
 }) => {
   const [isHovered, setIsHovered] = useState(false);

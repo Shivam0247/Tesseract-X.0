@@ -1,7 +1,8 @@
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
+import { Link } from "react-router-dom";
 
-function TeamCard({ name, position, img }) {
+function TeamCard({ name, position, img, insta, linkedIn, twitter }) {
   return (
     <div>
       <CardContainer className="inter-var flex mx-[1em]">
@@ -32,8 +33,15 @@ function TeamCard({ name, position, img }) {
             className="text-xl font-bold text-white mt-3"
           >
             <span>
-              <i className="fa-brands fa-linkedin mr-3 cursor-pointer"></i>
-              <i className="fa-brands fa-instagram cursor-pointer"></i>
+              <Link to={linkedIn}>
+                <i className="fa-brands fa-linkedin mr-3 cursor-pointer"></i>
+              </Link>
+              <Link to={insta}>
+                <i className="fa-brands fa-instagram cursor-pointer mr-3"></i>
+              </Link>
+              <Link to={twitter}>
+                <i class="fa-brands fa-x-twitter"></i>
+              </Link>
             </span>
           </CardItem>
         </CardBody>
