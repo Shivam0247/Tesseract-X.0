@@ -115,3 +115,24 @@
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
+/* 
+@font-face {
+  font-family: "Sdroboticsdemo";
+  src: url("../Fonts/sd-robotics-font/Sdroboticsdemo-X3led.ttf");
+}
+
+.FrontText .innerText {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: Sdroboticsdemo;
+  vertical-align: baseline;
+} */
+
+@media (max-width: 480px) {
+  .FrontText .innerText {
+    letter-spacing: 1px;
+  }
+}

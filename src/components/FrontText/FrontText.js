@@ -162,11 +162,11 @@ function FrontText() {
             />
           </p>
         }
-        className="h-[100vh] border rounded-md front-text-paragraph"
+        className="h-[100vh] border rounded-md front-text-paragraph innerText"
       >
-        <span className="text-red-500">Warning:</span> Side effects of attending{" "}
-        <span className="text-red-500">TESSERACT</span> may include
-        uncontrollable excitement, tech inspiration overload, and the
+        <span className="innerText text-red-500">Warning:</span> Side effects of
+        attending <span className="innerText text-red-500">TESSERACT</span> may
+        include uncontrollable excitement, tech inspiration overload, and the
         irresistible urge to create the next big thing !
       </MaskContainer>
     </div>

@@ -7,7 +7,7 @@ import {
 } from "../ui/text-reveal-card";
 function Footer() {
   return (
-    <div class="w-full min-h-[10vh] flex items-center justify-center mt-11 bg-black px-10">
+    <div class="w-full min-h-[10vh] flex items-center justify-center mt-11 bg-black px-5">
       <div class="md:w-[100%] w-full px-4 text-white flex flex-col">
         <div class="w-full text-3xl md:text-7xl sm:text-5xl font-bold">
           <h1 class="w-full md:w-2/3 max-w-[39%]">
