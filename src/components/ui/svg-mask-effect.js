@@ -9,7 +9,7 @@ export const MaskContainer = ({
   children,
   revealText,
   size = 10,
-  revealSize = 800, // Increase the reveal size to make the circle larger
+  revealSize = 900, // Increase the reveal size to make the circle larger
   className,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -73,7 +73,8 @@ export const MaskContainer = ({
           maskSize: `${maskSize}px`,
         }}
         transition={{
-          duration: 0,
+          duration: 0.3, // Smooth transition duration
+          ease: "easeOut", // Easing function for smoothness
         }}
       >
         <div className="absolute inset-0 bg-black h-full w-full z-0 opacity-50" />
