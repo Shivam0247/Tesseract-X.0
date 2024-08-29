@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "./Gallery.css"; // Import the CSS file
+import "./Gallery.css";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { Accordion, AccordionItem } from "@nextui-org/react";
+
 const inaugralCeremony = require.context("../../inaugralCeremony", true);
 const inaugralCeremonyList = inaugralCeremony
   .keys()
@@ -10,26 +11,41 @@ const inaugralCeremonyList = inaugralCeremony
 const EDM = require.context("../../EDM", true);
 const EDMList = EDM.keys().map((image) => EDM(image));
 
-function Galler() {
+function Gallery() {
   const [openKeys, setOpenKeys] = useState(["1", "2", "3"]);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
-  const handleSelectionChange = (keys) => {
-    // Convert Set to array
-    const keysArray = Array.from(keys);
-    setOpenKeys(keysArray);
+  // Function to preload images
+  const preloadImages = (imageList) => {
+    imageList.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
   };
 
-  const [selectedImage, setSelectedImage] = useState(null);
+  useEffect(() => {
+    // Preload images in the background
+    preloadImages(inaugralCeremonyList);
+    preloadImages(EDMList);
+
+    // Mark images as loaded after preloading
+    setImagesLoaded(true);
+  }, []);
+
+  const handleSelectionChange = (keys) => {
+    setOpenKeys(Array.from(keys));
+  };
 
   useEffect(() => {
     if (selectedImage) {
-      document.body.style.overflow = "hidden"; // Prevent scrolling
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto"; // Allow scrolling
+      document.body.style.overflow = "auto";
     }
 
     return () => {
-      document.body.style.overflow = "auto"; // Reset overflow on component unmount
+      document.body.style.overflow = "auto";
     };
   }, [selectedImage]);
 
@@ -40,6 +56,10 @@ function Galler() {
   const handleOverlayClick = () => {
     setSelectedImage(null);
   };
+
+  if (!imagesLoaded) {
+    return <div>Loading...</div>; // Optionally show a loading indicator
+  }
 
   return (
     <div className="MainGallery w-full min-h-[50vh] pb-20 py-10 bg-black">
@@ -89,10 +109,10 @@ function Galler() {
         </AccordionItem>
         <AccordionItem
           key="2"
-          aria-label="Inaugral Ceremony"
+          aria-label="Inaugural Ceremony"
           title={
             <span style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
-              Inaugral Ceremony
+              Inaugural Ceremony
             </span>
           }
           keepContentMounted
@@ -181,4 +201,4 @@ function Galler() {
   );
 }
 
-export default Galler;
+export default Gallery;
