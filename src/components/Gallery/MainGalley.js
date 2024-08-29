@@ -25,10 +25,7 @@ function Gallery() {
 
   const InaugralCeremony = [
     {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724938323/cwjjxjbpuxiqhgwqxtve.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724938338/k6nyxnejdxzmvbqokpl1.jpg",
+      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724956382/EDM/cv9etfg5btxdk4bjmamg.jpg",
     },
     {
       src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC01220.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
