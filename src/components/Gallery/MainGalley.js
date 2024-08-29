@@ -16,6 +16,189 @@ function Gallery() {
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
+  const InaugralCeremony = [
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC01206.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC01209.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC01220.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC01226.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC01236.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC01239.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC01255.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC01263.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC01264.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC01270.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07278.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07280.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07282.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07284.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07289.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07294.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07300.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07310.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07312.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07316.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07319.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07322.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07327.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07350.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07361.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07376.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07379.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07380.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07396.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07405.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC07430.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC_0007.JPG?alt=media&token=f8c790ec-3e48-4a27-a5f7-d5f6c7fe44c2",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC_0028.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC_0030.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC_0034.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC_0045.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC_0049.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC_0051.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC_0055.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC_0064.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC_0068.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC_0071.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC_0077.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC_0088.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC_0095.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC_0116.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC_0125.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC_0128.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC_0135.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC_0141.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FSKS_5399.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FSKS_5410.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FSKS_5488.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FSKS_5521.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FSKS_5557.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FSKS_5602.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FSKS_5618.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FSKS_5627.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FSKS_5688.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+    {
+      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FSKS_5698.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+    },
+  ];
+
   // Function to preload images
   const preloadImages = (imageList) => {
     imageList.forEach((src) => {
@@ -122,14 +305,14 @@ function Gallery() {
               columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
             >
               <Masonry gutter="10px">
-                {inaugralCeremonyList.map((image, index) => (
+                {InaugralCeremony.map((image, index) => (
                   <div
                     key={index}
-                    onClick={() => handleImageClick(image)}
+                    onClick={() => handleImageClick(image.src)}
                     className="gallery-item"
                   >
                     <img
-                      src={image}
+                      src={image.src}
                       alt={`Image ${index + 1}`}
                       className="gallery-image"
                     />
