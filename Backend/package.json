@@ -4,6 +4,7 @@
   "description": "this is the backend for tesseract for fetching image form the clouds",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
