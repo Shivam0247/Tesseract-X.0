@@ -18,7 +18,6 @@ import MainGallery from "./components/Gallery/MainGalley";
 import { Analytics } from "@vercel/analytics/react";
 import React, { useState, useEffect } from "react";
 import LoadingScreen from "./components/Loading/LoadingScreen";
-import { SpeedInsights } from "@vercel/speed-insights/react";
 function App() {
   const [loading, setLoading] = useState(true);
   const [fadeIn, setFadeIn] = useState(false);
@@ -44,7 +43,6 @@ function App() {
           <div className="App">
             <BrowserRouter>
               <Analytics />
-              <SpeedInsights />
               <Navbar />
               <Routes>
                 <Route exact path="/" element={<Home />} />
