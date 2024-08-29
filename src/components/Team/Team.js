@@ -3,6 +3,9 @@ import TeamCard from "./TeamCard";
 import { useNavigate } from "react-router-dom";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 import "./Team.css";
+import Khushi from "../../ProfilePhoto/KhushiShah.jpeg";
+import Krish from "../../ProfilePhoto/KrishModi.png";
+
 function Team() {
   const navigate = useNavigate();
 
@@ -19,17 +22,17 @@ function Team() {
         <TeamCard
           name="Khushi Shah"
           position="General Secretary"
-          img="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          linkedIn=""
-          insta=""
+          img={Khushi}
+          linkedIn="https://www.linkedin.com/in/khushi-shah-2178a4278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+          insta="https://www.instagram.com/khushiee.iee/profilecard/?igsh=NXl3dWFzNnBranhx"
           twitter=""
         />
         <TeamCard
           name="Krish Modi"
           position="Treasurer"
-          img="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          linkedIn=""
-          insta=""
+          img={Krish}
+          linkedIn="https://www.linkedin.com/in/krishmodi33/"
+          insta="https://www.instagram.com/krishmodi_0202/"
           twitter=""
         />
       </div>
