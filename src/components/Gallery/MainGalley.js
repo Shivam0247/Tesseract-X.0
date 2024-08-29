@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./Gallery.css";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import FetchImageContext from "../../Context/FetchImage/FetchImageContext";
 import { Accordion, AccordionItem } from "@nextui-org/react";
-
 const inaugralCeremony = require.context("../../inaugralCeremony", true);
 const inaugralCeremonyList = inaugralCeremony
   .keys()
@@ -16,12 +16,19 @@ function Gallery() {
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
+  const fetchImageContext = useContext(FetchImageContext);
+  const { images, getEDMImages } = fetchImageContext;
+
+  useEffect(() => {
+    getEDMImages();
+  }, []);
+
   const InaugralCeremony = [
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC01206.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724938323/cwjjxjbpuxiqhgwqxtve.jpg",
     },
     {
-      src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC01209.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
+      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724938338/k6nyxnejdxzmvbqokpl1.jpg",
     },
     {
       src: "https://firebasestorage.googleapis.com/v0/b/tesseract-x-0.appspot.com/o/InaugralCeremony%2FDSC01220.JPG?alt=media&token=29850be9-ff05-4d2f-8594-4b90260ddf2b",
@@ -273,7 +280,7 @@ function Gallery() {
               columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
             >
               <Masonry gutter="10px">
-                {EDMList.map((image, index) => (
+                {images.map((image, index) => (
                   <div
                     key={index}
                     onClick={() => handleImageClick(image)}

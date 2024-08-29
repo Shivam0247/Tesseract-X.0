@@ -18,6 +18,7 @@ import MainGallery from "./components/Gallery/MainGalley";
 import { Analytics } from "@vercel/analytics/react";
 import React, { useState, useEffect } from "react";
 import LoadingScreen from "./components/Loading/LoadingScreen";
+import FetchImageState from "./Context/FetchImage/FetchImageState";
 function App() {
   const [loading, setLoading] = useState(true);
   const [fadeIn, setFadeIn] = useState(false);
@@ -41,23 +42,25 @@ function App() {
       ) : (
         <div className={`app-content ${fadeIn ? "fade-in" : ""}`}>
           <div className="App">
-            <BrowserRouter>
-              <Analytics />
-              <Navbar />
-              <Routes>
-                <Route exact path="/" element={<Home />} />
-                <Route exact path="/AboutUs" element={<AboutUs />} />
-                <Route exact path="/Gallery" element={<MainGallery />} />
-                <Route exact path="/Team" element={<MainTeam />} />
-              </Routes>
-              {/* <FrontText />
+            <FetchImageState>
+              <BrowserRouter>
+                <Analytics />
+                <Navbar />
+                <Routes>
+                  <Route exact path="/" element={<Home />} />
+                  <Route exact path="/AboutUs" element={<AboutUs />} />
+                  <Route exact path="/Gallery" element={<MainGallery />} />
+                  <Route exact path="/Team" element={<MainTeam />} />
+                </Routes>
+                {/* <FrontText />
         <Intro />
         <Event.AppleCardsCarouselDemo />
         <Team />
         <Gallery />
         <Sponsor /> */}
-              <Footer />
-            </BrowserRouter>
+                <Footer />
+              </BrowserRouter>
+            </FetchImageState>
           </div>
         </div>
       )}
