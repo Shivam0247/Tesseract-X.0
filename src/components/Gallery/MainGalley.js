@@ -7,6 +7,9 @@ const inaugralCeremonyList = inaugralCeremony
   .keys()
   .map((image) => inaugralCeremony(image));
 
+const EDM = require.context("../../EDM", true);
+const EDMList = EDM.keys().map((image) => EDM(image));
+
 function Galler() {
   const [openKeys, setOpenKeys] = useState(["1", "2", "3"]);
 
@@ -67,7 +70,7 @@ function Galler() {
               columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
             >
               <Masonry gutter="10px">
-                {inaugralCeremonyList.map((image, index) => (
+                {EDMList.map((image, index) => (
                   <div
                     key={index}
                     onClick={() => handleImageClick(image)}

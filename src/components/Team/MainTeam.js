@@ -2,6 +2,33 @@ import React, { useState } from "react";
 import TeamCard from "./TeamCard";
 import { Avatar, Accordion, AccordionItem } from "@nextui-org/react";
 import "./Team.css";
+import shivam from "../../ProfilePhoto/shivam.jpeg";
+import Khushi from "../../ProfilePhoto/KhushiShah.jpeg";
+import Krish from "../../ProfilePhoto/KrishModi.png";
+import Ansh from "../../ProfilePhoto/AnshSoni.jpg";
+import Rahil from "../../ProfilePhoto/RahilMavani.jpg";
+import Karan from "../../ProfilePhoto/KaranBabariya.jpg";
+import Jinay from "../../ProfilePhoto/JinayShah.jpg";
+import Aneri from "../../ProfilePhoto/Anerishah.jpg";
+import Pratham from "../../ProfilePhoto/PrathamPatel.jpg";
+import Madhav from "../../ProfilePhoto/MadhavSampat.jpg";
+import Pranil from "../../ProfilePhoto/Pranilkenche.png";
+import Sonali from "../../ProfilePhoto/SonaliModi.jpeg";
+import Aryan from "../../ProfilePhoto/AryanKadivar.jpeg";
+import Hetvi from "../../ProfilePhoto/HetviNarola.png";
+import Rudra from "../../ProfilePhoto/RudraTrada.jpeg";
+import Gargi from "../../ProfilePhoto/GargiShah.jpeg";
+import Pranat from "../../ProfilePhoto/PRANATVOHRA.jpg";
+import Het from "../../ProfilePhoto/HetShingala.jpg";
+import Utkarsh from "../../ProfilePhoto/UtkarshRajput.jpeg";
+import KhushiUttamani from "../../ProfilePhoto/Khushi.jpg";
+import Isha from "../../ProfilePhoto/IshaSojitra.jpg";
+import Rachit from "../../ProfilePhoto/RachitShah.jpg";
+import Heer from "../../ProfilePhoto/HeerGaglani.jpg";
+import Tavleen from "../../ProfilePhoto/TavleenKaur.jpeg";
+import Jainil from "../../ProfilePhoto/Jainil.jpeg";
+import Ishan from "../../ProfilePhoto/Ishan.jpg";
+
 function MainTeam() {
   // Initialize openKeys with both keys to have both accordion items open by default
   const [openKeys, setOpenKeys] = useState(["1", "2"]);
@@ -11,17 +38,19 @@ function MainTeam() {
     {
       name: "Khushi Shah",
       position: "General Secretary",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
+      img: Khushi,
+      linkedIn:
+        "https://www.linkedin.com/in/khushi-shah-2178a4278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      insta:
+        "https://www.instagram.com/khushiee.iee/profilecard/?igsh=NXl3dWFzNnBranhx",
       twitter: "",
     },
     {
       name: "Krish Modi",
       position: "Treasurer",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
+      img: Krish,
+      linkedIn: "https://www.linkedin.com/in/krishmodi33/",
+      insta: "https://www.instagram.com/krishmodi_0202/",
       twitter: "",
     },
   ]);
@@ -30,7 +59,7 @@ function MainTeam() {
     {
       name: "Shivam Patel",
       position: "Technical Head",
-      img: "https://i.ibb.co/gvBbt37/Whats-App-Image-2024-08-13-at-20-05-08.jpg",
+      img: shivam,
       linkedIn: "https://www.linkedin.com/in/-shivampatel/",
       insta: "https://www.instagram.com/shivam_0247/",
       twitter: "https://x.com/SHIVAM_0247",
@@ -38,121 +67,138 @@ function MainTeam() {
     {
       name: "Ansh Soni",
       position: "Graphic Design Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
-      twitter: "",
+      img: Ansh,
+      linkedIn: "https://www.linkedin.com/in/anshsoni04/",
+      insta: "https://www.instagram.com/_ansh_sonii/?next=%2F",
+      twitter: "https://x.com/AnshSon97791840",
     },
     {
       name: "Rahil Mavani",
       position: "Graphic Design Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
-      twitter: "",
+      img: Rahil,
+      linkedIn:
+        "https://www.linkedin.com/in/rahilmavani?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      insta: "https://www.instagram.com/rahil.mavani?igsh=czh2N3FpMHZ6dndu",
+      twitter: "https://x.com/rahil_mavani?t=lqEAbzHoLp-jzRc5fWJOoQ&s=09",
     },
     {
-      name: "Karan",
+      name: "Karan Babariya",
       position: "Graphic Design Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
-      twitter: "",
+      img: Karan,
+      linkedIn:
+        "https://www.linkedin.com/in/karan-babariya-893b062a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      insta: "https://www.instagram.com/the.krnn?igsh=MThlcmZmYjZ1ZHd0eA==",
+      twitter: "https://x.com/KBabariya_58?t=NlKFqHhTjJxfR2obfSFYrg&s=09",
     },
     {
       name: "Jinay Shah",
       position: "Logistics Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
+      img: Jinay,
+      linkedIn: "https://www.linkedin.com/in/jinay-shah14/",
+      insta: "https://www.instagram.com/jinay_shah14/",
       twitter: "",
     },
     {
       name: "Aneri Shah",
       position: "Logistics Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
+      img: Aneri,
+      linkedIn:
+        "https://www.linkedin.com/in/aneri-shah24?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      insta:
+        "https://www.instagram.com/aneri.shah_1225?igsh=MTVjb3duYjBmY2dtaQ==",
       twitter: "",
     },
     {
-      name: "Pratham",
+      name: "Pratham Patel",
       position: "Logistics Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
+      img: Pratham,
+      linkedIn: "https://www.linkedin.com/in/pratham-patel-2001a7247/",
+      insta: "https://www.instagram.com/pratham042004/",
       twitter: "",
     },
     {
-      name: "Jainil",
+      name: "Jainil Patel",
       position: "Logistics Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
+      img: Jainil,
+      linkedIn:
+        "https://www.linkedin.com/in/jainil-patel-595869269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      insta:
+        "https://www.instagram.com/jainilpatel___?igsh=d2lycnBmaHh2N2tx&utm_source=qr",
       twitter: "",
     },
     {
       name: "Madhav Sampat",
       position: "Event Management Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
-      twitter: "",
+      img: Madhav,
+      linkedIn:
+        "https://www.linkedin.com/in/madhav-sampat-051125253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=andr",
+      insta: "https://www.instagram.com/madhavsampat?igsh=MWZ1NjdseGR5dXU3dg==",
+      twitter: "https://x.com/madhavsampat04?t=6RYp_Ba0ogsAEFBGuGgZGw&s=09",
     },
     {
       name: "Pranil Kenche",
       position: "Event Management Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
+      img: Pranil,
+      linkedIn:
+        "https://www.linkedin.com/in/pranil-kenche-b25157264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      insta: "https://www.instagram.com/pranil_24?igsh=MW96YW0zdzUwd3U2Ng==",
       twitter: "",
     },
     {
       name: "Sonali Modi",
       position: "Event Management Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: Sonali,
       linkedIn: "",
-      insta: "",
+      insta:
+        "https://www.instagram.com/sonali.modi_?igsh=a3d2NzczNmp5Y3dq&utm_source=qr",
       twitter: "",
     },
     {
       name: "Aryan Kadivar",
       position: "Sponorship Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
+      img: Aryan,
+      linkedIn:
+        "https://www.linkedin.com/in/aryan-kadivar-51b137249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      insta:
+        "https://www.instagram.com/aryankmusic?igsh=ZnByNW43NnJqZHRm&utm_source=qr",
       twitter: "",
     },
     {
       name: "Hetvi Narola",
       position: "Sponorship Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
+      img: Hetvi,
+      linkedIn:
+        "https://www.linkedin.com/in/hetvi-narola-7b8279235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      insta:
+        "https://www.instagram.com/hetvi.7104/profilecard/?igsh=aDIwazJxMHQxNDBp",
       twitter: "",
     },
     {
       name: "Rudra Trada",
       position: "Sponorship Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: Rudra,
       linkedIn: "",
-      insta: "",
+      insta:
+        "https://www.instagram.com/rudra_trada?igsh=ZHJwaWM5bWs2M2Rq&utm_source=qr",
       twitter: "",
     },
     {
       name: "Gargi Shah",
       position: "Fine Arts Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
+      img: Gargi,
+      linkedIn:
+        "https://www.linkedin.com/in/gargi-shah-a08ab2248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      insta:
+        "https://www.instagram.com/_gargishah24_?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr",
       twitter: "",
     },
     {
-      name: "Pranat",
+      name: "Pranat Vohra",
       position: "Fine Arts Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
+      img: Pranat,
+      linkedIn:
+        "https://www.linkedin.com/in/pranat-vohra-2336a62b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      insta: "https://www.instagram.com/pranatvohra?igsh=NzNuOXIxejN5OTM=",
       twitter: "",
     },
     {
@@ -166,65 +212,72 @@ function MainTeam() {
     {
       name: "Het Shingala",
       position: "Hospitality Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
-      twitter: "",
+      img: Het,
+      linkedIn:
+        "https://www.linkedin.com/in/het-shingala?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      insta: "https://www.instagram.com/het_910?igsh=MXM5N3VlcTk5cHM4dg==",
+      twitter: "https://x.com/Het_910?t=TnNsr3gBsoz7VI0nd67KkA&s=08",
     },
     {
       name: "Utkarsh Rajput",
       position: "Hospitality Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
+      img: Utkarsh,
+      linkedIn:
+        "https://www.linkedin.com/in/utkarsh-rajput-bb97b3299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      insta:
+        "https://www.instagram.com/utkarsh0510?igsh=MTd0Nnp5djYyd2U1OA%3D%3D&utm_source=qr",
       twitter: "",
     },
     {
       name: "Khushi Uttamani",
       position: "Publicity & Social Media Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
+      img: KhushiUttamani,
+      linkedIn: "https://www.linkedin.com/in/khushi-uttamani-95b8a6257/",
+      insta: " https://www.instagram.com/khushiuttamanii/",
       twitter: "",
     },
     {
-      name: "Isha",
+      name: "Isha Sojitra",
       position: "Publicity & Social Media Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
+      img: Isha,
+      linkedIn:
+        "https://www.linkedin.com/in/isha-sojitra-0876352b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      insta:
+        "https://www.instagram.com/ishasojitra05?igsh=MWoxeDUzMDhjMjgzZw==",
       twitter: "",
     },
     {
-      name: "Ishan",
+      name: "Ishan Shah",
       position: "Publicity & Social Media Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
+      img: Ishan,
+      linkedIn:
+        "https://www.linkedin.com/in/ishan-shah-281678271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      insta: "https://www.instagram.com/ishan.s_1074?igsh=MWR6ZndrY3Fhcnp4bQ==",
       twitter: "",
     },
     {
-      name: "Rachit",
+      name: "Rachit Shah",
       position: "Publicity & Social Media Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
+      img: Rachit,
+      linkedIn: "https://www.linkedin.com/in/rachit-shah-/",
+      insta: "https://www.instagram.com/_rach.it?igsh=MTdwZjg2NGEwZWI2Mg==",
       twitter: "",
     },
     {
-      name: "Heer",
+      name: "Heer Gaglani",
       position: "Content & Documentation Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
+      img: Heer,
+      linkedIn:
+        "https://www.linkedin.com/in/heer-gaglani-898016266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      insta: "https://www.instagram.com/heer_206?igsh=cmRvYjF0djU1a3Jq",
       twitter: "",
     },
     {
       name: "Tavleen Kaur",
       position: "Content & Documentation Head",
-      img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkedIn: "",
-      insta: "",
+      img: Tavleen,
+      linkedIn: "www.linkedin.com/in/tavleenkaur108",
+      insta: "https://www.instagram.com/t.a.v.leen/",
       twitter: "",
     },
   ]);
@@ -269,6 +322,9 @@ function MainTeam() {
                 name={card.name}
                 position={card.position}
                 img={card.img}
+                insta={card.insta}
+                linkedIn={card.linkedIn}
+                twitter={card.twitter}
               />
             ))}
           </div>
