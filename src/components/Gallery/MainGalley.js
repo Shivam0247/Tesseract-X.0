@@ -21,7 +21,8 @@ function Gallery() {
 
   useEffect(() => {
     getEDMImages();
-  }, []);
+    console.log(images);
+  }, [getEDMImages]);
 
   const InaugralCeremony = [
     {
