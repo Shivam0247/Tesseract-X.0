@@ -25,270 +25,96 @@ function Gallery() {
   }, []);
 
   const EDM = [
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964329/EDM1_zj1qtl.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964354/EDM10_srukcd.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964356/EDM11_jhm3yb.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964358/EDM12_imink8.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964360/EDM13_we8ezf.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964363/EDM14_xv1hir.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964366/EDM15_nmq4hr.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964370/EDM16_ac3yat.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964372/EDM17_wwfdwe.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964376/EDM18_fcw4ay.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964377/EDM19_ntudv6.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964331/EDM2_janq6t.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964380/EDM20_wsfmeb.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964384/EDM21_jpcaqq.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964386/EDM22_uqsu2i.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964389/EDM23_edpnku.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964392/EDM24_ypbbjo.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964404/EDM25_i92uvd.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964406/EDM26_qstti8.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964411/EDM27_wkv47t.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964442/EDM28_gsnxeh.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964441/EDM29_yhv74r.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964336/EDM3_lmvt2e.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964459/EDM30_e1y9ez.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964462/EDM31_a1bhxy.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964458/EDM32_dlufgb.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964464/EDM33_y9ykga.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964489/EDM34_jkqkaq.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964490/EDM35_hfyudf.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964616/EDM79_jkpj9g.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964477/EDM37_kbr6jg.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964485/EDM38_tyjqp0.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964479/EDM39_i8cqi0.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964334/EDM4_zgeimn.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964490/EDM40_utpswr.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964490/EDM41_rzggwa.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964491/EDM42_uuwpmb.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964505/EDM43_y90xh8.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964506/EDM44_ktxfh7.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964499/EDM45_yqjukq.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964505/EDM46_z6f7ra.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964508/EDM47_p1dvth.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964516/EDM48_uy9avc.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964335/EDM5_go11nk.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964520/EDM50_w7hlf6.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964505/EDM51_uq2whd.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964515/EDM52_hry8bd.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964520/EDM53_rwdqef.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964523/EDM54_mzzcfi.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964525/EDM55_m8f0pw.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964526/EDM56_nw9ifo.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964526/EDM57_yftfcp.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964525/EDM58_vmcy8f.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964527/EDM59_pt9vpe.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964337/EDM6_iqzqlw.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964535/EDM60_qjc8or.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964537/EDM61_yswwns.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964541/EDM62_atikt9.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964545/EDM63_lue8av.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964546/EDM64_nbxmsv.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964547/EDM65_jodwa2.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964552/EDM66_v9qgxy.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964554/EDM67_pqkw3h.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964559/EDM68_hd5sdl.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964561/EDM69_kaayku.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964344/EDM7_xuonqu.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964564/EDM70_i0tzrg.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964567/EDM71_uju7m5.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964572/EDM72_yfzbl7.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964578/EDM73_azhogo.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964580/EDM74_odvcho.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964596/EDM75_q7cuy5.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964597/EDM76_h8v1nl.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964608/EDM77_uyaxxu.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964609/EDM78_qoa3qz.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964616/EDM79_jkpj9g.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964348/EDM8_vhfwhl.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964622/EDM81_xxvhi7.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964626/EDM82_iy6r0a.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964638/EDM83_uftohy.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964640/EDM84_p9rm10.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964645/EDM85_j7i3j4.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964647/EDM86_bomxvr.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964648/EDM87_ickjcp.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964655/EDM88_m8snxy.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964656/EDM89_dkkon5.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964351/EDM9_jwyjaw.jpg",
-    },
-    {
-      src: "https://res.cloudinary.com/dr8kooipi/image/upload/v1724964659/EDM90_jsnvod.jpg",
-    },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM1.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM10.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM11.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM12.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM13.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM14.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM15.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM16.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM17.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM18.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM19.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM2.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM20.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM21.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM22.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM23.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM24.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM25.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM26.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM27.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM28.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM29.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM3.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM30.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM31.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM32.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM33.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM34.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM35.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM36.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM37.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM38.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM39.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM4.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM40.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM41.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM42.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM43.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM44.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM45.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM46.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM47.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM48.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM49.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM5.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM50.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM51.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM52.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM53.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM54.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM55.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM56.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM57.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM58.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM59.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM6.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM60.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM61.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM62.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM63.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM64.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM65.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM66.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM67.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM68.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM69.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM7.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM70.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM71.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM72.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM73.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM74.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM75.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM76.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM77.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM78.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM79.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM8.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM80.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM81.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM82.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM83.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM84.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM85.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM86.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM87.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM88.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM89.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM9.jpg" },
+    { src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM90.jpg" },
   ];
 
   const InaugralCeremony = [
@@ -545,14 +371,14 @@ function Gallery() {
               columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
             >
               <Masonry gutter="10px">
-                {EDMList2.map((image, index) => (
+                {EDM.map((image, index) => (
                   <div
                     key={index}
-                    onClick={() => handleImageClick(image)}
+                    onClick={() => handleImageClick(image.src)}
                     className="gallery-item"
                   >
                     <img
-                      src={image}
+                      src={image.src}
                       alt={`Image ${index + 1}`}
                       className="gallery-image"
                     />

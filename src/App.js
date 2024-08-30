@@ -19,23 +19,22 @@ import ScrollTop from "./components/ScrollTop/ScrollTop";
 function AppContent() {
   const [loading, setLoading] = useState(true);
   const [fadeIn, setFadeIn] = useState(false);
-  const location = useLocation(); // Get the current location
+  const location = useLocation();
 
   const handleLoadingComplete = () => {
     setLoading(false);
   };
 
   useEffect(() => {
-    // Trigger loading screen on route change
     setLoading(true);
     setFadeIn(false);
     const timer = setTimeout(() => {
       handleLoadingComplete();
       setFadeIn(true);
-    }, 2500); // Delay to simulate loading time
+    }, 2500);
 
     return () => clearTimeout(timer);
-  }, [location]); // Depend on location to trigger on route change
+  }, [location]);
 
   return (
     <>
