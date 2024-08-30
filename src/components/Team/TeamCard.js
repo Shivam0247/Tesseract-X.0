@@ -33,14 +33,23 @@ function TeamCard({ name, position, img, insta, linkedIn, twitter }) {
             className="text-xl font-bold text-white mt-3"
           >
             <span>
-              <Link to={linkedIn}>
-                <i className="fa-brands fa-linkedin mr-3 cursor-pointer"></i>
+              <Link
+                to={linkedIn || "#"}
+                className={!linkedIn ? "cursor-not-allowed" : ""}
+              >
+                <i className="fa-brands fa-linkedin mr-3"></i>
               </Link>
-              <Link to={insta}>
-                <i className="fa-brands fa-instagram cursor-pointer mr-3"></i>
+              <Link
+                to={insta || "#"}
+                className={!insta ? "cursor-not-allowed" : ""}
+              >
+                <i className="fa-brands fa-instagram mr-3"></i>
               </Link>
-              <Link to={twitter}>
-                <i class="fa-brands fa-x-twitter"></i>
+              <Link
+                to={twitter || "#"}
+                className={!twitter ? "cursor-not-allowed" : ""}
+              >
+                <i className="fa-brands fa-x-twitter"></i>
               </Link>
             </span>
           </CardItem>
