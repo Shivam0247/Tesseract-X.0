@@ -37,33 +37,25 @@ function App() {
 
   return (
     <>
-      {loading ? (
-        <LoadingScreen onLoadingComplete={handleLoadingComplete} />
-      ) : (
-        <div className={`app-content ${fadeIn ? "fade-in" : ""}`}>
-          <div className="App">
-            <FetchImageState>
-              <BrowserRouter>
-                <Analytics />
-                <Navbar />
-                <Routes>
-                  <Route exact path="/" element={<Home />} />
-                  <Route exact path="/AboutUs" element={<AboutUs />} />
-                  <Route exact path="/Gallery" element={<MainGallery />} />
-                  <Route exact path="/Team" element={<MainTeam />} />
-                </Routes>
-                {/* <FrontText />
-        <Intro />
-        <Event.AppleCardsCarouselDemo />
-        <Team />
-        <Gallery />
-        <Sponsor /> */}
-                <Footer />
-              </BrowserRouter>
-            </FetchImageState>
-          </div>
-        </div>
-      )}
+      <FetchImageState>
+        <BrowserRouter>
+          {loading ? (
+            <LoadingScreen onLoadingComplete={handleLoadingComplete} />
+          ) : (
+            <div className={`App ${fadeIn ? "fade-in" : ""}`}>
+              <Navbar />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/AboutUs" element={<AboutUs />} />
+                <Route path="/gallery" element={<MainGallery />} />
+                <Route path="/team" element={<MainTeam />} />
+              </Routes>
+              <Footer />
+              <Analytics />
+            </div>
+          )}
+        </BrowserRouter>
+      </FetchImageState>
     </>
   );
 }

@@ -8,8 +8,8 @@ const inaugralCeremonyList = inaugralCeremony
   .keys()
   .map((image) => inaugralCeremony(image));
 
-const EDM = require.context("../../EDM", true);
-const EDMList = EDM.keys().map((image) => EDM(image));
+const EDM2 = require.context("../../EDM2", true);
+const EDMList2 = EDM2.keys().map((image) => EDM2(image));
 
 function Gallery() {
   const [openKeys, setOpenKeys] = useState(["1", "2", "3"]);
@@ -482,7 +482,7 @@ function Gallery() {
   useEffect(() => {
     // Preload images in the background
     preloadImages(inaugralCeremonyList);
-    preloadImages(EDMList);
+    preloadImages(EDMList2);
 
     // Mark images as loaded after preloading
     setImagesLoaded(true);
@@ -545,14 +545,14 @@ function Gallery() {
               columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
             >
               <Masonry gutter="10px">
-                {EDM.map((image, index) => (
+                {EDMList2.map((image, index) => (
                   <div
                     key={index}
-                    onClick={() => handleImageClick(image.src)}
+                    onClick={() => handleImageClick(image)}
                     className="gallery-item"
                   >
                     <img
-                      src={image.src}
+                      src={image}
                       alt={`Image ${index + 1}`}
                       className="gallery-image"
                     />
