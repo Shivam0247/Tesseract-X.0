@@ -3,13 +3,10 @@ import TeamCard from "./TeamCard";
 import { useNavigate } from "react-router-dom";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 import "./Team.css";
+import Khushi from "../../ProfilePhoto/KhushiShah.jpeg";
+import Krish from "../../ProfilePhoto/KrishModi.png";
 
 function Team() {
-  const Khushi =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/KhushiShah.jpeg";
-  const Krish =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/KrishModi.png";
-
   const navigate = useNavigate();
 
   const handleButtonClick = () => {

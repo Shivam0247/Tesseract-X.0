@@ -2,62 +2,37 @@ import React, { useState } from "react";
 import TeamCard from "./TeamCard";
 import { Avatar, Accordion, AccordionItem } from "@nextui-org/react";
 import "./Team.css";
+import shivam from "../../ProfilePhoto/shivam.jpeg";
+import Khushi from "../../ProfilePhoto/KhushiShah.jpeg";
+import Krish from "../../ProfilePhoto/KrishModi.png";
+import Ansh from "../../ProfilePhoto/AnshSoni.jpg";
+import Rahil from "../../ProfilePhoto/RahilMavani.jpg";
+import Karan from "../../ProfilePhoto/KaranBabariya.jpg";
+import Jinay from "../../ProfilePhoto/JinayShah.jpg";
+import Aneri from "../../ProfilePhoto/Anerishah.jpg";
+import Pratham from "../../ProfilePhoto/PrathamPatel.jpg";
+import Madhav from "../../ProfilePhoto/MadhavSampat.jpg";
+import Pranil from "../../ProfilePhoto/Pranilkenche.png";
 import Sonali from "../../ProfilePhoto/SonaliModi.jpeg";
+import Aryan from "../../ProfilePhoto/AryanKadivar.jpeg";
+import Hetvi from "../../ProfilePhoto/HetviNarola.png";
 import Rudra from "../../ProfilePhoto/RudraTrada.jpeg";
+import Gargi from "../../ProfilePhoto/GargiShah.jpeg";
+import Pranat from "../../ProfilePhoto/PRANATVOHRA.jpg";
+import Het from "../../ProfilePhoto/HetShingala.jpg";
 import Utkarsh from "../../ProfilePhoto/UtkarshRajput.jpeg";
+import KhushiUttamani from "../../ProfilePhoto/Khushi.jpg";
+import Isha from "../../ProfilePhoto/IshaSojitra.jpg";
+import Rachit from "../../ProfilePhoto/RachitShah.jpg";
+import Heer from "../../ProfilePhoto/HeerGaglani.jpg";
+import Tavleen from "../../ProfilePhoto/TavleenKaur.jpeg";
+import Jainil from "../../ProfilePhoto/Jainil.jpeg";
+import Ishan from "../../ProfilePhoto/Ishan.jpg";
+import Gopika from "../../ProfilePhoto/Gopika.png";
 
 function MainTeam() {
+  // Initialize openKeys with both keys to have both accordion items open by default
   const [openKeys, setOpenKeys] = useState(["1", "2"]);
-
-  const shivam =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/shivam.jpeg";
-  const Khushi =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/KhushiShah.jpeg";
-  const Krish =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/KrishModi.png";
-  const Ansh =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/AnshSoni.jpg";
-  const Rahil =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/RahilMavani.jpg";
-  const Karan =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/KaranBabariya.jpg";
-  const Jinay =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/JinayShah.jpg";
-  const Aneri =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/Anerishah.jpg";
-  const Pratham =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/PrathamPatel.jpg";
-  const Madhav =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/MadhavSampat.jpg";
-  const Pranil =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/Pranilkenche.png";
-  const Aryan =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/AryanKadivar.jpeg";
-  const Hetvi =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/HetviNarola.png";
-  const Gargi =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/GargiShah.jpeg";
-  const Pranat =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/PRANATVOHRA.jpg";
-  const Het =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/HetShingala.jpg";
-
-  const KhushiUttamani =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/Khushi.jpg";
-  const Isha =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/IshaSojitra.jpg";
-  const Rachit =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/RachitShah.jpg";
-  const Heer =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/HeerGaglani.jpg";
-  const Tavleen =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/TavleenKaur.jpeg";
-  const Jainil =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/Jainil.jpeg";
-  const Ishan =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/Ishan.jpg";
-  const Gopika =
-    "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/Gopika.png";
 
   // Card information stored in state
   const [executive, setExecutive] = useState([
