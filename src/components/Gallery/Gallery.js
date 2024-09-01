@@ -63,7 +63,7 @@ function Galler() {
       src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/36ClubActivity.JPG",
     },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM85.jpg",
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/53ClubActivity.JPG",
     },
     {
       src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/23Ceremony.JPG",
