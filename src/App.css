@@ -3,11 +3,10 @@
 @tailwind utilities;
 
 .app-content {
-    opacity: 0;
-    transition: opacity 1s ease-in;
-  }
-  
-  .app-content.fade-in {
-    opacity: 1;
-  }
-  
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.app-content.fade-in {
+  opacity: 1;
+}
