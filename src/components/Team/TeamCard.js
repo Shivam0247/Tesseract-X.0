@@ -45,12 +45,14 @@ function TeamCard({ name, position, img, insta, linkedIn, twitter }) {
               >
                 <i className="fa-brands fa-instagram mr-3"></i>
               </Link>
-              <Link
-                to={twitter || "#"}
-                className={!twitter ? "cursor-not-allowed" : ""}
-              >
-                <i className="fa-brands fa-x-twitter"></i>
-              </Link>
+              {!!twitter && (
+                <Link
+                  to={twitter || "#"}
+                  className={!twitter ? "cursor-not-allowed" : ""}
+                >
+                  <i className="fa-brands fa-x-twitter"></i>
+                </Link>
+              )}
             </span>
           </CardItem>
         </CardBody>

@@ -16,7 +16,7 @@ body {
   background-position: center;
   background-size: cover;
   position: relative;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 body::before {
