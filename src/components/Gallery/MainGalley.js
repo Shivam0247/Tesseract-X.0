@@ -323,9 +323,6 @@ function Gallery() {
       src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/1ClubActivity.JPG",
     },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/2ClubActivity.JPG",
-    },
-    {
       src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/3ClubActivity.JPG",
     },
     {
@@ -375,9 +372,6 @@ function Gallery() {
     },
     {
       src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/19ClubActivity.JPG",
-    },
-    {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/20ClubActivity.JPG",
     },
     {
       src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/21ClubActivity.JPG",
