@@ -324,6 +324,303 @@ function Gallery() {
     },
   ];
 
+  const ClubActivity = [
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/1ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/2ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/3ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/4ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/5ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/6ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/7ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/8ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/9ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/10ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/11ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/12ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/13ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/14ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/15ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/16ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/17ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/18ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/19ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/20ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/21ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/22ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/23ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/24ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/25ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/26ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/27ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/28ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/29ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/30ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/31ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/32ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/33ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/34ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/35ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/36ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/37ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/38ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/39ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/40ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/41ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/42ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/43ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/44ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/45ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/46ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/47ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/48ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/49ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/50ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/51ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/52ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/53ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/54ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/55ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/56ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/57ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/58ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/59ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/60ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/61ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/62ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/63ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/64ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/65ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/66ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/67ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/68ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/69ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/70ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/71ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/72ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/73ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/74ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/75ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/76ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/77ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/78ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/79ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/80ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/81ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/82ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/83ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/84ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/85ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/86ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/87ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/88ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/89ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/90ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/91ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/92ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/93ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/94ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/95ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/96ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/97ClubActivity.JPG",
+    },
+    {
+      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/98ClubActivity.JPG",
+    },
+  ];
+
   // Function to preload images
   const preloadImages = (imageList) => {
     imageList.forEach((src) => {
@@ -463,14 +760,14 @@ function Gallery() {
               columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
             >
               <Masonry gutter="10px">
-                {inaugralCeremonyList.map((image, index) => (
+                {ClubActivity.map((image, index) => (
                   <div
                     key={index}
-                    onClick={() => handleImageClick(image)}
+                    onClick={() => handleImageClick(image.src)}
                     className="gallery-item"
                   >
                     <img
-                      src={image}
+                      src={image.src}
                       alt={`Image ${index + 1}`}
                       className="gallery-image"
                     />
