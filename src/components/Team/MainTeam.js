@@ -7,7 +7,6 @@ import Rudra from "../../ProfilePhoto/RudraTrada.jpeg";
 import Utkarsh from "../../ProfilePhoto/UtkarshRajput.jpeg";
 
 function MainTeam() {
-  // Initialize openKeys with both keys to have both accordion items open by default
   const [openKeys, setOpenKeys] = useState(["1", "2"]);
 
   const shivam =
