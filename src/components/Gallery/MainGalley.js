@@ -314,9 +314,6 @@ function Gallery() {
       src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/6Ceremony.JPG",
     },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/7Ceremony.JPG",
-    },
-    {
       src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/8Ceremony.JPG",
     },
     {
