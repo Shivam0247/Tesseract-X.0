@@ -62,7 +62,7 @@ function Footer() {
               </svg> */}
               <div className="">
                 <TextRevealCard
-                  text="Tesseract X.0"
+                  text="Tesseract X"
                   revealText="Theme"
                 ></TextRevealCard>
               </div>

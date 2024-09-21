@@ -35,7 +35,7 @@ export const Timeline = ({ data }) => {
           Built for the Innovators
         </h2>
         <p className="text-neutral-300 text-sm md:text-base max-w-sm">
-          Welcome to Tesseract X.0
+          Welcome to Tesseract X
         </p>
       </div>
 

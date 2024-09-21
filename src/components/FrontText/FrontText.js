@@ -16,8 +16,8 @@ function FrontText() {
     seconds: "00",
   });
 
-  const [shuffledText, setShuffledText] = useState("Tesseract X.0");
-  const originalText = "Tesseract X.0";
+  const [shuffledText, setShuffledText] = useState("Tesseract X");
+  const originalText = "Tesseract X";
 
   const padWithZero = (number) => {
     return number.toString().padStart(2, "0");
@@ -140,7 +140,7 @@ function FrontText() {
         revealText={
           <p className="max-w-4xl mx-auto front-text-paragraph text-center font-bold leading-tight">
             <span className=" text-[4.5rem] sm:text-[6rem] md:text-[9rem]">
-              Tesseract X.0
+              Tesseract X
             </span>
             <br />
             <ReactTypingEffect
