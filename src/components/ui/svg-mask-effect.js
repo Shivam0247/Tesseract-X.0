@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { cn } from "../../lib/utils";
 import mask from "./mask.svg"; // Correctly import the SVG file
-import back from "../../Images/front1.jpeg"; // Correctly import the background image
+import back from "../../Images/front2.jpeg"; // Correctly import the background image
 
 export const MaskContainer = ({
   children,

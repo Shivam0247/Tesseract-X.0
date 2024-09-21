@@ -230,7 +230,7 @@ function Intro() {
     <div className="h-[100vh] w-full bg-black bg-grid-white/[0.150] relative flex items-center justify-center">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <p className="font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 h-[60%] w-full flex justify-center items-center">
-        <div className="glass-effect h-[100%] w-[90%] sm:w-[70%] flex justify-center items-center">
+        {/* <div className="glass-effect h-[100%] w-[90%] sm:w-[70%] flex justify-center items-center">
           <div className="typing-trigger w-[100%] h-[100%]">
             <ReactTerminal
               ref={terminalRef}
@@ -287,7 +287,7 @@ function Intro() {
               theme="my-custom-theme"
             />
           </div>
-        </div>
+        </div> */}
       </p>
     </div>
   );

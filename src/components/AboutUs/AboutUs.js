@@ -44,7 +44,7 @@ export function AboutUs() {
       ),
     },
     {
-      title: "Early 2023",
+      title: "2023",
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
@@ -89,7 +89,7 @@ export function AboutUs() {
       ),
     },
     {
-      title: "Build For The Innovators",
+      title: "2022",
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">

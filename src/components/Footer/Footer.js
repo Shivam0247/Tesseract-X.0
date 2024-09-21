@@ -5,6 +5,7 @@ import {
   TextRevealCardDescription,
   TextRevealCardTitle,
 } from "../ui/text-reveal-card";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div class="w-full min-h-[10vh] flex items-center justify-center mt-11 bg-black px-5">
@@ -67,21 +68,36 @@ function Footer() {
                 ></TextRevealCard>
               </div>
             </div>
-            <a class="hidden lg:block cursor-pointer text-gray-600 hover:text-white uppercase">
+            <Link
+              to="/"
+              class="hidden lg:block cursor-pointer text-gray-600 hover:text-white uppercase"
+            >
               Home
-            </a>
-            <a class="hidden lg:block cursor-pointer text-gray-600 hover:text-white uppercase">
+            </Link>
+            <Link
+              to="/AboutUs"
+              class="hidden lg:block cursor-pointer text-gray-600 hover:text-white uppercase"
+            >
               About
-            </a>
-            <a class="hidden lg:block cursor-pointer text-gray-600 hover:text-white uppercase">
+            </Link>
+            <Link
+              to="#"
+              class="hidden lg:block cursor-pointer text-gray-600 hover:text-white uppercase"
+            >
               Events
-            </a>
-            <a class="hidden lg:block cursor-pointer text-gray-600 hover:text-white uppercase">
+            </Link>
+            <Link
+              to="/Gallery"
+              class="hidden lg:block cursor-pointer text-gray-600 hover:text-white uppercase"
+            >
               Gallery
-            </a>
-            <a class="hidden lg:block cursor-pointer text-gray-600 hover:text-white uppercase">
+            </Link>
+            <Link
+              to="/Team"
+              class="hidden lg:block cursor-pointer text-gray-600 hover:text-white uppercase"
+            >
               Team
-            </a>
+            </Link>
 
             <div class="flex flex-row space-x-8 items-center justify-between">
               <a href="#">
