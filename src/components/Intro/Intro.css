@@ -105,3 +105,7 @@
     font-size: 12px; /* Adjust size for small screens */
   }
 }
+
+.text {
+  font-family: "Orbitron", sans-serif;
+}
