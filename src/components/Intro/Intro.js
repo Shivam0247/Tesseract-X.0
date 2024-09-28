@@ -255,15 +255,17 @@ function Intro() {
             }
           >
             <video
-              src={ThemeLaunch}
+              width="320"
+              height="240"
               poster={image}
-              className="w-[100%] h-[100%]"
-              autoPlay
               loop
+              autoPlay
               controls
               preload="auto"
-              // muted
-            ></video>
+              className="w-[100%] h-[100%]"
+            >
+              <source src={ThemeLaunch} type="video/mp4" />
+            </video>
           </ContainerScroll>
         </div>
 
