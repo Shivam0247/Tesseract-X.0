@@ -5,7 +5,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ReactTerminal } from "react-terminal";
 import ReactTypingEffect from "react-typing-effect";
-
+import ThemeLaunch from "../../Video/ThemeLaunch.mp4";
+import { ContainerScroll } from "../ui/container-scroll-animation";
+import image from "../../Images/EDM49.jpg";
 gsap.registerPlugin(ScrollTrigger);
 
 function Intro() {
@@ -230,6 +232,40 @@ function Intro() {
     <div className="h-[100vh] w-full bg-black bg-grid-white/[0.150] relative flex items-center justify-center">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <p className="font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 h-[60%] w-full flex justify-center items-center">
+        {/* <video
+          src={ThemeLaunch}
+          className="w-[40%]"
+          autoPlay
+          loop
+          controls
+          // muted
+        ></video> */}
+
+        <div className="text flex flex-col overflow-hidden">
+          <ContainerScroll
+            titleComponent={
+              <>
+                <h1 className="text-4xl font-semibold text-white">
+                  The future is elemental <br />
+                  <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                    ELEMENTRIX
+                  </span>
+                </h1>
+              </>
+            }
+          >
+            <video
+              src={ThemeLaunch}
+              poster={image}
+              className="w-[100%] h-[100%]"
+              autoPlay
+              loop
+              controls
+              // muted
+            ></video>
+          </ContainerScroll>
+        </div>
+
         {/* <div className="glass-effect h-[100%] w-[90%] sm:w-[70%] flex justify-center items-center">
           <div className="typing-trigger w-[100%] h-[100%]">
             <ReactTerminal
