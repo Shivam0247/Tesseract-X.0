@@ -110,7 +110,7 @@ export default function Example() {
           </div>
           <div>
             <Link
-              to="#"
+              to="/Events"
               className="text-medium font-semibold leading-6 text-white"
             >
               Events
@@ -185,7 +185,7 @@ export default function Example() {
                   About
                 </a>
                 <a
-                  href="#"
+                  href="/Events"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white "
                 >
                   Event

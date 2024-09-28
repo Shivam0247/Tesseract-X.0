@@ -64,7 +64,7 @@ function Footer() {
               <div className="">
                 <TextRevealCard
                   text="Tesseract X"
-                  revealText="Theme"
+                  revealText="ELEMENTRIX"
                 ></TextRevealCard>
               </div>
             </div>
@@ -81,7 +81,7 @@ function Footer() {
               About
             </Link>
             <Link
-              to="#"
+              to="/Events"
               class="hidden lg:block cursor-pointer text-gray-600 hover:text-white uppercase"
             >
               Events

@@ -12,6 +12,7 @@ import Footer from "./components/Footer/Footer";
 import MainTeam from "./components/Team/MainTeam";
 import MainGallery from "./components/Gallery/MainGalley";
 import { AboutUs } from "./components/AboutUs/AboutUs";
+import Events from "./components/Events/MainEvent";
 import LoadingScreen from "./components/Loading/LoadingScreen";
 import FetchImageState from "./Context/FetchImage/FetchImageState";
 import ScrollTop from "./components/ScrollTop/ScrollTop";
@@ -47,6 +48,7 @@ function AppContent() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/AboutUs" element={<AboutUs />} />
+            <Route path="/Events" element={<Events />} />
             <Route path="/gallery" element={<MainGallery />} />
             <Route path="/team" element={<MainTeam />} />
           </Routes>
