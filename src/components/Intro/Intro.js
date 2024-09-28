@@ -264,7 +264,10 @@ function Intro() {
               preload="auto"
               className="w-[100%] h-[100%]"
             >
-              <source src={ThemeLaunch} type="video/mp4" />
+              <source
+                src="https://snt-images-bucket.s3.ap-south-1.amazonaws.com/ThemeLaunch.mp4"
+                type="video/mp4"
+              />
             </video>
           </ContainerScroll>
         </div>
