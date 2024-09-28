@@ -245,7 +245,7 @@ function Intro() {
           <ContainerScroll
             titleComponent={
               <>
-                <h1 className="text-4xl font-semibold text-white">
+                <h1 className="text-xl font-semibold text-white sm:text-4xl">
                   The future is elemental <br />
                   <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
                     ELEMENTRIX
