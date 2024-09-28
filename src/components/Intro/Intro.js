@@ -254,7 +254,7 @@ function Intro() {
               </>
             }
           >
-            <video
+            {/* <video
               width="320"
               height="240"
               poster={image}
@@ -265,7 +265,18 @@ function Intro() {
               className="w-[100%] h-[100%]"
             >
               <source src={ThemeLaunch} type="video/mp4" />
-            </video>
+            </video> */}
+
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/gfe8Uf5j1Js?si=4RQgfE0lrsIq_TaU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </ContainerScroll>
         </div>
 
