@@ -255,8 +255,6 @@ function Intro() {
             }
           >
             <video
-              width="320"
-              height="240"
               poster={image}
               loop
               autoPlay
