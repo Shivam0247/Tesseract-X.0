@@ -27,7 +27,7 @@ import {
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
 import { Link } from "react-router-dom";
-
+import Logo from "../../Images/TESSERACTLOGO.png";
 const products = [
   {
     name: "Analytics",
@@ -43,7 +43,7 @@ const products = [
   },
   {
     name: "Security",
-    description: "Your customers’ data will be safe and secure",
+    description: "Your customers' data will be safe and secure",
     href: "#",
     icon: FingerPrintIcon,
   },
@@ -72,7 +72,7 @@ export default function Example() {
     <header className="md:flex">
       <nav
         aria-label="Global"
-        className="Navbar mx-auto flex max-w-[100%] w-[100%] items-center justify-between p-6 lg:px-8 fixed z-[999"
+        className="Navbar mx-auto flex max-w-[100%] w-[100%] items-center justify-between p-2 lg:px-8 fixed z-[999]"
       >
         <div className="flex lg:hidden">
           <button
@@ -87,11 +87,7 @@ export default function Example() {
         <div className="flex">
           <Link href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img
-              alt=""
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              className="h-8 w-auto"
-            />
+            <img alt="" src={Logo} className="h-[4rem] w-auto" />
           </Link>
         </div>
 
@@ -162,11 +158,7 @@ export default function Example() {
           <div className="flex items-center justify-between">
             <Link href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                alt=""
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
-              />
+              <img alt="" src={Logo} className="h-[3rem] w-auto" />
             </Link>
             <button
               type="button"
