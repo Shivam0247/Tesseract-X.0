@@ -261,6 +261,7 @@ function Intro() {
               autoPlay
               loop
               controls
+              preload="auto"
               // muted
             ></video>
           </ContainerScroll>
