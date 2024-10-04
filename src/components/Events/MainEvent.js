@@ -2,6 +2,62 @@ import React, { useState } from "react";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import "../Team/Team.css";
 import { Carousel, Card } from "../ui/apple-cards-carousel_MainEvent";
+import network1 from "../../Images/Events/Network/Netwrok 1.1.png";
+import network2 from "../../Images/Events/Network/Network 2.1.jpg";
+import anirveda1 from "../../Images/Events/Anirveda/1.1.jpg";
+import anirveda2 from "../../Images/Events/Anirveda/2.1.jpg";
+import anirveda3 from "../../Images/Events/Anirveda/3.1.jpg";
+import cretus1 from "../../Images/Events/Cretus/1.1.jpg";
+import cretus2 from "../../Images/Events/Cretus/2.1.png";
+import cretus3 from "../../Images/Events/Cretus/3.1.jpg";
+import cretus4 from "../../Images/Events/Cretus/4.2.jpg";
+import aataman1 from "../../Images/Events/Aatman/1.2.png";
+import aataman2 from "../../Images/Events/Aatman/2.1.jpg";
+import aataman3 from "../../Images/Events/Aatman/3.1.jpg";
+import Avionics1 from "../../Images/Events/Avionics/1.2.jpg";
+import Avionics2 from "../../Images/Events/Avionics/2.1.jpg";
+import Respawn1 from "../../Images/Events/Respawn/1.2.jpg";
+import Respawn2 from "../../Images/Events/Respawn/2.1.jpg";
+import Respawn3 from "../../Images/Events/Respawn/3.2.jpg";
+import mindripple1 from "../../Images/Events/Mind Ripple/1.2.png";
+import mindripple2 from "../../Images/Events/Mind Ripple/2.1.png";
+import mindripple3 from "../../Images/Events/Mind Ripple/3.1.png";
+import bullsandBears1 from "../../Images/Events/B&B/1.2.png";
+import bullsandBears2 from "../../Images/Events/B&B/2.1.png";
+import bullsandBears3 from "../../Images/Events/B&B/3.1.png";
+import Synergy1 from "../../Images/Events/Synergy/1.3.png";
+import Synergy2 from "../../Images/Events/Synergy/2.1.jpg";
+import Synergy3 from "../../Images/Events/Synergy/3.3.png";
+import Symmetry1 from "../../Images/Events/Symmetry/1.2.jpg";
+import Symmetry2 from "../../Images/Events/Symmetry/2.3.jpg";
+import Symmetry3 from "../../Images/Events/Symmetry/3.1.jpg";
+import Symmetry4 from "../../Images/Events/Symmetry/4.3.png";
+import som1 from "../../Images/Events/SOM/1.3.jpg";
+import som2 from "../../Images/Events/SOM/2.1.jpg";
+import som3 from "../../Images/Events/SOM/3.1.jpg";
+import encode1 from "../../Images/Events/Encode/1.1.jpg";
+import encode2 from "../../Images/Events/Encode/2.1.png";
+import encode3 from "../../Images/Events/Encode/3.1.jpg";
+import tir1 from "../../Images/Events/TIR/1.3.jpg";
+import tir2 from "../../Images/Events/TIR/2.3.jpg";
+import tir3 from "../../Images/Events/TIR/3.1.jpg";
+import cube1 from "../../Images/Events/Cube-i-Cult/1.2.png";
+import cube2 from "../../Images/Events/Cube-i-Cult/2.3.png";
+import vga1 from "../../Images/Events/VGA/1.1.jpg";
+import vga2 from "../../Images/Events/VGA/2.3.jpg";
+import Sorriso1 from "../../Images/Events/Sorriso/1.1.jpg";
+import Sorriso2 from "../../Images/Events/Sorriso/2.1.jpg";
+import Brahmand1 from "../../Images/Events/Brahmand/1.2.png";
+import Brahmand2 from "../../Images/Events/Brahmand/2.1.jpg";
+import Brahmand3 from "../../Images/Events/Brahmand/3.1.jpg";
+import Brahmand4 from "../../Images/Events/Brahmand/4.1.jpg";
+import Apogee1 from "../../Images/Events/Apogee/1.1.jpg";
+import Nucleus1 from "../../Images/Events/Nucleus/1.2.png";
+import Nucleus2 from "../../Images/Events/Nucleus/2.3.jpg";
+import Nucleus3 from "../../Images/Events/Nucleus/3.1.png";
+import Empower1 from "../../Images/Events/Empower U/1.2.jpg";
+import Alchemy1 from "../../Images/Events/Alchemy/1.3.png";
+import Alchemy2 from "../../Images/Events/Alchemy/2.1.jpg";
 
 function MainEvent() {
   // Grouping the data by category
@@ -98,337 +154,337 @@ const data = [
   {
     category: "Network",
     title: "Designing your life",
-    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: network1,
     content: <DummyContent />,
   },
   {
     category: "Network",
     title: "Credibility Crunch",
-    src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: network2,
     content: <DummyContent />,
   },
   {
     category: "Anirveda",
     title: "Change My Mind",
-    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: anirveda1,
     content: <DummyContent />,
   },
   {
     category: "Anirveda",
     title: "Global-O-Poly",
-    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: anirveda2,
     content: <DummyContent />,
   },
   {
     category: "Anirveda",
     title: "Strategic Supply Management",
-    src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: anirveda3,
     content: <DummyContent />,
   },
   {
     category: "Cretus",
     title: "RoboChef",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: cretus1,
     content: <DummyContent />,
   },
   {
     category: "Cretus",
     title: "Universe of Robotics",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: cretus2,
     content: <DummyContent />,
   },
   {
     category: "Cretus",
     title: "3D Printing and Designing Workshop",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: cretus3,
     content: <DummyContent />,
   },
   {
     category: "Cretus",
     title: "VR Robosoccer",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: cretus4,
     content: <DummyContent />,
   },
   {
     category: "Aatmann",
     title: "Brain Sell",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: aataman1,
     content: <DummyContent />,
   },
   {
     category: "Aatmann",
     title: "Bring Your own Boost",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: aataman2,
     content: <DummyContent />,
   },
   {
     category: "Aatmann",
     title: "Psynema 4.0",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: aataman3,
     content: <DummyContent />,
   },
   {
     category: "Avionics",
     title: "Drone Racing Simulator",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Avionics1,
     content: <DummyContent />,
   },
   {
     category: "Avionics",
     title: "Glider Making Hackathon",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Avionics2,
     content: <DummyContent />,
   },
   {
     category: "Respawn",
     title: "FIFA Tournament",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Respawn1,
     content: <DummyContent />,
   },
   {
     category: "Respawn",
     title: "PC Building Workshop",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Respawn2,
     content: <DummyContent />,
   },
   {
     category: "Respawn",
     title: "Escape Room Challenge",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Respawn3,
     content: <DummyContent />,
   },
   {
     category: "Mind Ripple",
     title: "Matrix Breakout",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: mindripple1,
     content: <DummyContent />,
   },
   {
     category: "Mind Ripple",
     title: "Enigma",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: mindripple2,
     content: <DummyContent />,
   },
   {
     category: "Mind Ripple",
     title: "Quizter",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: mindripple3,
     content: <DummyContent />,
   },
   {
     category: "Bulls and Bears",
     title: "Markets Unlocked",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: bullsandBears1,
     content: <DummyContent />,
   },
   {
     category: "Bulls and Bears",
     title: "Bazaar 6.0",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: bullsandBears2,
     content: <DummyContent />,
   },
   {
     category: "Bulls and Bears",
     title: "Crisis Compass",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: bullsandBears3,
     content: <DummyContent />,
   },
   {
     category: "Synergy",
     title: "BizzTalk Session 1",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Synergy1,
     content: <DummyContent />,
   },
   {
     category: "Synergy",
     title: "Craft your Identity",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Synergy2,
     content: <DummyContent />,
   },
   {
     category: "Synergy",
     title: "The Art of Negotiation",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Synergy3,
     content: <DummyContent />,
   },
   {
     category: "Symmetry",
     title: "GameCraft",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Symmetry1,
     content: <DummyContent />,
   },
   {
     category: "Symmetry",
     title: "Stop Motion 3.0",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Symmetry2,
     content: <DummyContent />,
   },
   {
     category: "Symmetry",
     title: "Blender Basics",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Symmetry3,
     content: <DummyContent />,
   },
   {
     category: "Symmetry",
     title: "Virtual Verse",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Symmetry4,
     content: <DummyContent />,
   },
   {
     category: "SOM",
     title: "Mind Maze",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: som1,
     content: <DummyContent />,
   },
   {
     category: "SOM",
     title: "Elemental Math Masters",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: som2,
     content: <DummyContent />,
   },
   {
     category: "SOM",
     title: "AlgoThon",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: som3,
     content: <DummyContent />,
   },
   {
     category: "Encode",
     title: "Guardians of the Elements",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: encode1,
     content: <DummyContent />,
   },
   {
     category: "Encode",
     title: "Capture the Flag: Elemental Edition",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: encode2,
     content: <DummyContent />,
   },
   {
     category: "Encode",
     title: "Code Tatva",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: encode3,
     content: <DummyContent />,
   },
   {
     category: "TIR",
     title: "Dome Designing",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: tir1,
     content: <DummyContent />,
   },
   {
     category: "TIR",
     title: "Global Architecture",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: tir2,
     content: <DummyContent />,
   },
   {
     category: "TIR",
     title: "Terra Turris",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: tir3,
     content: <DummyContent />,
   },
   {
     category: "Cube-I-Cult",
     title: "Puzzle-Hunt",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: cube1,
     content: <DummyContent />,
   },
   {
     category: "Cube-I-Cult",
     title: "Mosaic Building Workshop",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: cube2,
     content: <DummyContent />,
   },
   {
     category: "VGA",
     title: "Cineshaam",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: vga1,
     content: <DummyContent />,
   },
   {
     category: "VGA",
     title: "Color Grading Workshop",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: vga2,
     content: <DummyContent />,
   },
   {
     category: "Sorriso",
     title: "Shutter Trail",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Sorriso1,
     content: <DummyContent />,
   },
   {
     category: "Sorriso",
     title: "Product Photography (Workshop + Shoot)",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Sorriso2,
     content: <DummyContent />,
   },
   {
     category: "Brahmand",
     title: "GesoDesic Hemisphere",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Brahmand1,
     content: <DummyContent />,
   },
   {
     category: "Brahmand",
     title: "AetherNet",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Brahmand2,
     content: <DummyContent />,
   },
   {
     category: "Brahmand",
     title: "HelioTrack: Navigating the Sun's Pulse",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Brahmand3,
     content: <DummyContent />,
   },
   {
     category: "Brahmand",
     title: "Night Sky Gazing",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Brahmand4,
     content: <DummyContent />,
   },
   {
     category: "Apogee3",
     title: "Earth to Ether",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Apogee1,
     content: <DummyContent />,
   },
   {
     category: "Nucleus",
     title: "Physics Expo",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Nucleus1,
     content: <DummyContent />,
   },
   {
     category: "Nucleus",
     title: "Cyanotype Printing Workshop",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Nucleus2,
     content: <DummyContent />,
   },
   {
     category: "Nucleus",
     title: "RGB Workshop",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Nucleus3,
     content: <DummyContent />,
   },
   {
     category: "Empower U",
     title: "InspireX",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Empower1,
     content: <DummyContent />,
   },
   {
     category: "Alchemy",
     title: "Parla Tech 6.0",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Alchemy1,
     content: <DummyContent />,
   },
   {
     category: "Alchemy",
     title: "Fragrance Fusion",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: Alchemy2,
     content: <DummyContent />,
   },
 ];
