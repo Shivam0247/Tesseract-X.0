@@ -76,7 +76,7 @@ export const Carousel = ({ items, initialScroll = 0 }) => {
     >
       <div className="relative w-full bg-black">
         <div
-          className="scroll-container flex w-full overflow-x-scroll overscroll-x-auto py-[2rem] md:py-[2em] scroll-smooth"
+          className="scroll-container w-full overflow-x-scroll overscroll-x-auto py-[2rem] md:py-[2em] scroll-smooth"
           ref={carouselRef}
           onScroll={checkScrollability}
         >
