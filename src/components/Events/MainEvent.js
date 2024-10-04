@@ -1,305 +1,17 @@
 import React, { useState } from "react";
-import TeamCard from "../Team/TeamCard";
-import { Avatar, Accordion, AccordionItem } from "@nextui-org/react";
+import { Accordion, AccordionItem } from "@nextui-org/react";
 import "../Team/Team.css";
-import shivam from "../../ProfilePhoto/shivam.jpeg";
-import Khushi from "../../ProfilePhoto/KhushiShah.jpeg";
-import Krish from "../../ProfilePhoto/KrishModi.png";
-import Ansh from "../../ProfilePhoto/AnshSoni.jpg";
-import Rahil from "../../ProfilePhoto/RahilMavani.jpg";
-import Karan from "../../ProfilePhoto/KaranBabariya.jpg";
-import Jinay from "../../ProfilePhoto/JinayShah.jpg";
-import Aneri from "../../ProfilePhoto/Anerishah.jpg";
-import Pratham from "../../ProfilePhoto/PrathamPatel.jpg";
-import Madhav from "../../ProfilePhoto/MadhavSampat.jpg";
-import Pranil from "../../ProfilePhoto/Pranilkenche.png";
-import Sonali from "../../ProfilePhoto/SonaliModi.jpeg";
-import Aryan from "../../ProfilePhoto/AryanKadivar.jpeg";
-import Hetvi from "../../ProfilePhoto/HetviNarola.png";
-import Rudra from "../../ProfilePhoto/RudraTrada.jpeg";
-import Gargi from "../../ProfilePhoto/GargiShah.jpeg";
-import Pranat from "../../ProfilePhoto/PRANATVOHRA.jpg";
-import Het from "../../ProfilePhoto/HetShingala.jpg";
-import Utkarsh from "../../ProfilePhoto/UtkarshRajput.jpeg";
-import KhushiUttamani from "../../ProfilePhoto/Khushi.jpg";
-import Isha from "../../ProfilePhoto/IshaSojitra.jpg";
-import Rachit from "../../ProfilePhoto/RachitShah.jpg";
-import Heer from "../../ProfilePhoto/HeerGaglani.jpg";
-import Tavleen from "../../ProfilePhoto/TavleenKaur.jpeg";
-import Jainil from "../../ProfilePhoto/Jainil.jpeg";
-import Ishan from "../../ProfilePhoto/Ishan.jpg";
-import Gopika from "../../ProfilePhoto/Gopika.png";
+import { Carousel, Card } from "../ui/apple-cards-carousel_MainEvent";
 
 function MainEvent() {
-  // Initialize openKeys with both keys to have both accordion items open by default
-  const [openKeys, setOpenKeys] = useState(["1", "2"]);
+  // Grouping the data by category
+  const categories = Array.from(new Set(data.map((item) => item.category)));
 
-  // Card information stored in state
-  const [executive, setExecutive] = useState([
-    {
-      name: "Khushi Shah",
-      position: "General Secretary",
-      img: Khushi,
-      linkedIn:
-        "https://www.linkedin.com/in/khushi-shah-2178a4278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-      insta:
-        "https://www.instagram.com/khushiee.iee/profilecard/?igsh=NXl3dWFzNnBranhx",
-      twitter: "",
-    },
-    {
-      name: "Krish Modi",
-      position: "Treasurer",
-      img: Krish,
-      linkedIn: "https://www.linkedin.com/in/krishmodi33/",
-      insta: "https://www.instagram.com/krishmodi_0202/",
-      twitter: "",
-    },
-  ]);
-
-  const [heads, setHeads] = useState(
-    [
-      {
-        name: "Shivam Patel",
-        position: "Technical Head",
-        img: shivam,
-        linkedIn: "https://www.linkedin.com/in/-shivampatel/",
-        insta: "https://www.instagram.com/shivam_0247/",
-        twitter: "https://x.com/SHIVAM_0247",
-      },
-      {
-        name: "Ansh Soni",
-        position: "Graphic Design Head",
-        img: Ansh,
-        linkedIn: "https://www.linkedin.com/in/anshsoni04/",
-        insta: "https://www.instagram.com/_ansh_sonii/?next=%2F",
-        twitter: "https://x.com/AnshSon97791840",
-      },
-      {
-        name: "Rahil Mavani",
-        position: "Graphic Design Head",
-        img: Rahil,
-        linkedIn:
-          "https://www.linkedin.com/in/rahilmavani?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        insta: "https://www.instagram.com/rahil.mavani?igsh=czh2N3FpMHZ6dndu",
-        twitter: "https://x.com/rahil_mavani?t=lqEAbzHoLp-jzRc5fWJOoQ&s=09",
-      },
-      {
-        name: "Karan Babariya",
-        position: "Graphic Design Head",
-        img: Karan,
-        linkedIn:
-          "https://www.linkedin.com/in/karan-babariya-893b062a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        insta: "https://www.instagram.com/the.krnn?igsh=MThlcmZmYjZ1ZHd0eA==",
-        twitter: "https://x.com/KBabariya_58?t=NlKFqHhTjJxfR2obfSFYrg&s=09",
-      },
-      {
-        name: "Jinay Shah",
-        position: "Logistics Head",
-        img: Jinay,
-        linkedIn: "https://www.linkedin.com/in/jinay-shah14/",
-        insta: "https://www.instagram.com/jinay_shah14/",
-        twitter: "",
-      },
-      {
-        name: "Aneri Shah",
-        position: "Logistics Head",
-        img: Aneri,
-        linkedIn:
-          "https://www.linkedin.com/in/aneri-shah24?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        insta:
-          "https://www.instagram.com/aneri.shah_1225?igsh=MTVjb3duYjBmY2dtaQ==",
-        twitter: "",
-      },
-      {
-        name: "Pratham Patel",
-        position: "Logistics Head",
-        img: Pratham,
-        linkedIn: "https://www.linkedin.com/in/pratham-patel-2001a7247/",
-        insta: "https://www.instagram.com/pratham042004/",
-        twitter: "",
-      },
-      {
-        name: "Jainil Patel",
-        position: "Logistics Head",
-        img: Jainil,
-        linkedIn:
-          "https://www.linkedin.com/in/jainil-patel-595869269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        insta:
-          "https://www.instagram.com/jainilpatel___?igsh=d2lycnBmaHh2N2tx&utm_source=qr",
-        twitter: "",
-      },
-      {
-        name: "Madhav Sampat",
-        position: "Event Management Head",
-        img: Madhav,
-        linkedIn:
-          "https://www.linkedin.com/in/madhav-sampat-051125253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=andr",
-        insta:
-          "https://www.instagram.com/madhavsampat?igsh=MWZ1NjdseGR5dXU3dg==",
-        twitter: "https://x.com/madhavsampat04?t=6RYp_Ba0ogsAEFBGuGgZGw&s=09",
-      },
-      {
-        name: "Pranil Kenche",
-        position: "Event Management Head",
-        img: Pranil,
-        linkedIn:
-          "https://www.linkedin.com/in/pranil-kenche-b25157264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        insta: "https://www.instagram.com/pranil_24?igsh=MW96YW0zdzUwd3U2Ng==",
-        twitter: "",
-      },
-      {
-        name: "Sonali Modi",
-        position: "Event Management Head",
-        img: Sonali,
-        linkedIn: "",
-        insta:
-          "https://www.instagram.com/sonali.modi_?igsh=a3d2NzczNmp5Y3dq&utm_source=qr",
-        twitter: "",
-      },
-      {
-        name: "Aryan Kadivar",
-        position: "Sponorship Head",
-        img: Aryan,
-        linkedIn:
-          "https://www.linkedin.com/in/aryan-kadivar-51b137249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        insta:
-          "https://www.instagram.com/aryankmusic?igsh=ZnByNW43NnJqZHRm&utm_source=qr",
-        twitter: "",
-      },
-      {
-        name: "Hetvi Narola",
-        position: "Sponorship Head",
-        img: Hetvi,
-        linkedIn:
-          "https://www.linkedin.com/in/hetvi-narola-7b8279235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        insta:
-          "https://www.instagram.com/hetvi.7104/profilecard/?igsh=aDIwazJxMHQxNDBp",
-        twitter: "",
-      },
-      {
-        name: "Rudra Trada",
-        position: "Sponorship Head",
-        img: Rudra,
-        linkedIn: "",
-        insta:
-          "https://www.instagram.com/rudra_trada?igsh=ZHJwaWM5bWs2M2Rq&utm_source=qr",
-        twitter: "",
-      },
-      {
-        name: "Gargi Shah",
-        position: "Fine Arts Head",
-        img: Gargi,
-        linkedIn:
-          "https://www.linkedin.com/in/gargi-shah-a08ab2248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        insta:
-          "https://www.instagram.com/_gargishah24_?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr",
-        twitter: "",
-      },
-      {
-        name: "Pranat Vohra",
-        position: "Fine Arts Head",
-        img: Pranat,
-        linkedIn:
-          "https://www.linkedin.com/in/pranat-vohra-2336a62b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        insta: "https://www.instagram.com/pranatvohra?igsh=NzNuOXIxejN5OTM=",
-        twitter: "",
-      },
-      {
-        name: "Gopika Gattani",
-        position: "Fine Arts Head",
-        img: Gopika,
-        linkedIn:
-          "https://www.linkedin.com/in/gopika-gattani-6a09a1325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        insta:
-          "https://www.instagram.com/wake._and_.paint?igsh=aTc2d29pdG9xOGxv",
-        twitter: "",
-      },
-      {
-        name: "Het Shingala",
-        position: "Hospitality Head",
-        img: Het,
-        linkedIn:
-          "https://www.linkedin.com/in/het-shingala?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        insta: "https://www.instagram.com/het_910?igsh=MXM5N3VlcTk5cHM4dg==",
-        twitter: "https://x.com/Het_910?t=TnNsr3gBsoz7VI0nd67KkA&s=08",
-      },
-      {
-        name: "Utkarsh Rajput",
-        position: "Hospitality Head",
-        img: Utkarsh,
-        linkedIn:
-          "https://www.linkedin.com/in/utkarsh-rajput-bb97b3299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        insta:
-          "https://www.instagram.com/utkarsh0510?igsh=MTd0Nnp5djYyd2U1OA%3D%3D&utm_source=qr",
-        twitter: "",
-      },
-      {
-        name: "Khushi Uttamani",
-        position: "Publicity & Social Media Head",
-        img: KhushiUttamani,
-        linkedIn: "https://www.linkedin.com/in/khushi-uttamani-95b8a6257/",
-        insta: " https://www.instagram.com/khushiuttamanii/",
-        twitter: "",
-      },
-      {
-        name: "Isha Sojitra",
-        position: "Publicity & Social Media Head",
-        img: Isha,
-        linkedIn:
-          "https://www.linkedin.com/in/isha-sojitra-0876352b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        insta:
-          "https://www.instagram.com/ishasojitra05?igsh=MWoxeDUzMDhjMjgzZw==",
-        twitter: "",
-      },
-      {
-        name: "Ishan Shah",
-        position: "Publicity & Social Media Head",
-        img: Ishan,
-        linkedIn:
-          "https://www.linkedin.com/in/ishan-shah-281678271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        insta:
-          "https://www.instagram.com/ishan.s_1074?igsh=MWR6ZndrY3Fhcnp4bQ==",
-        twitter: "",
-      },
-      {
-        name: "Rachit Shah",
-        position: "Publicity & Social Media Head",
-        img: Rachit,
-        linkedIn: "https://www.linkedin.com/in/rachit-shah-/",
-        insta: "https://www.instagram.com/_rach.it?igsh=MTdwZjg2NGEwZWI2Mg==",
-        twitter: "",
-      },
-      {
-        name: "Heer Gaglani",
-        position: "Content & Documentation Head",
-        img: Heer,
-        linkedIn:
-          "https://www.linkedin.com/in/heer-gaglani-898016266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        insta: "https://www.instagram.com/heer_206?igsh=cmRvYjF0djU1a3Jq",
-        twitter: "",
-      },
-      {
-        name: "Tavleen Kaur",
-        position: "Content & Documentation Head",
-        img: Tavleen,
-        linkedIn: "www.linkedin.com/in/tavleenkaur108",
-        insta: "https://www.instagram.com/t.a.v.leen/",
-        twitter: "",
-      },
-    ].sort((a, b) => {
-      if (a.position === b.position) {
-        // If positions are the same, sort by name
-        return a.name.localeCompare(b.name);
-      } else {
-        // Otherwise, sort by position
-        return a.position.localeCompare(b.position);
-      }
-    })
+  const [openKeys, setOpenKeys] = useState(
+    categories.map((_, index) => (index + 1).toString())
   );
 
-  // Handle selection change for accordion
   const handleSelectionChange = (keys) => {
-    // Convert Set to array
     const keysArray = Array.from(keys);
     setOpenKeys(keysArray);
   };
@@ -317,60 +29,406 @@ function MainEvent() {
         selectionMode="multiple"
         selectedKeys={openKeys}
         onSelectionChange={handleSelectionChange}
-        className="text-white px-5 sm:px-[6em]"
+        className="text-white px-5 sm:px-[3em]"
         fullWidth
       >
-        <AccordionItem
-          key="1"
-          aria-label="Technical Events"
-          title={
-            <span style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
-              Technical Events
-            </span>
-          }
-          keepContentMounted
-        >
-          <div className="team mx-[2em] flex-grow-0 flex-shrink-0 basis-1/3 flex flex-row flex-wrap justify-center">
-            {/* {executive.map((card, index) => (
-              <TeamCard
-                key={index}
-                name={card.name}
-                position={card.position}
-                img={card.img}
-                insta={card.insta}
-                linkedIn={card.linkedIn}
-                twitter={card.twitter}
-              />
-            ))} */}
-          </div>
-        </AccordionItem>
-        <AccordionItem
-          key="2"
-          aria-label="Fun Events"
-          title={
-            <span style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
-              Fun Events
-            </span>
-          }
-          keepContentMounted
-        >
-          <div className="team mx-[2em] flex-grow-0 flex-shrink-0 basis-1/3 flex flex-row flex-wrap justify-center">
-            {/* {heads.map((card, index) => (
-              <TeamCard
-                key={index}
-                name={card.name}
-                position={card.position}
-                img={card.img}
-                insta={card.insta}
-                linkedIn={card.linkedIn}
-                twitter={card.twitter}
-              />
-            ))} */}
-          </div>
-        </AccordionItem>
+        {/* Map over categories to create AccordionItems for each */}
+        {categories.map((category, index) => {
+          // Filter the data based on the current category
+          const categoryItems = data.filter(
+            (item) => item.category === category
+          );
+          const cards = categoryItems.map((card, i) => (
+            <Card key={card.src} card={card} index={i} />
+          ));
+
+          return (
+            <AccordionItem
+              key={(index + 1).toString()}
+              aria-label={category}
+              title={
+                <span style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
+                  {category} Events
+                </span>
+              }
+              keepContentMounted
+            >
+              <div className="team mx-[2em] flex-grow-0 flex-shrink-0 basis-1/3 flex flex-row flex-wrap justify-center">
+                <Carousel items={cards} />
+              </div>
+            </AccordionItem>
+          );
+        })}
       </Accordion>
     </div>
   );
 }
 
 export default MainEvent;
+
+const DummyContent = () => {
+  return (
+    <>
+      {[...Array(3).keys()].map((_, index) => (
+        <div
+          key={"dummy-content" + index}
+          className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+        >
+          <p className="text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+            <span className="font-bold text-neutral-200">
+              The first rule of Apple club is that you boast about Apple club.
+            </span>{" "}
+            Keep a journal, quickly jot down a grocery list, and take amazing
+            class notes.
+          </p>
+          <img
+            src="https://assets.aceternity.com/macbook.png"
+            alt="Macbook mockup from Aceternity UI"
+            height={500}
+            width={500}
+            className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+          />
+        </div>
+      ))}
+    </>
+  );
+};
+
+const data = [
+  {
+    category: "Network",
+    title: "Designing your life",
+    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Network",
+    title: "Credibility Crunch",
+    src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Anirveda",
+    title: "Change My Mind",
+    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Anirveda",
+    title: "Global-O-Poly",
+    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Anirveda",
+    title: "Strategic Supply Management",
+    src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Cretus",
+    title: "RoboChef",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Cretus",
+    title: "Universe of Robotics",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Cretus",
+    title: "3D Printing and Designing Workshop",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Cretus",
+    title: "VR Robosoccer",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Aatmann",
+    title: "Brain Sell",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Aatmann",
+    title: "Bring Your own Boost",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Aatmann",
+    title: "Psynema 4.0",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Avionics",
+    title: "Drone Racing Simulator",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Avionics",
+    title: "Glider Making Hackathon",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Respawn",
+    title: "FIFA Tournament",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Respawn",
+    title: "PC Building Workshop",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Respawn",
+    title: "Escape Room Challenge",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Mind Ripple",
+    title: "Matrix Breakout",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Mind Ripple",
+    title: "Enigma",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Mind Ripple",
+    title: "Quizter",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Bulls and Bears",
+    title: "Markets Unlocked",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Bulls and Bears",
+    title: "Bazaar 6.0",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Bulls and Bears",
+    title: "Crisis Compass",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Synergy",
+    title: "BizzTalk Session 1",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Synergy",
+    title: "Craft your Identity",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Synergy",
+    title: "The Art of Negotiation",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Symmetry",
+    title: "GameCraft",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Symmetry",
+    title: "Stop Motion 3.0",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Symmetry",
+    title: "Blender Basics",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Symmetry",
+    title: "Virtual Verse",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "SOM",
+    title: "Mind Maze",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "SOM",
+    title: "Elemental Math Masters",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "SOM",
+    title: "AlgoThon",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Encode",
+    title: "Guardians of the Elements",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Encode",
+    title: "Capture the Flag: Elemental Edition",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Encode",
+    title: "Code Tatva",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "TIR",
+    title: "Dome Designing",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "TIR",
+    title: "Global Architecture",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "TIR",
+    title: "Terra Turris",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Cube-I-Cult",
+    title: "Puzzle-Hunt",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Cube-I-Cult",
+    title: "Mosaic Building Workshop",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "VGA",
+    title: "Cineshaam",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "VGA",
+    title: "Color Grading Workshop",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Sorriso",
+    title: "Shutter Trail",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Sorriso",
+    title: "Product Photography (Workshop + Shoot)",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Brahmand",
+    title: "GesoDesic Hemisphere",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Brahmand",
+    title: "AetherNet",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Brahmand",
+    title: "HelioTrack: Navigating the Sun's Pulse",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Brahmand",
+    title: "Night Sky Gazing",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Apogee3",
+    title: "Earth to Ether",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Nucleus",
+    title: "Physics Expo",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Nucleus",
+    title: "Cyanotype Printing Workshop",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Nucleus",
+    title: "RGB Workshop",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Empower U",
+    title: "InspireX",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Alchemy",
+    title: "Parla Tech 6.0",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+  {
+    category: "Alchemy",
+    title: "Fragrance Fusion",
+    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: <DummyContent />,
+  },
+];
