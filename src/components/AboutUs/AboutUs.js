@@ -1,5 +1,5 @@
 import React from "react";
-import { Timeline } from "../ui/timeline"; // Adjust the path if necessary
+import { Timeline } from "../ui/timeline";
 
 export function AboutUs() {
   const data = [
@@ -12,13 +12,18 @@ export function AboutUs() {
           </p>
           <div className="mb-8">
             <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-            🌎Tesseract X's 2024 theme centers around the five fundamental elements—Earth, Fire, Air, Water, and Ether—emphasizing their significance in shaping the future of technology and innovation
+              🌎Tesseract X's 2024 theme centers around the five fundamental
+              elements—Earth, Fire, Air, Water, and Ether—emphasizing their
+              significance in shaping the future of technology and innovation
             </div>
             <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-            🌎The theme highlights the deep relationship between natural forces and technological advancements, setting the stage for discussions and activities exploring how these elements will influence future scientific and technological progress.
+              🌎The theme highlights the deep relationship between natural
+              forces and technological advancements, setting the stage for
+              discussions and activities exploring how these elements will
+              influence future scientific and technological progress.
             </div>
           </div>
-          
+
           <div className="grid grid-cols-2 gap-4">
             <img
               src="/themelaunch.png"
@@ -57,11 +62,15 @@ export function AboutUs() {
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            🦸🏻‍♂️"The Extraordinary TechVerse": Tesseract 2023 embraces superheroes, science fiction, and the multiverse to make complex scientific and technological concepts more relatable and accessible to a broader audience.
+            🦸🏻‍♂️"The Extraordinary TechVerse": Tesseract 2023 embraces
+            superheroes, science fiction, and the multiverse to make complex
+            scientific and technological concepts more relatable and accessible
+            to a broader audience.
           </p>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-          🦸🏻‍♂️By leveraging the appeal of superheroes, the theme connects intricate ideas in physics and technology with popular culture, 
-          attracting a diverse audience while promoting technical excellence.
+            🦸🏻‍♂️By leveraging the appeal of superheroes, the theme connects
+            intricate ideas in physics and technology with popular culture,
+            attracting a diverse audience while promoting technical excellence.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
