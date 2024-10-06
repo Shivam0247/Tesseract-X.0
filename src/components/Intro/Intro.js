@@ -5,7 +5,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ReactTerminal } from "react-terminal";
 import ReactTypingEffect from "react-typing-effect";
-import ThemeLaunch from "../../Video/ThemeLaunch.mp4";
 import { ContainerScroll } from "../ui/container-scroll-animation";
 import image from "../../Images/EDM49.jpg";
 gsap.registerPlugin(ScrollTrigger);
@@ -17,8 +16,8 @@ function Intro() {
   const [hasTriggered, setHasTriggered] = useState(false);
   const navigate = useNavigate();
   const terminalRef = useRef(null);
-  const scrollPosition = useRef(0); // Ref to store scroll position
-  const targetScrollY = useRef(0); // Ref to store target scroll position (130vh)
+  const scrollPosition = useRef(0);
+  const targetScrollY = useRef(0);
 
   const asciiArt = `
     // ASCII art here
@@ -73,7 +72,6 @@ function Intro() {
           document.activeElement.tagName === "INPUT" ||
           document.activeElement.tagName === "TEXTAREA";
         if (inputFocused) {
-          // Scroll to target position when input is focused
           window.scrollTo(0, targetScrollY.current);
         }
       },
@@ -85,11 +83,9 @@ function Intro() {
   }, [hasTriggered]);
 
   useEffect(() => {
-    // Set target scroll position to 130vh
     targetScrollY.current = window.innerHeight * 1;
 
     const handleFocus = () => {
-      // Save current scroll position
       scrollPosition.current = window.scrollY;
     };
 
@@ -228,19 +224,40 @@ function Intro() {
     };
   }, []);
 
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const videoElement = videoRef.current;
+
+    const handlePlayPause = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          videoElement.play();
+        } else {
+          videoElement.pause();
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handlePlayPause, {
+      threshold: 0.5,
+    });
+
+    if (videoElement) {
+      observer.observe(videoElement);
+    }
+
+    return () => {
+      if (videoElement) {
+        observer.unobserve(videoElement);
+      }
+    };
+  }, []);
+
   return (
     <div className="h-[100vh] w-full bg-black bg-grid-white/[0.150] relative flex items-center justify-center">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <p className="font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 h-[60%] w-full flex justify-center items-center">
-        {/* <video
-          src={ThemeLaunch}
-          className="w-[40%]"
-          autoPlay
-          loop
-          controls
-          // muted
-        ></video> */}
-
         <div className="text flex flex-col overflow-hidden">
           <ContainerScroll
             titleComponent={
@@ -255,12 +272,14 @@ function Intro() {
             }
           >
             <video
+              ref={videoRef}
               poster={image}
               loop
               autoPlay
               controls
               preload="auto"
               className="w-[100%] h-[100%]"
+              muted
             >
               <source
                 src="https://snt-images-bucket.s3.ap-south-1.amazonaws.com/ThemeLaunch.mp4"
@@ -269,65 +288,6 @@ function Intro() {
             </video>
           </ContainerScroll>
         </div>
-
-        {/* <div className="glass-effect h-[100%] w-[90%] sm:w-[70%] flex justify-center items-center">
-          <div className="typing-trigger w-[100%] h-[100%]">
-            <ReactTerminal
-              ref={terminalRef}
-              className="CMD gradient-border"
-              commands={commands}
-              prompt="SnT@pdeu ~ %"
-              errorMessage={
-                <span className="text-red-500">command not found</span>
-              }
-              welcomeMessage={
-                showWelcome ? (
-                  <div className="welcome-message flex justify-center items-center h-[97%]">
-                    <p
-                      className="front-text-paragraph"
-                      style={{
-                        textAlign: "center",
-                        color: "#FFFEFC",
-                      }}
-                    >
-                      <ReactTypingEffect
-                        text="Welcome To The SnT"
-                        cursor={" "}
-                        typingDelay={10}
-                        cursorRenderer={(cursor) => <h1>{cursor}</h1>}
-                        displayTextRenderer={(text, i) => (
-                          <p className="typing-text">
-                            {text.split("").map((char, i) => (
-                              <span key={i}>{char}</span>
-                            ))}
-                          </p>
-                        )}
-                      />
-                    </p>
-                  </div>
-                ) : (
-                  <>
-                    {
-                      "Welcome to the SnT Terminal. Type 'help' for more details."
-                    }
-                    <br />
-                  </>
-                )
-              }
-              onChange={handleCommand}
-              themes={{
-                "my-custom-theme": {
-                  themeBGColor: "",
-                  themeToolbarColor: "",
-                  themeColor: "#FFFEFC",
-                  themePromptColor: "#a917a8",
-                  errorTextColor: "#FF0000",
-                },
-              }}
-              theme="my-custom-theme"
-            />
-          </div>
-        </div> */}
       </p>
     </div>
   );
