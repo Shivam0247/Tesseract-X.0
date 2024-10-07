@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ReactTerminal } from "react-terminal";
 import ReactTypingEffect from "react-typing-effect";
 import { ContainerScroll } from "../ui/container-scroll-animation";
-import image from "../../Images/EDM49.jpg";
+import image from "../../Images/fiveelements.jpg";
 gsap.registerPlugin(ScrollTrigger);
 
 function Intro() {
