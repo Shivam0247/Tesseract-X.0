@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.app-content {
+.App {
   opacity: 0;
   transition: opacity 1s ease-in;
 }
 
-.app-content.fade-in {
+.App {
   opacity: 1;
 }

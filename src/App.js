@@ -32,7 +32,7 @@ function AppContent() {
     const timer = setTimeout(() => {
       handleLoadingComplete();
       setFadeIn(true);
-    }, 2500);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, [location]);

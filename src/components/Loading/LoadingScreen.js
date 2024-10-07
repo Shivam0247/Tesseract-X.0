@@ -1,8 +1,28 @@
-import React, { useState, useEffect } from 'react';
-import './LoadingScreen.css';
+import React, { useState, useEffect } from "react";
+import "./LoadingScreen.css";
 
 const LoadingScreen = ({ onLoadingComplete }) => {
   const [progress, setProgress] = useState(0);
+  const [displayedWord, setDisplayedWord] = useState("Tesseract");
+  const [loading, setLoading] = useState(true);
+  const [fadeOut, setFadeOut] = useState(false);
+  const shuffleTime = 2500;
+  const finalWordDisplayTime = 2500;
+
+  const getRandomCharacter = () => {
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    return chars.charAt(Math.floor(Math.random() * chars.length));
+  };
+
+  const updateDisplayedWord = () => {
+    if (loading) {
+      let updatedWord = "";
+      for (let i = 0; i < displayedWord.length; i++) {
+        updatedWord += getRandomCharacter();
+      }
+      setDisplayedWord(updatedWord);
+    }
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -20,23 +40,39 @@ const LoadingScreen = ({ onLoadingComplete }) => {
   }, []);
 
   useEffect(() => {
+    const wordInterval = setInterval(() => {
+      updateDisplayedWord();
+    }, 100);
+
+    return () => clearInterval(wordInterval);
+  }, [loading]);
+
+  useEffect(() => {
+    const shuffleTimeout = setTimeout(() => {
+      setLoading(false);
+      setDisplayedWord("TESSERACT");
+    }, shuffleTime);
+
+    return () => clearTimeout(shuffleTimeout);
+  }, []);
+
+  useEffect(() => {
     if (progress >= 100) {
       setTimeout(() => {
-        onLoadingComplete(); // Notify parent component that loading is complete
-      }, 500); // A short delay before hiding the screen
+        setFadeOut(true);
+        setTimeout(() => {
+          onLoadingComplete();
+        }, 1000);
+      }, finalWordDisplayTime);
     }
   }, [progress, onLoadingComplete]);
 
   return (
-    <div className="loading-screen">
-      <div className="scanner">
-        <div className="fingerprint"></div>
-        <div className="scan-line"></div>
+    <div className={`loaderScreen ${fadeOut ? "fade-out" : "fade-in"}`}>
+      <div className="loader text-[40px] sm:text-[80px] md:text-[100px] lg:text-[120px]">
+        {displayedWord}
       </div>
-      <div className="progress-container">
-        <div className="progress-bar" style={{ width: `${progress}%` }}></div>
-        <div className="progress-text">{Math.round(progress)}%</div>
-      </div>
+      <div className="percentage">{Math.floor(progress)}%</div>
     </div>
   );
 };
