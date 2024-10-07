@@ -291,7 +291,6 @@ function Intro() {
               controls
               preload="auto"
               className="w-[100%] h-[100%]"
-              muted
             >
               <source
                 src="https://snt-images-bucket.s3.ap-south-1.amazonaws.com/ThemeLaunch.mp4"
