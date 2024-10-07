@@ -487,32 +487,13 @@ const data = [
   },
   {
     category: "Bulls and Bears",
-    title: "Markets Unlocked",
-    src: bullsandBears1,
-    content: (
-      <DummyContent
-        highlight={"The Credibility Crunch "}
-        description={
-          "event aims to enhance students critical thinking and problem-solving skills by engaging them in real-world business challenges. Teams will analyze case studies of corporate failures and devise strategic solutions as if they were in charge of the companies involved. This collaborative experience fosters teamwork, innovation, and practical application of business concepts, ultimately preparing students for future professional scenarios."
-        }
-        img1={
-          "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/Network_5.png"
-        }
-        img2={
-          "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/Network_4.png"
-        }
-      />
-    ),
-  },
-  {
-    category: "Bulls and Bears",
     title: "Bazaar 6.0",
     src: bullsandBears2,
     content: (
       <DummyContent
-        highlight={"Get ready "}
+        highlight={"Get ready the thrill of the Stock Market! "}
         description={
-          "to immerse yourself in the dynamic world of stock trading with Bazaar 6.0, a six-hour real-time market simulation where you'll start with ₹5 lakhs of virtual capital and face the challenge of growing it through strategic investments. As news, rumors, and tips flood the market, you'll need to stay sharp, assess risks, and make quick decisions to build your portfolio. This event is designed to mimic real-world market conditions, pushing you to think critically and react swiftly. Whether you're an experienced trader or a beginner, Bazaar 6.0 will test your financial instincts in an unpredictable market environment. The top 20 participants will share a total prize pool of ₹10,000."
+          "Test your instincts, strategize, and trade in a high-energy simulation that mirrors real-time market dynamics. Whether you're a beginner or a seasoned player, challenge yourself to build the best portfolio and see if you have what it takes to thrive in the fast-paced world of stocks. Join us for an exciting opportunity to experience the highs and lows of the market—without the risk!"
         }
         img1={
           "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/Network_5.png"
