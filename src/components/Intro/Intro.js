@@ -232,9 +232,21 @@ function Intro() {
     const handlePlayPause = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          videoElement.play();
+          try {
+            videoElement.play().catch((error) => {
+              console.error("Error playing video:", error);
+            });
+          } catch (error) {
+            console.error("Error occurred in play attempt:", error);
+          }
         } else {
-          videoElement.pause();
+          try {
+            videoElement.pause().catch((error) => {
+              console.error("Error pausing video:", error);
+            });
+          } catch (error) {
+            console.error("Error occurred in pause attempt:", error);
+          }
         }
       });
     };
