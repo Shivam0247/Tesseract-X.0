@@ -85,10 +85,10 @@ export default function Example() {
           </button>
         </div>
         <div className="flex">
-          <Link href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img alt="" src={Logo} className="h-[4rem] w-auto" />
-          </Link>
+          </a>
         </div>
 
         <PopoverGroup className="hidden w-[100%] justify-end mr-5 lg:flex lg:gap-x-12">
@@ -156,10 +156,10 @@ export default function Example() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="SmallNav fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <Link href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img alt="" src={Logo} className="h-[3rem] w-auto" />
-            </Link>
+            </a>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
