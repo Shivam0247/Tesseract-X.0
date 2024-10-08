@@ -27,7 +27,7 @@ function Footer() {
           </div>
         </div>
         <div class="flex flex-col">
-          <div class="flex mb-5 overflow-hidden flex-wrap items-center mt-24 flex-row justify-between">
+          <div class="flex mb-5 overflow-hidden flex-wrap items-center mt-2 sm:mt-24 flex-row justify-between">
             <div class="">
               {/* <svg
                 width="84"
