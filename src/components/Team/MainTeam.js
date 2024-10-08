@@ -117,16 +117,16 @@ function MainTeam() {
         insta: "https://www.instagram.com/pratham042004/",
         twitter: "",
       },
-      {
-        name: "Jainil Patel",
-        position: "Logistics Head",
-        img: Jainil,
-        linkedIn:
-          "https://www.linkedin.com/in/jainil-patel-595869269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        insta:
-          "https://www.instagram.com/jainilpatel___?igsh=d2lycnBmaHh2N2tx&utm_source=qr",
-        twitter: "",
-      },
+      // {
+      //   name: "Jainil Patel",
+      //   position: "Logistics Head",
+      //   img: Jainil,
+      //   linkedIn:
+      //     "https://www.linkedin.com/in/jainil-patel-595869269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      //   insta:
+      //     "https://www.instagram.com/jainilpatel___?igsh=d2lycnBmaHh2N2tx&utm_source=qr",
+      //   twitter: "",
+      // },
       {
         name: "Madhav Sampat",
         position: "Event Management Head",

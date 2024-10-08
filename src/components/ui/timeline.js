@@ -31,11 +31,13 @@ export const Timeline = ({ data }) => {
   return (
     <div className="w-full bg-black font-sans md:px-10" ref={containerRef}>
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-white max-w-4xl mt-[2rem]">
-          Built for the Innovators
+        <h2 className="text-lg md:text-4xl font-[700] mb-4 text-white max-w-4xl mt-[2rem] font-[Orbitron]">
+          Welcome to Tesseract
         </h2>
-        <p className="text-neutral-300 text-sm md:text-base max-w-sm">
-          Welcome to Tesseract X
+
+        <p className="text-neutral-300 max-w-md flex justify-center text-[15px] mb-[3em]">
+          Tesseract is flagship tech fair, featuring innovative exhibitions,
+          competitions, and workshops in cutting-edge technology.
         </p>
       </div>
 

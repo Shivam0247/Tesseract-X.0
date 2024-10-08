@@ -16,6 +16,7 @@ export function AboutUs() {
               elements—Earth, Fire, Air, Water, and Ether—emphasizing their
               significance in shaping the future of technology and innovation
             </div>
+            <br />
             <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
               🌎The theme highlights the deep relationship between natural
               forces and technological advancements, setting the stage for
@@ -67,6 +68,7 @@ export function AboutUs() {
             scientific and technological concepts more relatable and accessible
             to a broader audience.
           </p>
+          <br />
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
             🦸🏻‍♂️By leveraging the appeal of superheroes, the theme connects
             intricate ideas in physics and technology with popular culture,
@@ -107,34 +109,34 @@ export function AboutUs() {
     },
     {
       title: "2022",
-      content: (
-        <div>
-          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Tess is going to held in the month of november
-          </p>
-          <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-              ✅ Card grid component
-            </div>
-            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-              ✅ Startup template Aceternity
-            </div>
-            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-              ✅ Random file upload lol
-            </div>
-            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-              ✅ UI update on text editor
-            </div>
-            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-              ✅ Image hosting and responsiveness
-            </div>
-          </div>
-          <p className="text-neutral-200 text-xs md:text-sm font-normal">
-            <span className="text-neutral-300">Published</span> on
-            <span className="text-neutral-100"> August 25, 2024</span>
-          </p>
-        </div>
-      ),
+      // content: (
+      //   <div>
+      //     <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
+      //       Tess is going to held in the month of november
+      //     </p>
+      //     <div className="mb-8">
+      //       <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+      //         ✅ Card grid component
+      //       </div>
+      //       <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+      //         ✅ Startup template Aceternity
+      //       </div>
+      //       <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+      //         ✅ Random file upload lol
+      //       </div>
+      //       <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+      //         ✅ UI update on text editor
+      //       </div>
+      //       <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+      //         ✅ Image hosting and responsiveness
+      //       </div>
+      //     </div>
+      //     <p className="text-neutral-200 text-xs md:text-sm font-normal">
+      //       <span className="text-neutral-300">Published</span> on
+      //       <span className="text-neutral-100"> August 25, 2024</span>
+      //     </p>
+      //   </div>
+      // ),
     },
   ];
 
