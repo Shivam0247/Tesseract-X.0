@@ -21,9 +21,9 @@ function Footer() {
             competitions, and a glimpse into the future of technology.
           </p>
           <div class="w-44 pt-6 md:pt-0 cursor-pointer">
-            <a class="bg-red-500 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">
+            {/* <a class="bg-red-500 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">
               Contact US
-            </a>
+            </a> */}
           </div>
         </div>
         <div class="flex flex-col">
