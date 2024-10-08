@@ -93,53 +93,53 @@ export default function Example() {
 
         <PopoverGroup className="hidden w-[100%] justify-end mr-5 lg:flex lg:gap-x-12">
           <div>
-            <Link
-              to="/"
+            <a
+              href="/"
               className="text-medium font-semibold leading-6 text-white"
             >
               Home
-            </Link>
+            </a>
           </div>
           <div>
-            <Link
-              to="/AboutUs"
+            <a
+              href="/AboutUs"
               className="text-medium font-semibold leading-6 text-white"
             >
               About
-            </Link>
+            </a>
           </div>
           <div>
-            <Link
-              to="/Events"
+            <a
+              href="/Events"
               className="text-medium font-semibold leading-6 text-white"
             >
               Events
-            </Link>
+            </a>
           </div>
           <div>
-            <Link
-              to="/Gallery"
+            <a
+              href="/Gallery"
               className="text-medium font-semibold leading-6 text-white"
             >
               Gallery
-            </Link>
+            </a>
           </div>
           <div>
-            <Link
-              to="/Team"
+            <a
+              href="/Team"
               className="text-medium font-semibold leading-6 text-white"
             >
               Team
-            </Link>
+            </a>
           </div>
 
           <div>
-            <Link
+            <a
               to="#"
               className="text-medium font-semibold leading-6 text-white"
             >
               Contact Us
-            </Link>
+            </a>
           </div>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">

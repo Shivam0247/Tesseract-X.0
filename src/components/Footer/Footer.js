@@ -68,36 +68,36 @@ function Footer() {
                 ></TextRevealCard>
               </div>
             </div>
-            <Link
-              to="/"
+            <a
+              href="/"
               class="hidden lg:block cursor-pointer text-gray-600 hover:text-white uppercase"
             >
               Home
-            </Link>
-            <Link
-              to="/AboutUs"
+            </a>
+            <a
+              href="/AboutUs"
               class="hidden lg:block cursor-pointer text-gray-600 hover:text-white uppercase"
             >
               About
-            </Link>
-            <Link
-              to="/Events"
+            </a>
+            <a
+              href="/Events"
               class="hidden lg:block cursor-pointer text-gray-600 hover:text-white uppercase"
             >
               Events
-            </Link>
-            <Link
-              to="/Gallery"
+            </a>
+            <a
+              href="/Gallery"
               class="hidden lg:block cursor-pointer text-gray-600 hover:text-white uppercase"
             >
               Gallery
-            </Link>
-            <Link
-              to="/Team"
+            </a>
+            <a
+              href="/Team"
               class="hidden lg:block cursor-pointer text-gray-600 hover:text-white uppercase"
             >
               Team
-            </Link>
+            </a>
 
             <div class="flex flex-row space-x-8 items-center justify-between">
               <a href="#">

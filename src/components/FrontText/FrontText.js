@@ -18,6 +18,7 @@ function FrontText() {
 
   const [shuffledText, setShuffledText] = useState("Tesseract X");
   const originalText = "Tesseract X";
+  const [fadeIn, setFadeIn] = useState(false); // State for fade-in effect
 
   const padWithZero = (number) => {
     return number.toString().padStart(2, "0");
@@ -52,7 +53,6 @@ function FrontText() {
   }, [targetDate]);
 
   useEffect(() => {
-    // Initialize GSAP timeline for page load animation
     gsap.fromTo(
       ".MainText",
       {
@@ -66,10 +66,10 @@ function FrontText() {
         scale: 1,
         duration: 1,
         ease: "power2.out",
+        onComplete: () => setFadeIn(true), // Set fade-in to true on complete
       }
     );
 
-    // Initialize GSAP ScrollTrigger for scroll animation
     ScrollTrigger.create({
       trigger: ".FrontText",
       start: "top top",
@@ -90,22 +90,18 @@ function FrontText() {
           ease: "power2.inOut",
         }
       ),
-      markers: false, // Set to true to enable markers for debugging
+      markers: false,
     });
 
     return () => {
-      // Clean up ScrollTrigger
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
   useEffect(() => {
     const specialChars = "!@#$%^&*()_+[]{}|;:',.<>?";
-
     const shuffleText = () => {
       const textArray = originalText.split("");
-
-      // Mix in random special characters
       const augmentedArray = textArray.map((char) =>
         Math.random() > 0.5
           ? specialChars.charAt(Math.floor(Math.random() * specialChars.length))
@@ -124,22 +120,26 @@ function FrontText() {
 
     const interval = setInterval(() => {
       setShuffledText(shuffleText());
-    }, 50); // Speed up the shuffling by reducing the interval time
+    }, 50);
 
     setTimeout(() => {
       clearInterval(interval);
       setShuffledText(originalText);
-    }, 1500); // Shorten the duration of shuffling
+    }, 1500);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="FrontText h-[100vh] w-full flex items-center justify-center overflow-hidden">
+    <div
+      className={`FrontText h-[100vh] w-full flex items-center justify-center overflow-hidden ${
+        fadeIn ? "fade-in" : ""
+      }`}
+    >
       <MaskContainer
         revealText={
           <p className="max-w-4xl mx-auto front-text-paragraph text-center font-bold leading-tight">
-            <span className=" text-[4.5rem] sm:text-[6rem] md:text-[9rem]">
+            <span className="text-[4.5rem] sm:text-[6rem] md:text-[12rem]">
               Tesseract X
             </span>
             <br />
@@ -147,10 +147,10 @@ function FrontText() {
               text="Where Technology Meets Creativity"
               cursor={" "}
               typingDelay={0}
-              speed={100} // Controls the typing speed
-              eraseSpeed={0} // Prevents reverse typing
-              eraseDelay={99999999} // Delays the erasing indefinitely
-              loop={true} // Ensures continuous typing
+              speed={100}
+              eraseSpeed={0}
+              eraseDelay={99999999}
+              loop={true}
               cursorRenderer={(cursor) => <h1>{cursor}</h1>}
               displayTextRenderer={(text, i) => (
                 <p className="typing">
@@ -167,7 +167,7 @@ function FrontText() {
         <span className="innerText text-red-500">Warning:</span> Side effects of
         attending <span className="innerText text-red-500">TESSERACT</span> may
         include uncontrollable excitement, tech inspiration overload, and the
-        irresistible urge to create the next big thing !
+        irresistible urge to create the next big thing!
       </MaskContainer>
     </div>
   );

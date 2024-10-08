@@ -31,7 +31,6 @@ import Ishan from "../../ProfilePhoto/Ishan.jpg";
 import Gopika from "../../ProfilePhoto/Gopika.png";
 
 function MainTeam() {
-  // Initialize openKeys with both keys to have both accordion items open by default
   const [openKeys, setOpenKeys] = useState(["1", "2"]);
 
   // Card information stored in state

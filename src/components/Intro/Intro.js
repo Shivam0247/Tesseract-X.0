@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ReactTerminal } from "react-terminal";
 import ReactTypingEffect from "react-typing-effect";
 import { ContainerScroll } from "../ui/container-scroll-animation";
-import image from "../../Images/EDM49.jpg";
+import image from "../../Images/fiveelements.jpg";
 gsap.registerPlugin(ScrollTrigger);
 
 function Intro() {
@@ -232,9 +232,21 @@ function Intro() {
     const handlePlayPause = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          videoElement.play();
+          try {
+            videoElement.play().catch((error) => {
+              console.error("Error playing video:", error);
+            });
+          } catch (error) {
+            console.error("Error occurred in play attempt:", error);
+          }
         } else {
-          videoElement.pause();
+          try {
+            videoElement.pause().catch((error) => {
+              console.error("Error pausing video:", error);
+            });
+          } catch (error) {
+            console.error("Error occurred in pause attempt:", error);
+          }
         }
       });
     };
@@ -279,7 +291,6 @@ function Intro() {
               controls
               preload="auto"
               className="w-[100%] h-[100%]"
-              muted
             >
               <source
                 src="https://snt-images-bucket.s3.ap-south-1.amazonaws.com/ThemeLaunch.mp4"
