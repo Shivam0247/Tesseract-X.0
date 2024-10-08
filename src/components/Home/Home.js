@@ -14,7 +14,7 @@ function Home() {
       <Event.AppleCardsCarouselDemo />
       <Team />
       <Galler />
-      <Sponsor />
+      {/* <Sponsor /> */}
     </div>
   );
 }
