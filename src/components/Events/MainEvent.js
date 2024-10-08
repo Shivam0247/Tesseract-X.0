@@ -205,6 +205,7 @@ import Alchemy2 from "../../Images/Events/Alchemy/2.1.jpg";
 import Alchemy5 from "../../Images/Events/Alchemy/2.2.jpg";
 
 import Alchemy6 from "../../Images/Events/Alchemy/2.3.jpg";
+import { Link } from "react-router-dom";
 
 function MainEvent() {
   // Grouping the data by category
@@ -268,7 +269,7 @@ function MainEvent() {
 }
 
 export default MainEvent;
-const DummyContent = ({ description, highlight, img1, img2 }) => {
+const DummyContent = ({ description, highlight, img1, img2, form }) => {
   const images = [img1, img2];
   return (
     <>
@@ -289,12 +290,14 @@ const DummyContent = ({ description, highlight, img1, img2 }) => {
         ))}
       </div>
       <div className="flex justify-end">
-        <Button
-          color="primary"
-          className="bg-white rounded-lg w-[20%] text-black"
-        >
-          Register
-        </Button>
+        <a href={form} target="_blank" className="flex w-[100%] justify-end">
+          <Button
+            color="primary"
+            className="bg-white rounded-lg w-[20%] text-black"
+          >
+            Register
+          </Button>
+        </a>
       </div>
     </>
   );
@@ -312,6 +315,9 @@ const data = [
         }
         img1={network3}
         img2={network4}
+        form={
+          "https://docs.google.com/forms/d/e/1FAIpQLSch7QSt0XFYmz9iIlbvkDR89Hx98-Lhd4ws0fOfZLjX97jYWg/viewform"
+        }
       />
     ),
   },
@@ -327,6 +333,9 @@ const data = [
         }
         img1={network5}
         img2={network6}
+        form={
+          "https://docs.google.com/forms/d/e/1FAIpQLSd6n0tcoLphanV3LEB10cm0tLPJwUgut5lzxSKoQElzNM60jg/viewform"
+        }
       />
     ),
   },
@@ -342,6 +351,7 @@ const data = [
         }
         img1={anirveda4}
         img2={anirveda5}
+        form={"https://forms.gle/9FqrVXiRwGDEWbSF6"}
       />
     ),
   },
@@ -357,6 +367,7 @@ const data = [
         }
         img1={anirveda6}
         img2={anirveda7}
+        form={"https://forms.gle/31M3anczXDu4znA39"}
       />
     ),
   },
@@ -372,6 +383,7 @@ const data = [
         }
         img1={anirveda8}
         img2={anirveda9}
+        form={"https://forms.gle/YpQ8HWnnQrnLs3sK9"}
       />
     ),
   },
@@ -387,6 +399,7 @@ const data = [
         }
         img1={cretus5}
         img2={cretus6}
+        form={"https://forms.gle/CNMK99j8CydevcUv5"}
       />
     ),
   },
@@ -402,6 +415,7 @@ const data = [
         }
         img1={cretus7}
         img2={cretus8}
+        form={"https://forms.gle/iHhUdEnZdNtmGeHr5"}
       />
     ),
   },
@@ -417,6 +431,7 @@ const data = [
         }
         img1={cretus9}
         img2={cretus10}
+        form={"https://forms.gle/3JCPxGJXPXZuVAWM9"}
       />
     ),
   },
@@ -432,6 +447,7 @@ const data = [
         }
         img1={cretus11}
         img2={cretus12}
+        form={"https://forms.gle/szMepLSc883wHyNX6"}
       />
     ),
   },
@@ -447,12 +463,15 @@ const data = [
         }
         img1={aataman4}
         img2={aataman5}
+        form={
+          "https://docs.google.com/forms/d/1ZiYso7mHcPZLZOVGU4ueCQ-7C1dEKYXhJVjK7cvk5zQ/viewform"
+        }
       />
     ),
   },
   {
     category: "Aatmann",
-    title: "Bring Your own Boost",
+    title: "Bring Your own BOOZT",
     src: aataman2,
     content: (
       <DummyContent
@@ -462,6 +481,9 @@ const data = [
         }
         img1={aataman6}
         img2={aataman7}
+        form={
+          "https://docs.google.com/forms/d/1g1Iws1vB9hA-age3VSee3rO6lYAjU2eP7LtLuF_Q8z8/viewform"
+        }
       />
     ),
   },
@@ -477,6 +499,9 @@ const data = [
         }
         img1={aataman8}
         img2={aataman9}
+        form={
+          "https://docs.google.com/forms/d/1XTAY8AWnsSq3KUV6p7lwBHYUoVkBBf4kR-TwbWGjZ0M/viewform"
+        }
       />
     ),
   },
@@ -492,6 +517,9 @@ const data = [
         }
         img1={Avionics3}
         img2={Avionics4}
+        form={
+          "https://docs.google.com/forms/d/e/1FAIpQLSfJUBYDQOplrDrSMntkZm1akFQ8ojYFAAgLLHDYVqW_9iCN7Q/viewform?usp=sf_link"
+        }
       />
     ),
   },
@@ -507,6 +535,9 @@ const data = [
         }
         img1={Avionics5}
         img2={Avionics6}
+        form={
+          "https://docs.google.com/forms/d/e/1FAIpQLSdrLU6jgTpk1KBHtEFGQjE6lHXnq6gO3vDUyg0ToagbA5uI7g/viewform?usp=sf_link"
+        }
       />
     ),
   },
@@ -522,6 +553,7 @@ const data = [
         }
         img1={Respawn4}
         img2={Respawn5}
+        form={"https://forms.gle/9KTN8A8R8SifKV5b7"}
       />
     ),
   },
@@ -537,6 +569,7 @@ const data = [
         }
         img1={Respawn6}
         img2={Respawn7}
+        form={"https://forms.gle/ey4pYDNjGuGb8PS36"}
       />
     ),
   },
@@ -552,6 +585,7 @@ const data = [
         }
         img1={Respawn8}
         img2={Respawn9}
+        form={"https://forms.gle/N4CBGB9M2TaayZBg8"}
       />
     ),
   },
@@ -567,6 +601,7 @@ const data = [
         }
         img1={mindripple4}
         img2={mindripple5}
+        form={"https://forms.gle/Mrw5yRqTmUp9qEA27"}
       />
     ),
   },
@@ -582,6 +617,7 @@ const data = [
         }
         img1={mindripple6}
         img2={mindripple7}
+        form={"https://forms.gle/VRDBmStk8GFSWXYD7"}
       />
     ),
   },
@@ -597,6 +633,7 @@ const data = [
         }
         img1={mindripple8}
         img2={mindripple9}
+        form={"https://forms.gle/pxtB4gLB7MWpzfev8"}
       />
     ),
   },
@@ -612,6 +649,7 @@ const data = [
         }
         img1={bullsandBears6}
         img2={bullsandBears7}
+        form={"https://forms.gle/JFhNZJYAaEEZHVo6A"}
       />
     ),
   },
@@ -627,6 +665,7 @@ const data = [
         }
         img1={bullsandBears8}
         img2={bullsandBears9}
+        form={"https://forms.gle/GsTtSMJdeFNR6pwM6"}
       />
     ),
   },
@@ -642,6 +681,9 @@ const data = [
         }
         img1={Synergy4}
         img2={Synergy5}
+        form={
+          "https://docs.google.com/forms/d/1NykljdnGCmAwpSaZ631qXg-9_o1btavUESiALCzZCaE/edit?usp=drivesdk&chromeless=1"
+        }
       />
     ),
   },
@@ -657,6 +699,7 @@ const data = [
         }
         img1={Synergy6}
         img2={Synergy7}
+        form={"https://forms.gle/zEwe5EsShensRu5eA"}
       />
     ),
   },
@@ -672,6 +715,7 @@ const data = [
         }
         img1={Synergy8}
         img2={Synergy9}
+        form={"https://forms.gle/Bweokzydos9ob3xr9"}
       />
     ),
   },
@@ -687,6 +731,7 @@ const data = [
         }
         img1={Symmetry5}
         img2={Symmetry6}
+        form={""}
       />
     ),
   },
@@ -702,6 +747,9 @@ const data = [
         }
         img1={Symmetry7}
         img2={Symmetry8}
+        form={
+          "https://docs.google.com/forms/d/e/1FAIpQLSeimt1GVuR7xhEjqP7akGejIZKLCxiEemEYFjSHFkV1pFX8Jg/viewform"
+        }
       />
     ),
   },
@@ -717,6 +765,9 @@ const data = [
         }
         img1={Symmetry9}
         img2={Symmetry10}
+        form={
+          "https://docs.google.com/forms/d/e/1FAIpQLSc4kBRHT18OK0xgSFtrZR9BQuGDQc5xgegFTzFiObGWy8aeJw/viewform"
+        }
       />
     ),
   },
@@ -732,6 +783,9 @@ const data = [
         }
         img1={Symmetry11}
         img2={Symmetry12}
+        form={
+          "https://docs.google.com/forms/d/e/1FAIpQLScsF_p1wFce8A9wliso7NqDyE6nCrabaoG6rX6n1hypBBS52Q/viewform"
+        }
       />
     ),
   },
@@ -747,6 +801,7 @@ const data = [
         }
         img1={som4}
         img2={som5}
+        form={"https://forms.gle/3kbnyCs3a5AkTV7o8"}
       />
     ),
   },
@@ -762,6 +817,7 @@ const data = [
         }
         img1={som6}
         img2={som7}
+        form={"https://forms.gle/vq6hqq62ovTziqAe8"}
       />
     ),
   },
@@ -777,6 +833,7 @@ const data = [
         }
         img1={som8}
         img2={som9}
+        form={"https://forms.gle/qhyTEBRQAtNTYowU7"}
       />
     ),
   },
@@ -792,6 +849,7 @@ const data = [
         }
         img1={encode4}
         img2={encode5}
+        form={"https://forms.gle/WvHRRXBQRfbpbdAi8"}
       />
     ),
   },
@@ -807,6 +865,7 @@ const data = [
         }
         img1={encode6}
         img2={encode7}
+        form={"https://forms.gle/tn8sij8mwVPa5KPi8"}
       />
     ),
   },
@@ -822,6 +881,7 @@ const data = [
         }
         img1={encode8}
         img2={encode9}
+        form={"https://forms.gle/oFm41wRoAam1iRgv6"}
       />
     ),
   },
@@ -837,6 +897,9 @@ const data = [
         }
         img1={tir4}
         img2={tir5}
+        form={
+          "https://docs.google.com/forms/d/e/1FAIpQLScbI_fcbtCCR_OQnN2YqO8XgIgTfd8z9DNqZS0MxEqj1dukhg/viewform"
+        }
       />
     ),
   },
@@ -852,6 +915,9 @@ const data = [
         }
         img1={tir6}
         img2={tir7}
+        form={
+          "https://docs.google.com/forms/d/1CN0b8zeTwcgBw8UlexU3zcAGTTdIQ22I7t4stgOp9u0/viewform"
+        }
       />
     ),
   },
@@ -867,6 +933,9 @@ const data = [
         }
         img1={tir8}
         img2={tir9}
+        form={
+          "https://docs.google.com/forms/d/1HeuztLbSthZMUYBAjeIIK5iR-3vTrwYUkqiv_ySHOLg/viewform"
+        }
       />
     ),
   },
@@ -882,6 +951,7 @@ const data = [
         }
         img1={cube3}
         img2={cube4}
+        form={""}
       />
     ),
   },
@@ -897,6 +967,7 @@ const data = [
         }
         img1={cube5}
         img2={cube6}
+        form={"https://forms.gle/FCGudezp4WGJ8yZy6"}
       />
     ),
   },
@@ -912,6 +983,7 @@ const data = [
         }
         img1={vga3}
         img2={vga4}
+        form={"https://forms.gle/NG4yVqeYCZJ2vH5A6"}
       />
     ),
   },
@@ -927,6 +999,7 @@ const data = [
         }
         img1={vga5}
         img2={vga6}
+        form={"https://forms.gle/hd98Wc3vPcFQrtZ67"}
       />
     ),
   },
@@ -942,6 +1015,7 @@ const data = [
         }
         img1={Sorriso3}
         img2={Sorriso4}
+        form={""}
       />
     ),
   },
@@ -957,6 +1031,9 @@ const data = [
         }
         img1={Sorriso5}
         img2={Sorriso6}
+        form={
+          "https://docs.google.com/forms/d/e/1FAIpQLSdAf6MNFzESQKGe1IIofv6LPJSBdtOJyPhBXvetGMOw1A83Gg/viewform?usp=sf_link"
+        }
       />
     ),
   },
@@ -972,6 +1049,9 @@ const data = [
         }
         img1={Brahmand5}
         img2={Brahmand6}
+        form={
+          "https://docs.google.com/forms/d/1ZnmaPusHncVshcsA78zX9JVgqT_cfA2I1v8XnjHTL9c/edit"
+        }
       />
     ),
   },
@@ -987,6 +1067,9 @@ const data = [
         }
         img1={Brahmand7}
         img2={Brahmand8}
+        form={
+          "https://docs.google.com/forms/d/1YPbKewy3nIB4xHg-j5IcncQGA8nigv_4ZLRigSJ1ijg/edit"
+        }
       />
     ),
   },
@@ -1004,6 +1087,9 @@ const data = [
         }
         img1={Brahmand9}
         img2={Brahmand10}
+        form={
+          "https://docs.google.com/forms/d/1nxRvjpbCWp22wAh4-_9X0Q7Qwh5QhZIabNxF2sW6Gn4/edit?ts=67024138"
+        }
       />
     ),
   },
@@ -1019,6 +1105,9 @@ const data = [
         }
         img1={Brahmand11}
         img2={Brahmand12}
+        form={
+          "https://docs.google.com/forms/d/1I2AX0dlPBVSFf6qBZu6KCfTt8IvzpRAjs95O7cnVKBE/edit?ts=67026352"
+        }
       />
     ),
   },
@@ -1034,6 +1123,9 @@ const data = [
         }
         img1={Apogee4}
         img2={Apogee2}
+        form={
+          "https://docs.google.com/forms/d/e/1FAIpQLSc-ZsbIieN8qz3VfUmEpe5H2OCFs2TZdv5uWzBaCYgm9LHsrA/viewform?usp=sf_link"
+        }
       />
     ),
   },
@@ -1049,6 +1141,7 @@ const data = [
         }
         img1={Nucleus4}
         img2={Nucleus5}
+        form={"https://forms.gle/cj1TUjxTJd7gv4Hg9"}
       />
     ),
   },
@@ -1064,6 +1157,9 @@ const data = [
         }
         img1={Nucleus6}
         img2={Nucleus7}
+        form={
+          "https://docs.google.com/forms/d/e/1FAIpQLSf35kIhoKFM4oJOh9lZ4Shdj0JwuegB_UaVpJCg8kG7xKp_9g/viewform?usp=sharing"
+        }
       />
     ),
   },
@@ -1079,6 +1175,9 @@ const data = [
         }
         img1={Nucleus8}
         img2={Nucleus9}
+        form={
+          "https://docs.google.com/forms/d/e/1FAIpQLSfX0OxMNGttXxsIZbXJQfXWh_wQn5JSudUkpxAIs4_wM_2A6g/viewform?usp=sf_link"
+        }
       />
     ),
   },
@@ -1094,6 +1193,7 @@ const data = [
         }
         img1={Empower2}
         img2={Empower3}
+        form={"https://forms.gle/4S5EXnGMr57Yj4h57"}
       />
     ),
   },
@@ -1109,6 +1209,7 @@ const data = [
         }
         img1={Alchemy3}
         img2={Alchemy4}
+        form={"https://forms.gle/J2W7HRELW1AMEuQRA"}
       />
     ),
   },
@@ -1126,6 +1227,7 @@ const data = [
         }
         img1={Alchemy5}
         img2={Alchemy6}
+        form={"https://forms.gle/LMcY9DsBL9kQ1bDL8"}
       />
     ),
   },
