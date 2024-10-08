@@ -7,7 +7,7 @@ export function AboutUs() {
       title: "2024",
       content: (
         <div>
-          <p className="text-neutral-200 text-lg md:text-lg    font-normal mb-5">
+          <p className="text-neutral-200 text-sm sm:text-lg font-normal mb-5">
             Theme Launch 2024
           </p>
           <div className="mb-8">
