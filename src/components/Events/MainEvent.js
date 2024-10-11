@@ -227,7 +227,7 @@ function MainEvent() {
         The Event
       </h2>
       <h4 className="text-neutral-300 flex justify-center text-[15px] mb-[3em]">
-        Presenting the Events
+        Join us for exciting and impactful events!
       </h4>
 
       <Accordion
