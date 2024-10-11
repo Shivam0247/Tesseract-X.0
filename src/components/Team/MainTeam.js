@@ -157,7 +157,7 @@ function MainTeam() {
       },
       {
         name: "Aryan Kadivar",
-        position: "Sponorship Head",
+        position: "Sponsorship Head",
         img: Aryan,
         linkedIn:
           "https://www.linkedin.com/in/aryan-kadivar-51b137249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
@@ -167,7 +167,7 @@ function MainTeam() {
       },
       {
         name: "Hetvi Narola",
-        position: "Sponorship Head",
+        position: "Sponsorship Head",
         img: Hetvi,
         linkedIn:
           "https://www.linkedin.com/in/hetvi-narola-7b8279235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
@@ -177,7 +177,7 @@ function MainTeam() {
       },
       {
         name: "Rudra Trada",
-        position: "Sponorship Head",
+        position: "Sponsorship Head",
         img: Rudra,
         linkedIn: "",
         insta:
