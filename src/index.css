@@ -8,8 +8,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Pirata+One&family=Silkscreen:wght@400;700&display=swap");
 
 body {
-  width: 100vw;
-  height: 100vh;
   /* background-image: url("./Images/front.jpg"); */
   background-color: black;
   background-repeat: no-repeat;

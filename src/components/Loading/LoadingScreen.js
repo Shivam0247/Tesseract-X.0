@@ -68,10 +68,14 @@ const LoadingScreen = ({ onLoadingComplete }) => {
   }, [progress, onLoadingComplete]);
 
   return (
-    <div className="h-[100vh] w-full bg-black bg-grid-white/[0.150] relative flex items-center justify-center">
+    <div className="loadingscreen h-[80%] w-full bg-black bg-grid-white/[0.150] relative flex items-center justify-center overflow-hidden">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <p className="font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 h-[60%] w-full flex justify-center items-center">
-        <div className={`loaderScreen ${fadeOut ? "fade-out" : "fade-in"}`}>
+        <div
+          className={`loaderScreen w-[100vw] h-[90vh] sm:h-[100vh] ${
+            fadeOut ? "fade-out" : "fade-in"
+          }`}
+        >
           <div className="loader text-[40px] sm:text-[80px] md:text-[100px] lg:text-[120px]">
             {displayedWord}
           </div>
