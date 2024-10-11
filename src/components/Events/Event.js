@@ -667,7 +667,7 @@ const data = [
         img1={Synergy4}
         img2={Synergy5}
         form={
-          "https://docs.google.com/forms/d/1NykljdnGCmAwpSaZ631qXg-9_o1btavUESiALCzZCaE/edit?usp=drivesdk&chromeless=1"
+          "https://docs.google.com/forms/d/e/1FAIpQLSeQdPGmu0Gxl0UWF68cKvN5I0gvM4QvDmy5oKvwxQtLzKM0eg/viewform?usp=sf_link"
         }
       />
     ),
