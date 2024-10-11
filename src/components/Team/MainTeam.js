@@ -234,7 +234,7 @@ function MainTeam() {
       },
       {
         name: "Khushi Uttamani",
-        position: "Publicity & Social Media Head",
+        position: "Public Relations & Marketing Head",
         img: KhushiUttamani,
         linkedIn: "https://www.linkedin.com/in/khushi-uttamani-95b8a6257/",
         insta: " https://www.instagram.com/khushiuttamanii/",
@@ -242,7 +242,7 @@ function MainTeam() {
       },
       {
         name: "Isha Sojitra",
-        position: "Publicity & Social Media Head",
+        position: "Public Relations & Marketing Head",
         img: Isha,
         linkedIn:
           "https://www.linkedin.com/in/isha-sojitra-0876352b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -252,7 +252,7 @@ function MainTeam() {
       },
       {
         name: "Ishan Shah",
-        position: "Publicity & Social Media Head",
+        position: "Public Relations & Marketing Head",
         img: Ishan,
         linkedIn:
           "https://www.linkedin.com/in/ishan-shah-281678271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -262,7 +262,7 @@ function MainTeam() {
       },
       {
         name: "Rachit Shah",
-        position: "Publicity & Social Media Head",
+        position: "Public Relations & Marketing Head",
         img: Rachit,
         linkedIn: "https://www.linkedin.com/in/rachit-shah-/",
         insta: "https://www.instagram.com/_rach.it?igsh=MTdwZjg2NGEwZWI2Mg==",
