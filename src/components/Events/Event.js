@@ -153,10 +153,11 @@ import vga6 from "../../Images/Events/VGA/2.1.jpg";
 import Sorriso1 from "../../Images/Events/Sorriso/1.1.jpg";
 import Sorriso3 from "../../Images/Events/Sorriso/1.2.png";
 import Sorriso4 from "../../Images/Events/Sorriso/1.3.jpg";
-
 import Sorriso2 from "../../Images/Events/Sorriso/2.1.jpg";
 import Sorriso5 from "../../Images/Events/Sorriso/2.2.jpg";
 import Sorriso6 from "../../Images/Events/Sorriso/2.3.jpg";
+import Sorriso7 from "../../Images/Events/Sorriso/3.1.jpg";
+import Sorriso8 from "../../Images/Events/Sorriso/3.2.png";
 
 import Brahmand1 from "../../Images/Events/Brahmand/1.2.png";
 import Brahmand5 from "../../Images/Events/Brahmand/1.1.jpg";
@@ -241,10 +242,19 @@ const DummyContent = ({ description, highlight, img1, img2, form }) => {
         ))}
       </div>
       <div className="flex justify-end">
-        <a href={form} target="_blank" className="flex w-[100%] justify-end">
+        <a
+          href={form || "#"} // Provide a default value or prevent navigation when form is empty
+          target="_blank"
+          className={`flex w-[100%] justify-end ${
+            !form ? "pointer-events-none cursor-not-allowed" : ""
+          }`}
+        >
           <Button
             color="primary"
-            className="bg-white rounded-lg w-[20%] text-black"
+            className={`bg-white rounded-lg w-[20%] text-black ${
+              !form ? "opacity-50" : ""
+            }`} // Reduce opacity when form is empty
+            disabled={!form} // Disable the button when form is empty
           >
             Register
           </Button>
@@ -1030,6 +1040,23 @@ const data = [
         form={
           "https://docs.google.com/forms/d/e/1FAIpQLSdAf6MNFzESQKGe1IIofv6LPJSBdtOJyPhBXvetGMOw1A83Gg/viewform?usp=sf_link"
         }
+      />
+    ),
+  },
+  {
+    category: "Sorriso",
+    title: "Sorriso PhotoBooth",
+    date: "18th-20th October",
+    src: Sorriso8,
+    content: (
+      <DummyContent
+        highlight={"During Tesseract, "}
+        description={
+          "SORRISO will arrange an exciting PhotoBooth that invites all students to engage creatively with the Five Elements of Nature-Earth, Water, Fire, Air, and Ether (Space). The booth will be a major attraction at the fest where we will be offering themed props and backdrops corresponding to each element. Students can take unique, memorable photos that reflect the Tesseract theme, creating a fun and immersive experience. The PhotoBooth aims to celebrate the connection between photography and nature, allowing participants to express their creativity while connecting with the elements in an engaging way."
+        }
+        img1={Sorriso7}
+        img2={Sorriso6}
+        form={""}
       />
     ),
   },
