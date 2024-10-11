@@ -62,7 +62,7 @@ function MainTeam() {
         position: "Technical Head",
         img: shivam,
         linkedIn: "https://www.linkedin.com/in/-shivampatel/",
-        insta: "https://www.instagram.com/shivam_0247/",
+        insta: "https://www.instagram.com/shivam_0247/profilecard/",
         twitter: "https://x.com/SHIVAM_0247",
       },
       {
