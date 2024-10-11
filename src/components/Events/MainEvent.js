@@ -1261,7 +1261,7 @@ const data = [
     ),
   },
   {
-    category: "Empower U",
+    category: "EmpowerU",
     title: "InspireX",
     date: "19th October (Saturday)",
     src: Empower1,
