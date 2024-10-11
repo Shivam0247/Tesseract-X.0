@@ -1000,7 +1000,7 @@ const data = [
         }
         img1={cube3}
         img2={cube4}
-        form={""}
+        form={"https://forms.gle/2MFbCFnimd2vkji76"}
       />
     ),
   },
