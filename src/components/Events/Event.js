@@ -258,6 +258,7 @@ const data = [
   {
     category: "Network",
     title: "Designing your life",
+    date: "18th October (Friday)",
     src: network1,
     content: (
       <DummyContent
@@ -276,6 +277,7 @@ const data = [
   {
     category: "Network",
     title: "Credibility Crunch",
+    date: "20th October (Sunday)",
     src: network2,
     content: (
       <DummyContent
@@ -294,6 +296,7 @@ const data = [
   {
     category: "Anirveda",
     title: "Change My Mind",
+    date: "19th October (Saturday)",
     src: anirveda1,
     content: (
       <DummyContent
@@ -310,6 +313,7 @@ const data = [
   {
     category: "Anirveda",
     title: "Global-O-Poly",
+    date: "20th October (Sunday)",
     src: anirveda2,
     content: (
       <DummyContent
@@ -326,6 +330,7 @@ const data = [
   {
     category: "Anirveda",
     title: "Strategic Supply Management",
+    date: "18th October (Friday)",
     src: anirveda3,
     content: (
       <DummyContent
@@ -342,6 +347,7 @@ const data = [
   {
     category: "Cretus",
     title: "RoboChef",
+    date: "18th October (Friday)",
     src: cretus1,
     content: (
       <DummyContent
@@ -358,6 +364,7 @@ const data = [
   {
     category: "Cretus",
     title: "Universe of Robotics",
+    date: "19th October (Saturday)",
     src: cretus2,
     content: (
       <DummyContent
@@ -374,6 +381,7 @@ const data = [
   {
     category: "Cretus",
     title: "3D Printing and Designing Workshop",
+    date: "20th October (Sunday)",
     src: cretus3,
     content: (
       <DummyContent
@@ -390,6 +398,7 @@ const data = [
   {
     category: "Cretus",
     title: "VR Robosoccer",
+    date: "16th October (Wednesday)",
     src: cretus4,
     content: (
       <DummyContent
@@ -406,6 +415,7 @@ const data = [
   {
     category: "Aatmann",
     title: "Brain Sell",
+    date: "18th October (Friday)",
     src: aataman1,
     content: (
       <DummyContent
@@ -424,6 +434,7 @@ const data = [
   {
     category: "Aatmann",
     title: "Bring Your own BOOZT",
+    date: "19th October (Saturday)",
     src: aataman2,
     content: (
       <DummyContent
@@ -442,6 +453,7 @@ const data = [
   {
     category: "Aatmann",
     title: "Psynema 4.0",
+    date: "19th October (Saturday)",
     src: aataman3,
     content: (
       <DummyContent
@@ -460,6 +472,7 @@ const data = [
   {
     category: "Avionics",
     title: "Drone Racing Simulator",
+    date: "18th October (Friday)",
     src: Avionics1,
     content: (
       <DummyContent
@@ -478,6 +491,7 @@ const data = [
   {
     category: "Avionics",
     title: "Glider Making Hackathon",
+    date: "19th October (Saturday)",
     src: Avionics2,
     content: (
       <DummyContent
@@ -496,6 +510,7 @@ const data = [
   {
     category: "Respawn",
     title: "FIFA Tournament",
+    date: "18th October (Friday)",
     src: Respawn1,
     content: (
       <DummyContent
@@ -512,6 +527,7 @@ const data = [
   {
     category: "Respawn",
     title: "PC Building Workshop",
+    date: "19th October (Saturday)",
     src: Respawn2,
     content: (
       <DummyContent
@@ -528,6 +544,7 @@ const data = [
   {
     category: "Respawn",
     title: "Escape Room Challenge",
+    date: "20th October (Sunday)",
     src: Respawn3,
     content: (
       <DummyContent
@@ -544,6 +561,7 @@ const data = [
   {
     category: "Mind Ripple",
     title: "Matrix Breakout",
+    date: "18th-20th October",
     src: mindripple1,
     content: (
       <DummyContent
@@ -560,6 +578,7 @@ const data = [
   {
     category: "Mind Ripple",
     title: "Enigma",
+    date: "18th October (Friday)",
     src: mindripple2,
     content: (
       <DummyContent
@@ -576,6 +595,7 @@ const data = [
   {
     category: "Mind Ripple",
     title: "Quizter",
+    date: "17th October (Thursday)",
     src: mindripple3,
     content: (
       <DummyContent
@@ -592,6 +612,7 @@ const data = [
   {
     category: "Bulls and Bears",
     title: "Bazaar 6.0",
+    date: "19th October (Saturday)",
     src: bullsandBears2,
     content: (
       <DummyContent
@@ -608,6 +629,7 @@ const data = [
   {
     category: "Bulls and Bears",
     title: "Crisis Compass",
+    date: "20th October (Sunday)",
     src: bullsandBears3,
     content: (
       <DummyContent
@@ -624,6 +646,7 @@ const data = [
   {
     category: "Synergy",
     title: "BizzTalk Session 1",
+    date: "18th October (Friday)",
     src: Synergy1,
     content: (
       <DummyContent
@@ -642,6 +665,7 @@ const data = [
   {
     category: "Synergy",
     title: "Craft your Identity",
+    date: "19th October (Saturday)",
     src: Synergy2,
     content: (
       <DummyContent
@@ -658,6 +682,7 @@ const data = [
   {
     category: "Synergy",
     title: "The Art of Negotiation",
+    date: "20th October (Sunday)",
     src: Synergy3,
     content: (
       <DummyContent
@@ -674,6 +699,7 @@ const data = [
   {
     category: "Symmetry",
     title: "No Code Game",
+    date: "",
     src: Symmetry1,
     content: (
       <DummyContent
@@ -690,6 +716,7 @@ const data = [
   {
     category: "Symmetry",
     title: "Stop Motion 3.0",
+    date: "18th October (Friday)",
     src: Symmetry2,
     content: (
       <DummyContent
@@ -708,6 +735,7 @@ const data = [
   {
     category: "Symmetry",
     title: "Blender Basics",
+    date: "",
     src: Symmetry3,
     content: (
       <DummyContent
@@ -726,6 +754,7 @@ const data = [
   {
     category: "Symmetry",
     title: "Virtual Verse",
+    date: "19th & 20th October",
     src: Symmetry4,
     content: (
       <DummyContent
@@ -744,6 +773,7 @@ const data = [
   {
     category: "SOM",
     title: "Mind Maze",
+    date: "17th October (Thursday)",
     src: som1,
     content: (
       <DummyContent
@@ -760,6 +790,7 @@ const data = [
   {
     category: "SOM",
     title: "Elemental Math Masters",
+    date: "18th October (Friday)",
     src: som2,
     content: (
       <DummyContent
@@ -776,6 +807,7 @@ const data = [
   {
     category: "SOM",
     title: "AlgoThon",
+    date: "19th October (Saturday)",
     src: som3,
     content: (
       <DummyContent
@@ -792,6 +824,7 @@ const data = [
   {
     category: "Encode",
     title: "Guardians of the Elements",
+    date: "19th October (Saturday)",
     src: encode1,
     content: (
       <DummyContent
@@ -808,6 +841,7 @@ const data = [
   {
     category: "Encode",
     title: "Capture the Flag: Elemental Edition",
+    date: "19th October (Saturday)",
     src: encode2,
     content: (
       <DummyContent
@@ -824,6 +858,7 @@ const data = [
   {
     category: "Encode",
     title: "Code Tatva",
+    date: "20th October (Sunday)",
     src: encode3,
     content: (
       <DummyContent
@@ -840,6 +875,7 @@ const data = [
   {
     category: "TIR",
     title: "Dome Designing",
+    date: "20th October (Sunday)",
     src: tir1,
     content: (
       <DummyContent
@@ -858,6 +894,7 @@ const data = [
   {
     category: "TIR",
     title: "Global Architecture",
+    date: "18th October (Friday)",
     src: tir2,
     content: (
       <DummyContent
@@ -876,6 +913,7 @@ const data = [
   {
     category: "TIR",
     title: "Terra Turris",
+    date: "19th October (Saturday)",
     src: tir3,
     content: (
       <DummyContent
@@ -894,6 +932,7 @@ const data = [
   {
     category: "Cube-I-Cult",
     title: "Puzzle-Hunt",
+    date: "18th October (Friday)",
     src: cube1,
     content: (
       <DummyContent
@@ -910,6 +949,7 @@ const data = [
   {
     category: "Cube-I-Cult",
     title: "Mosaic Building Workshop",
+    date: "19th October (Saturday)",
     src: cube2,
     content: (
       <DummyContent
@@ -926,6 +966,7 @@ const data = [
   {
     category: "VGA",
     title: "Cineshaam",
+    date: "18th October (Friday)",
     src: vga1,
     content: (
       <DummyContent
@@ -942,6 +983,7 @@ const data = [
   {
     category: "VGA",
     title: "Color Grading Workshop",
+    date: "19th October (Saturday)",
     src: vga2,
     content: (
       <DummyContent
@@ -958,6 +1000,7 @@ const data = [
   {
     category: "Sorriso",
     title: "Shutter Trail",
+    date: "18th October (Friday)",
     src: Sorriso1,
     content: (
       <DummyContent
@@ -974,6 +1017,7 @@ const data = [
   {
     category: "Sorriso",
     title: "Product Photography (Workshop + Shoot)",
+    date: "19th October (Saturday)",
     src: Sorriso2,
     content: (
       <DummyContent
@@ -992,6 +1036,7 @@ const data = [
   {
     category: "Brahmand",
     title: "GesoDesic Hemisphere",
+    date: "18th-19th October",
     src: Brahmand1,
     content: (
       <DummyContent
@@ -1010,6 +1055,7 @@ const data = [
   {
     category: "Brahmand",
     title: "AetherNet",
+    date: "20th October (Sunday)",
     src: Brahmand2,
     content: (
       <DummyContent
@@ -1028,6 +1074,7 @@ const data = [
   {
     category: "Brahmand",
     title: "HelioTrack: Navigating the Sun's Pulse",
+    date: "18th-19th October",
     src: Brahmand3,
     content: (
       <DummyContent
@@ -1048,6 +1095,7 @@ const data = [
   {
     category: "Brahmand",
     title: "Night Sky Gazing",
+    date: "16th-17th October",
     src: Brahmand4,
     content: (
       <DummyContent
@@ -1066,6 +1114,7 @@ const data = [
   {
     category: "Apogee3",
     title: "Earth to Ether",
+    date: "18th-20th October",
     src: Apogee1,
     content: (
       <DummyContent
@@ -1084,6 +1133,7 @@ const data = [
   {
     category: "Nucleus",
     title: "Physics Expo",
+    date: "18th October (Friday)",
     src: Nucleus1,
     content: (
       <DummyContent
@@ -1100,6 +1150,7 @@ const data = [
   {
     category: "Nucleus",
     title: "Cyanotype Printing Workshop",
+    date: "20th October (Sunday)",
     src: Nucleus2,
     content: (
       <DummyContent
@@ -1118,6 +1169,7 @@ const data = [
   {
     category: "Nucleus",
     title: "RGB Workshop",
+    date: "19th October (Saturday)",
     src: Nucleus3,
     content: (
       <DummyContent
@@ -1136,6 +1188,7 @@ const data = [
   {
     category: "Empower U",
     title: "InspireX",
+    date: "19th October (Saturday)",
     src: Empower1,
     content: (
       <DummyContent
@@ -1152,6 +1205,7 @@ const data = [
   {
     category: "Alchemy",
     title: "Parla Tech 6.0",
+    date: "",
     src: Alchemy1,
     content: (
       <DummyContent
@@ -1168,6 +1222,7 @@ const data = [
   {
     category: "Alchemy",
     title: "Fragrance Fusion",
+    date: "19th October (Saturday)",
     src: Alchemy2,
     content: (
       <DummyContent

@@ -198,12 +198,20 @@ export const Card = ({ card, index, layout = false }) => {
               >
                 {card.category}
               </motion.p>
-              <motion.p
-                layoutId={layout ? `title-${card.title}` : undefined}
-                className="text-2xl md:text-5xl font-semibold mt-4 text-white"
-              >
-                {card.title}
-              </motion.p>
+              <div className="flex justify-between items-center flex-wrap">
+                <motion.p
+                  layoutId={layout ? `title-${card.title}` : undefined}
+                  className="text-2xl md:text-5xl font-semibold mt-4 text-white"
+                >
+                  {card.title}
+                </motion.p>
+                <motion.p
+                  layoutId={layout ? `title-${card.title}` : undefined}
+                  className="text-md md:text-lg font-semibold mt-4 text-neutral-400"
+                >
+                  Date: {card.date}
+                </motion.p>
+              </div>
               <div className="py-10">{card.content}</div>
             </motion.div>
           </div>
