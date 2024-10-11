@@ -152,6 +152,7 @@ function Footer() {
                       id="background"
                       style={{ fill: "black" }}
                     />
+
                     <g id="shapes">
                       <rect
                         height="257.962"
