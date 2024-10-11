@@ -243,7 +243,7 @@ const DummyContent = ({ description, highlight, img1, img2, form }) => {
       </div>
       <div className="flex justify-end">
         <a
-          href={form || "#"} // Provide a default value or prevent navigation when form is empty
+          href={form || "#"}
           target="_blank"
           className={`flex w-[100%] justify-end ${
             !form ? "pointer-events-none cursor-not-allowed" : ""
@@ -1265,4 +1265,4 @@ const data = [
       />
     ),
   },
-];
+].sort((a, b) => a.category.localeCompare(b.category));

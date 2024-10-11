@@ -1313,4 +1313,4 @@ const data = [
       />
     ),
   },
-];
+].sort((a, b) => a.category.localeCompare(b.category));
