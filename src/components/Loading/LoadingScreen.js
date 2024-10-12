@@ -3,69 +3,81 @@ import "./LoadingScreen.css";
 
 const LoadingScreen = ({ onLoadingComplete }) => {
   const [progress, setProgress] = useState(0);
-  const [displayedWord, setDisplayedWord] = useState("Tesseract");
-  const [loading, setLoading] = useState(true);
+  const [displayedWord, setDisplayedWord] = useState("Loading...");
   const [fadeOut, setFadeOut] = useState(false);
-  const shuffleTime = 2500;
-  const finalWordDisplayTime = 2500;
+  const [wordIndex, setWordIndex] = useState(0);
 
-  const getRandomCharacter = () => {
-    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    return chars.charAt(Math.floor(Math.random() * chars.length));
-  };
+  const totalLoadingTime = 4000; // Total time for loading screen in milliseconds
+  const wordDisplayTime = 2500; // Time to display words in milliseconds
+  const shuffleInterval = wordDisplayTime / 27; // Interval for word changing
+  const words = [
+    "Aatmann",
+    "Alchemy",
+    "Anirveda",
+    "Apogee3",
+    "Avioics",
+    "Brahmand",
+    "Bulls & Bears",
+    "Cretus",
+    "Cube-I-Cult",
+    "EmpowerU",
+    "Encode",
+    "Mind Ripple",
+    "Network",
+    "Nucleus",
+    "Respawn",
+    "SOM",
+    "Sorriso",
+    "Symmetry",
+    "Synergy",
+    "TIR",
+    "VGA",
+  ];
 
-  const updateDisplayedWord = () => {
-    if (loading) {
-      let updatedWord = "";
-      for (let i = 0; i < displayedWord.length; i++) {
-        updatedWord += getRandomCharacter();
-      }
-      setDisplayedWord(updatedWord);
-    }
-  };
-
+  // Simulate progress increase to reach 100% in totalLoadingTime
   useEffect(() => {
-    const interval = setInterval(() => {
+    const progressInterval = setInterval(() => {
       setProgress((oldProgress) => {
-        if (oldProgress >= 100) {
-          clearInterval(interval);
-          return 100;
+        const newProgress = Math.min(
+          oldProgress + 100 / (totalLoadingTime / 100),
+          100
+        );
+        if (newProgress >= 100) {
+          clearInterval(progressInterval);
         }
-        const diff = Math.random() * 10; // Increase the progress randomly
-        return Math.min(oldProgress + diff, 100);
+        return newProgress;
       });
-    }, 100);
+    }, 100); // Adjust the interval as needed
 
-    return () => clearInterval(interval);
+    return () => clearInterval(progressInterval);
   }, []);
 
+  // Update the displayed word periodically based on progress
   useEffect(() => {
-    const wordInterval = setInterval(() => {
-      updateDisplayedWord();
-    }, 100);
+    let wordInterval;
+    if (progress < 100) {
+      // Update word while progress is below 100
+      wordInterval = setInterval(() => {
+        setWordIndex((prevIndex) => (prevIndex + 1) % words.length); // Cycle through words
+      }, shuffleInterval);
+    } else {
+      // When progress reaches 100%, show "TESSERACT"
+      setDisplayedWord("TESSERACT");
+      setFadeOut(true);
+      setTimeout(() => {
+        onLoadingComplete();
+      }, 1000); // Wait for fade-out duration of 0.5 seconds
+    }
 
     return () => clearInterval(wordInterval);
-  }, [loading]);
-
-  useEffect(() => {
-    const shuffleTimeout = setTimeout(() => {
-      setLoading(false);
-      setDisplayedWord("TESSERACT");
-    }, shuffleTime);
-
-    return () => clearTimeout(shuffleTimeout);
-  }, []);
-
-  useEffect(() => {
-    if (progress >= 100) {
-      setTimeout(() => {
-        setFadeOut(true);
-        setTimeout(() => {
-          onLoadingComplete();
-        }, 1000);
-      }, finalWordDisplayTime);
-    }
   }, [progress, onLoadingComplete]);
+
+  // Update displayed word based on wordIndex change
+  useEffect(() => {
+    if (progress < 100) {
+      setDisplayedWord(words[wordIndex]);
+    }
+  }, [wordIndex, progress, words]);
 
   return (
     <div className="loadingscreen h-[80%] w-full bg-black bg-grid-white/[0.150] relative flex items-center justify-center overflow-hidden">
