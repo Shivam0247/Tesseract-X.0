@@ -387,7 +387,7 @@ const data = [
   },
   {
     category: "Anirveda",
-    title: "Strategic Supply Management",
+    title: "Get! Set!! Supply!!!",
     date: "18th October (Friday)",
     src: anirveda3,
     content: (
