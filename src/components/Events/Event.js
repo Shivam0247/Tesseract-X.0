@@ -344,7 +344,7 @@ const data = [
     src: anirveda3,
     content: (
       <DummyContent
-        highlight={"Strategic Supply Management "}
+        highlight={"Get! Set!! Supply!!!"}
         description={
           "Unlock the power of the elements with Strategic Supply Management , a dynamic event by Anirveda that brings together Earth, Water, Fire, Air, and Ether to simulate the real-world challenges of managing supply chains. This unique competition tests participants' ability to design, optimize, and navigate the complexities of modern supply chains using a multi-faceted, hands-on approach.Teams will dive into a series of dynamic challenges that simulate the complexities of supply chain management., such as building stable logistics (Earth), adapting to supply fluctuations (Water), innovating production processes (Fire), enhancing communication (Air), and integrating AI and cloud solutions (Ether).In a simulated environment, teams will make strategic decisions impacting their outcomes, with expert-led workshops on cutting-edge technologies and sustainable practices enhancing their skills. Networking opportunities will connect attendees with industry professionals. At the end of the event, teams will present their strategies to a panel of judges, competing for recognition and awards for innovative solutions."
         }
