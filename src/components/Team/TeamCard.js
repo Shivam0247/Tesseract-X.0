@@ -6,7 +6,7 @@ function TeamCard({ name, position, img, insta, linkedIn, twitter }) {
   return (
     <div>
       <CardContainer className="inter-var flex mx-[1em]">
-        <CardBody className="relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2] w-auto sm:w-[19rem] min-h-[35vh] rounded-xl p-6 border">
+        <CardBody className="relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2] w-auto sm:w-[19rem] rounded-xl p-6 border">
           <CardItem translateZ="50" className="text-xl font-bold text-white">
             {name}
           </CardItem>

@@ -72,7 +72,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <p className="font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 h-[60%] w-full flex justify-center items-center">
         <div
-          className={`loaderScreen w-[100vw] h-[90vh] sm:h-[100vh] ${
+          className={`loaderScreen w-[100vw] min-h-[90vh] sm:h-[100vh] ${
             fadeOut ? "fade-out" : "fade-in"
           }`}
         >
