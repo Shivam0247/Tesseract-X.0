@@ -12,64 +12,64 @@ function Galler() {
   };
   const images = [
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM1.jpg",
+      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM1.jpg",
     },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM18.jpg",
+      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM18.jpg",
     },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM2.jpg",
+      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM2.jpg",
     },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM14.jpg",
+      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM14.jpg",
     },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM29.jpg",
+      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM29.jpg",
     },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM7.jpg",
+      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM7.jpg",
     },
     // {
-    //   src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM2.jpg",
+    //   src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM2.jpg",
     // },
     // {
-    //   src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/40ClubActivity.JPG",
+    //   src: "https://snt-tess.s3.ap-south-1.amazonaws.com/40ClubActivity.JPG",
     // },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM67.jpg",
+      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM67.jpg",
     },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM57.jpg",
+      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM57.jpg",
     },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/85ClubActivity.JPG",
+      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/85ClubActivity.JPG",
     },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/66Ceremony.JPG",
+      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/66Ceremony.JPG",
     },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/98ClubActivity.JPG",
+      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/98ClubActivity.JPG",
     },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/97ClubActivity.JPG",
+      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/97ClubActivity.JPG",
     },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/4ClubActivity.JPG",
+      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/4ClubActivity.JPG",
     },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/EDM68.jpg",
+      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM68.jpg",
     },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/36ClubActivity.JPG",
+      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/36ClubActivity.JPG",
     },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/53ClubActivity.JPG",
+      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/53ClubActivity.JPG",
     },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/23Ceremony.JPG",
+      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/23Ceremony.JPG",
     },
     {
-      src: "https://snt-images-bucket.s3.ap-south-1.amazonaws.com/41Ceremony.JPG",
+      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/41Ceremony.JPG",
     },
   ];
 
