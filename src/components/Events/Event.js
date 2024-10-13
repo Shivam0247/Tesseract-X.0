@@ -201,11 +201,12 @@ import Empower3 from "../../Images/Events/Empower U/1.3.jpg";
 import Alchemy1 from "../../Images/Events/Alchemy/1.3.png";
 import Alchemy3 from "../../Images/Events/Alchemy/1.1.jpg";
 import Alchemy4 from "../../Images/Events/Alchemy/1.2.png";
-
 import Alchemy2 from "../../Images/Events/Alchemy/2.1.jpg";
 import Alchemy5 from "../../Images/Events/Alchemy/2.2.jpg";
-
 import Alchemy6 from "../../Images/Events/Alchemy/2.3.jpg";
+import Alchemy7 from "../../Images/Events/Alchemy/3.1.jpeg";
+import Alchemy8 from "../../Images/Events/Alchemy/3.2.jpeg";
+import Alchemy9 from "../../Images/Events/Alchemy/3.3.jpeg";
 
 export function AppleCardsCarouselDemo() {
   const cards = data.map((card, index) => (
@@ -1262,6 +1263,23 @@ const data = [
         img1={Alchemy5}
         img2={Alchemy6}
         form={"https://forms.gle/LMcY9DsBL9kQ1bDL8"}
+      />
+    ),
+  },
+  {
+    category: "Alchemy",
+    title: "Resin Art",
+    date: "",
+    src: Alchemy7,
+    content: (
+      <DummyContent
+        highlight={"Resin art "}
+        description={
+          "is more than just a creative craft; it's a memory that you want to keep forever with you, and at the same time, it's a practical exploration of chemical processes. This event is designed to leave a lasting impact on everyone's memories."
+        }
+        img1={Alchemy8}
+        img2={Alchemy9}
+        form={""}
       />
     ),
   },
