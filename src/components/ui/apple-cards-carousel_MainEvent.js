@@ -209,7 +209,7 @@ export const Card = ({ card, index, layout = false }) => {
                   layoutId={layout ? `title-${card.title}` : undefined}
                   className="text-md md:text-lg font-semibold mt-4 text-neutral-400"
                 >
-                  Date: {card.date}
+                  Date: {card.date || "N/A"}
                 </motion.p>
               </div>
               <div className="py-10">{card.content}</div>
