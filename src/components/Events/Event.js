@@ -667,9 +667,7 @@ const data = [
         }
         img1={Synergy4}
         img2={Synergy5}
-        form={
-          "https://docs.google.com/forms/d/e/1FAIpQLSeQdPGmu0Gxl0UWF68cKvN5I0gvM4QvDmy5oKvwxQtLzKM0eg/viewform?usp=sf_link"
-        }
+        form={"https://forms.gle/WJ4YdmtR65ubVnYU7"}
       />
     ),
   },
@@ -686,7 +684,7 @@ const data = [
         }
         img1={Synergy6}
         img2={Synergy7}
-        form={"https://forms.gle/zEwe5EsShensRu5eA"}
+        form={"https://forms.gle/WJ4YdmtR65ubVnYU7"}
       />
     ),
   },
@@ -703,7 +701,7 @@ const data = [
         }
         img1={Synergy8}
         img2={Synergy9}
-        form={"https://forms.gle/Bweokzydos9ob3xr9"}
+        form={"https://forms.gle/WJ4YdmtR65ubVnYU7"}
       />
     ),
   },
