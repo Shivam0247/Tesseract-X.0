@@ -7,6 +7,7 @@ import { ReactTerminal } from "react-terminal";
 import ReactTypingEffect from "react-typing-effect";
 import { ContainerScroll } from "../ui/container-scroll-animation";
 import image from "../../Images/fiveelements.jpg";
+import video1 from "../../Video/ThemeLaunch.mp4";
 gsap.registerPlugin(ScrollTrigger);
 
 function Intro() {
@@ -292,10 +293,7 @@ function Intro() {
               preload="auto"
               className="w-[100%] h-[100%]"
             >
-              <source
-                src="https://snt-tess.s3.ap-south-1.amazonaws.com/ThemeLaunch.mp4"
-                type="video/mp4"
-              />
+              <source src={video1} type="video/mp4" />
             </video>
           </ContainerScroll>
         </div>

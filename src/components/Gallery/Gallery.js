@@ -3,6 +3,24 @@ import "./Gallery.css"; // Import the CSS file
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 import { useNavigate } from "react-router-dom";
+import EDM1 from "../../EDM2/EDM1.jpg";
+import EDM18 from "../../EDM2/EDM18.jpg";
+import EDM2 from "../../EDM2/EDM2.jpg";
+import EDM14 from "../../EDM2/EDM14.jpg";
+import EDM29 from "../../EDM2/EDM29.jpg";
+import EDM7 from "../../EDM2/EDM7.jpg";
+import EDM67 from "../../EDM2/EDM67.jpg";
+import EDM57 from "../../EDM2/EDM57.jpg";
+import ClubActivity85 from "../../ClubActivity/85ClubActivity.JPG";
+import ceremony66 from "../../inaugralCeremony/66Ceremony.JPG";
+import ClubActivity98 from "../../ClubActivity/98ClubActivity.JPG";
+import ClubActivity97 from "../../ClubActivity/97ClubActivity.JPG";
+import ClubActivity4 from "../../ClubActivity/4ClubActivity.JPG";
+import EDM68 from "../../EDM2/EDM68.jpg";
+import ClubActivity36 from "../../ClubActivity/36ClubActivity.JPG";
+import ClubActivity53 from "../../ClubActivity/53ClubActivity.JPG";
+import ceremony23 from "../../inaugralCeremony/23Ceremony.JPG";
+import ceremony41 from "../../inaugralCeremony/41Ceremony.JPG";
 
 function Galler() {
   const navigate = useNavigate();
@@ -12,22 +30,22 @@ function Galler() {
   };
   const images = [
     {
-      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM1.jpg",
+      src: EDM1,
     },
     {
-      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM18.jpg",
+      src: EDM18,
     },
     {
-      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM2.jpg",
+      src: EDM2,
     },
     {
-      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM14.jpg",
+      src: EDM14,
     },
     {
-      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM29.jpg",
+      src: EDM29,
     },
     {
-      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM7.jpg",
+      src: EDM7,
     },
     // {
     //   src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM2.jpg",
@@ -36,40 +54,40 @@ function Galler() {
     //   src: "https://snt-tess.s3.ap-south-1.amazonaws.com/40ClubActivity.JPG",
     // },
     {
-      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM67.jpg",
+      src: EDM67,
     },
     {
-      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM57.jpg",
+      src: EDM57,
     },
     {
-      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/85ClubActivity.JPG",
+      src: ClubActivity85,
     },
     {
-      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/66Ceremony.JPG",
+      src: ceremony66,
     },
     {
-      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/98ClubActivity.JPG",
+      src: ClubActivity98,
     },
     {
-      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/97ClubActivity.JPG",
+      src: ClubActivity97,
     },
     {
-      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/4ClubActivity.JPG",
+      src: ClubActivity4,
     },
     {
-      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/EDM68.jpg",
+      src: EDM68,
     },
     {
-      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/36ClubActivity.JPG",
+      src: ClubActivity36,
     },
     {
-      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/53ClubActivity.JPG",
+      src: ClubActivity53,
     },
     {
-      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/23Ceremony.JPG",
+      src: ceremony23,
     },
     {
-      src: "https://snt-tess.s3.ap-south-1.amazonaws.com/41Ceremony.JPG",
+      src: ceremony41,
     },
   ];
 

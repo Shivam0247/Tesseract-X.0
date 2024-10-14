@@ -1,5 +1,9 @@
 import React from "react";
 import { Timeline } from "../ui/timeline";
+import ceremony23 from "../../inaugralCeremony/23Ceremony.JPG";
+import ClubActivity53 from "../../ClubActivity/53ClubActivity.JPG";
+import ClubActivity58 from "../../ClubActivity/58ClubActivity.JPG";
+import ClubActivity98 from "../../ClubActivity/98ClubActivity.JPG";
 
 export function AboutUs() {
   const data = [
@@ -27,21 +31,21 @@ export function AboutUs() {
 
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://snt-tess.s3.ap-south-1.amazonaws.com/IMG_4186.DNG"
+              src="./group2.png"
               alt="Theme Launch"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <img
-              src="https://snt-tess.s3.ap-south-1.amazonaws.com/IMG_5629.JPG"
+              src="./group.jpg"
               alt="Encode at theme launch"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <img
-              src="https://snt-tess.s3.ap-south-1.amazonaws.com/SKS_7504.JPG"
+              src="./SKS_7504.JPG"
               alt="Committee reveal"
               width={500}
               height={500}
@@ -80,28 +84,28 @@ export function AboutUs() {
           <br />
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://snt-tess.s3.ap-south-1.amazonaws.com/23Ceremony.JPG"
+              src={ceremony23}
               alt="inaugration "
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <img
-              src="https://snt-tess.s3.ap-south-1.amazonaws.com/53ClubActivity.JPG"
+              src={ClubActivity53}
               alt="drone workshop"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <img
-              src="https://snt-tess.s3.ap-south-1.amazonaws.com/58ClubActivity.JPG"
+              src={ClubActivity58}
               alt="valorent tournament"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <img
-              src="https://snt-tess.s3.ap-south-1.amazonaws.com/98ClubActivity.JPG"
+              src={ClubActivity98}
               alt="edm-night"
               width={500}
               height={500}
