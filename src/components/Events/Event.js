@@ -684,7 +684,7 @@ const data = [
         }
         img1={Synergy6}
         img2={Synergy7}
-        form={"https://forms.gle/WJ4YdmtR65ubVnYU7"}
+        form={"https://forms.gle/XsqFbfY3qu2Wp4ww6"}
       />
     ),
   },
@@ -701,7 +701,7 @@ const data = [
         }
         img1={Synergy8}
         img2={Synergy9}
-        form={"https://forms.gle/WJ4YdmtR65ubVnYU7"}
+        form={"https://forms.gle/EY6mdKYmgdqr298K8"}
       />
     ),
   },
