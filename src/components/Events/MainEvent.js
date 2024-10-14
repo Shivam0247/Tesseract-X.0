@@ -1195,9 +1195,9 @@ const data = [
     src: Apogee1,
     content: (
       <DummyContent
-        highlight={"It will be a 3 day event "}
+        highlight={"We are organizing "}
         description={
-          "where we will teach the participating team will be taught about basic principals behind aerospace, how a solid propulsion motor is made. One second day they will be taught about electronics and on day they will be taught assembly and then finally rocket will be launched by the teams."
+          "a three-day workshop where participants will learn about rockets and get hands-on experience building and launching them. On the first day, we will teach the basic physics of rockets and show how to build the rocket motor. Participants will then start making their own rocket motor, which will need to cure for a day. On the second day, we will focus on electronics, where participants will build a flight computer. Finally, on the third day, they will assemble the rocket, integrate the electronics, and launch the rocket into the sky."
         }
         img1={Apogee4}
         img2={Apogee2}
