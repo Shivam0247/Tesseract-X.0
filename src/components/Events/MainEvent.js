@@ -220,9 +220,9 @@ function MainEvent() {
 
   // Moving 'Snt' category to the top of the list
   const reorderedCategories = [
-    "Snt ( Science & Technical Committee)",
+    "SnT ( Science & Technical Committee)",
     ...categories.filter(
-      (category) => category !== "Snt ( Science & Technical Committee)"
+      (category) => category !== "SnT ( Science & Technical Committee)"
     ),
   ];
 
@@ -1351,7 +1351,7 @@ const data = [
     ),
   },
   {
-    category: "Snt ( Science & Technical Committee)",
+    category: "SnT ( Science & Technical Committee)",
     title: "Tess Run",
     date: "19th October (Saturday)",
     src: tessrun,
@@ -1371,7 +1371,7 @@ const data = [
   },
 
   {
-    category: "Snt ( Science & Technical Committee)",
+    category: "SnT ( Science & Technical Committee)",
     title: "Tech Talk",
     date: "19th October (Saturday)",
     src: techtalk1,

@@ -215,10 +215,10 @@ import Alchemy9 from "../../Images/Events/Alchemy/3.3.jpeg";
 export function AppleCardsCarouselDemo() {
   // Separate "Snt" events from the rest
   const sntEvents = data.filter(
-    (event) => event.category === "Snt ( Science & Technical Committee)"
+    (event) => event.category === "SnT ( Science & Technical Committee)"
   );
   const otherEvents = data.filter(
-    (event) => event.category !== "Snt ( Science & Technical Committee)"
+    (event) => event.category !== "SnT ( Science & Technical Committee)"
   );
 
   // Concatenate "Snt" events first, followed by other events
@@ -1303,7 +1303,7 @@ const data = [
     ),
   },
   {
-    category: "Snt ( Science & Technical Committee)",
+    category: "SnT ( Science & Technical Committee)",
     title: "Tess Run",
     date: "19th October (Saturday)",
     src: tessrun,
@@ -1323,7 +1323,7 @@ const data = [
   },
 
   {
-    category: "Snt ( Science & Technical Committee)",
+    category: "SnT ( Science & Technical Committee)",
     title: "Tech Talk",
     date: "19th October (Saturday)",
     src: techtalk1,
