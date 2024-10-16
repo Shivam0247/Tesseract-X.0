@@ -107,7 +107,7 @@ export const InfiniteMovingCards = ({
               </div>
               <div className="flip-card-back">
                 <blockquote>
-                  <span className="relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
+                  <span className="relative z-20 text-2xl  leading-[1.6] text-gray-100 font-bold">
                     {item.back}
                   </span>
                 </blockquote>

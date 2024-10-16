@@ -1,54 +1,26 @@
 import React from "react";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
-
 function Sponsor() {
-  // Generate image URLs dynamically
-  const imageBaseUrl = "https://i.ibb.co/x5Hcj20/";
-  const imageCount = 5; // Number of images available
-  const imageUrls = Array.from(
-    { length: imageCount },
-    (_, index) => `${imageBaseUrl}${index + 1}.png`
-  );
-
   const testimonials = [
     {
-      quote:
-        "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-      name: "Charles Dickens",
-      title: "A Tale of Two Cities",
-      back: "asssas",
-      image: "https://i.ibb.co/mHX6mHK/5.png",
+      back: "Title Sponsor",
+      image: "/maxresdefault.jpg",
     },
     {
-      quote:
-        "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-      name: "William Shakespeare",
-      title: "Hamlet",
-      back: "sss",
-      image: imageUrls[1],
+      back: "Title Sponsor",
+      image: "/logo2.png",
     },
     {
-      quote: "All that we see or seem is but a dream within a dream.",
-      name: "Edgar Allan Poe",
-      title: "A Dream Within a Dream",
-      back: "asssas",
-      image: imageUrls[2],
+      back: "Co-Title Sponsor",
+      image: "/logo3.jpg",
     },
     {
-      quote:
-        "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-      name: "Jane Austen",
-      title: "Pride and Prejudice",
-      back: "asssas",
-      image: imageUrls[3],
+      back: "Co-Title Sponsor",
+      image: "/logo4.jpg",
     },
     {
-      quote:
-        "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-      name: "Herman Melville",
-      title: "Moby-Dick",
-      back: "asssas",
-      image: imageUrls[4],
+      back: "Education Partner",
+      image: "/logo5.jpg",
     },
   ];
 
