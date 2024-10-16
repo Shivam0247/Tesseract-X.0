@@ -218,8 +218,16 @@ function MainEvent() {
   // Grouping the data by category
   const categories = Array.from(new Set(data.map((item) => item.category)));
 
+  // Moving 'Snt' category to the top of the list
+  const reorderedCategories = [
+    "Snt ( Science & Technical Committee)",
+    ...categories.filter(
+      (category) => category !== "Snt ( Science & Technical Committee)"
+    ),
+  ];
+
   const [openKeys, setOpenKeys] = useState(
-    categories.map((_, index) => (index + 1).toString())
+    reorderedCategories.map((_, index) => (index + 1).toString())
   );
 
   const handleSelectionChange = (keys) => {
@@ -243,8 +251,8 @@ function MainEvent() {
         className="text-white px-5 sm:px-[3em]"
         fullWidth
       >
-        {/* Map over categories to create AccordionItems for each */}
-        {categories.map((category, index) => {
+        {/* Map over reorderedCategories to create AccordionItems for each */}
+        {reorderedCategories.map((category, index) => {
           // Filter the data based on the current category
           const categoryItems = data.filter(
             (item) => item.category === category
@@ -276,6 +284,7 @@ function MainEvent() {
 }
 
 export default MainEvent;
+
 const DummyContent = ({ description, highlight, img1, img2, form }) => {
   const images = [img1];
 

@@ -213,7 +213,18 @@ import Alchemy8 from "../../Images/Events/Alchemy/3.2.jpeg";
 import Alchemy9 from "../../Images/Events/Alchemy/3.3.jpeg";
 
 export function AppleCardsCarouselDemo() {
-  const cards = data.map((card, index) => (
+  // Separate "Snt" events from the rest
+  const sntEvents = data.filter(
+    (event) => event.category === "Snt ( Science & Technical Committee)"
+  );
+  const otherEvents = data.filter(
+    (event) => event.category !== "Snt ( Science & Technical Committee)"
+  );
+
+  // Concatenate "Snt" events first, followed by other events
+  const sortedData = [...sntEvents, ...otherEvents];
+
+  const cards = sortedData.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
 
@@ -226,6 +237,7 @@ export function AppleCardsCarouselDemo() {
     </div>
   );
 }
+
 const DummyContent = ({ description, highlight, img1, img2, form }) => {
   const images = [img1];
 
