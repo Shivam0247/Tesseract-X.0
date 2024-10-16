@@ -4,6 +4,10 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
 import { Carousel, Card } from "../ui/apple-cards-carousel_MainEvent";
 
+import tessrun from "../../Images/Events/Snt/tessrun.jpg";
+import techtalk1 from "../../Images/Events/Snt/tesstalk1.jpg";
+import techtalk2 from "../../Images/Events/Snt/techtalk2.jpg";
+
 import network1 from "../../Images/Events/Network/Netwrok 1.1.png";
 import network3 from "../../Images/Events/Network/Network 1.2.jpg";
 import network4 from "../../Images/Events/Network/Network 1.3.png";
@@ -273,7 +277,13 @@ function MainEvent() {
 
 export default MainEvent;
 const DummyContent = ({ description, highlight, img1, img2, form }) => {
-  const images = [img1, img2];
+  const images = [img1];
+
+  // Add img2 to the array only if it's not empty
+  if (img2) {
+    images.push(img2);
+  }
+
   return (
     <>
       <div className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
@@ -314,6 +324,7 @@ const DummyContent = ({ description, highlight, img1, img2, form }) => {
     </>
   );
 };
+
 const data = [
   {
     category: "Network",
@@ -1327,6 +1338,45 @@ const data = [
         img1={Alchemy8}
         img2={Alchemy9}
         form={"https://forms.gle/bDGuYAJcZiCnUjjM8"}
+      />
+    ),
+  },
+  {
+    category: "Snt ( Science & Technical )",
+    title: "Tess Run",
+    date: "19th October (Saturday)",
+    src: tessrun,
+    content: (
+      <DummyContent
+        highlight={
+          "🚨 Due to Overwhelming Response, We're Back with TESS RUN! 🚨 "
+        }
+        description={
+          "After an incredible turnout and massive support, we are thrilled to bring you the TESS RUN once again! 🏃‍♀️ This time, let's run for a cause and take every step toward a safer future ! Register now ! Spots are filling fast, so don't miss out on this incredible chance to run for a purpose!"
+        }
+        img1={tessrun}
+        img2={""}
+        form={""}
+      />
+    ),
+  },
+
+  {
+    category: "Snt ( Science & Technical )",
+    title: "Tech Talk",
+    date: "19th October (Saturday)",
+    src: techtalk1,
+    content: (
+      <DummyContent
+        highlight={""}
+        description={
+          "We're thrilled to announce an exclusive Tech Talk with none other than the legendary educator , 8 Times TedX Speaker , Interviewer and YouTuber Dr. Vijender Chauhan 🎉🎥—a favorite among students for making even the toughest Interviews Seems Like Fun! 🧠✨ We're thrilled to announce an exclusive Tech Talk with none other than the legendary educator and YouTuber Dr. Gajendra Purohit 🎉🎥—a favorite among students for making even the toughest concepts crystal clear! 🧠✨"
+        }
+        img1={techtalk1}
+        img2={techtalk2}
+        form={
+          "https://docs.google.com/forms/d/e/1FAIpQLSfHrNQ9-Z6yZZvt8emFTONy81d52uNjgunJGX7_EsQlkAnNwQ/viewform"
+        }
       />
     ),
   },
