@@ -1291,7 +1291,7 @@ const data = [
     ),
   },
   {
-    category: "Snt ( Science & Technical )",
+    category: "Snt ( Science & Technical Committee)",
     title: "Tess Run",
     date: "19th October (Saturday)",
     src: tessrun,
@@ -1311,7 +1311,7 @@ const data = [
   },
 
   {
-    category: "Snt ( Science & Technical )",
+    category: "Snt ( Science & Technical Committee)",
     title: "Tech Talk",
     date: "19th October (Saturday)",
     src: techtalk1,
