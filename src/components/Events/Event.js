@@ -726,23 +726,23 @@ const data = [
       />
     ),
   },
-  {
-    category: "Symmetry",
-    title: "No Code Game",
-    date: "",
-    src: Symmetry1,
-    content: (
-      <DummyContent
-        highlight={"No Code Game: "}
-        description={
-          "Step into the world of game development without writing a single line of code! In this hands-on event, Symmetry will guide you through designing captivating game assets using Figma, while Encode will show you how to integrate these assets into a functional game using Unity. Ideal for both creative enthusiasts and aspiring developers, this workshop offers a perfect blend of design and technology."
-        }
-        img1={Symmetry5}
-        img2={Symmetry6}
-        form={""}
-      />
-    ),
-  },
+  // {
+  //   category: "Symmetry",
+  //   title: "No Code Game",
+  //   date: "",
+  //   src: Symmetry1,
+  //   content: (
+  //     <DummyContent
+  //       highlight={"No Code Game: "}
+  //       description={
+  //         "Step into the world of game development without writing a single line of code! In this hands-on event, Symmetry will guide you through designing captivating game assets using Figma, while Encode will show you how to integrate these assets into a functional game using Unity. Ideal for both creative enthusiasts and aspiring developers, this workshop offers a perfect blend of design and technology."
+  //       }
+  //       img1={Symmetry5}
+  //       img2={Symmetry6}
+  //       form={""}
+  //     />
+  //   ),
+  // },
   {
     category: "Symmetry",
     title: "Stop Motion 3.0",
